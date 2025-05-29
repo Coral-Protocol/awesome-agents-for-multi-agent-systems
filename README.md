@@ -2,24 +2,15 @@
 
 Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! 🐠  
 Our reef splits into two zones:  
-- [Open Source Agents](#open-source-coralised-agents) 🌴  
+- [Open Source Agents](#open-source-agents) 🌴  
 - [MCP Coralised Agents](#mcp-coralised-agents) ⚓  
-
-Explore this underwater world on our 🌐 [Coral Reef Portal]
-
-This reef isn’t complete but grows with care. 🌱 Discover tools to nurture agents and share your treasures! 🐚  
-
-## Add to the Reef? 🪄  
-Drop a pull request or reach out at [coral@coralprotocol.org](mailto:coral@coralprotocol.org). Keep species alphabetical and in their zone.  
-
-## About Coral Protocol 🐙  
 
 ---
 
-# Open Source Coralised Agents 🌴  
+# Open Source Agents 🌴  
 
 ## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent) 🧠🪸  
-Deep-diving agent for web research, huge asset in the coral reef of agents
+Deep-diving agent for web research, huge asset in the coral reef of agents  
 <details>  
 Name: Open Deep Research Coral Agent  
 <details><summary>Description</summary>  
@@ -47,9 +38,9 @@ Firecrawl agent capable of performing comprehensive web scraping, crawling, and 
 </details>  
 Framework: LangChain  
 Tools used: Firecrawl MCP Server Tools, Coral Server  
-Default/recommended model: GPT-4
-Keywords: 
-Other details:
+Default/recommended model: GPT-4  
+Keywords:  
+Other details:  
 Links: [GitHub](https://github.com/Coral-Protocol/firecrawl-coral-agent)  
 </details>  
 
@@ -62,8 +53,13 @@ GitHub agent capable of managing repositories, including creating, updating, and
 </details>  
 Framework: LangChain  
 Tools used: GitHub MCP Server Tools, Coral Server  
-Default/recommended model: GPT-4 
-Keywords: 
-Other details: 
+Default/recommended model: GPT-4  
+Keywords:  
+Other details:  
 Links: [GitHub](https://github.com/Coral-Protocol/github-coral-agent)  
-</details>
+</details>  
+
+---
+
+# Know More 🐙  
+Learn more about the Coral Protocol at [https://docs.coralprotocol.org/CoralDoc/Introduction/WhatisCoralProtocol](https://docs.coralprotocol.org/CoralDoc/Introduction/WhatisCoralProtocol).
