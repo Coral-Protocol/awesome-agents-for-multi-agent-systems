@@ -16,8 +16,8 @@ Name: Open Deep Research Coral Agent
 <details><summary>Description</summary>  
 Explores vast digital oceans, extracting and reasoning over data with Coral Protocol collaboration.  
 </details>  
-Framework: Next.js with React Server Components  
-Tools used: Firecrawl, AI SDK, OpenRouter, Camel  
+Framework: Camel AI, LangGraph
+Tools used: Custom Deep Research Tool, Coral Server
 Default/recommended model: OpenAI GPT-4o  
 
  
@@ -37,7 +37,7 @@ Firecrawl agent capable of performing comprehensive web scraping, crawling, and 
 </details>  
 Framework: LangChain  
 Tools used: Firecrawl MCP Server Tools, Coral Server  
-Default/recommended model: GPT-4  
+Default/recommended model: OpenAI GPT-4  
  
 </details>  
 
@@ -50,11 +50,11 @@ GitHub agent capable of managing repositories, including creating, updating, and
 </details>  
 Framework: LangChain  
 Tools used: GitHub MCP Server Tools, Coral Server  
-Default/recommended model: GPT-4  
+Default/recommended model: OpenAI GPT-4  
 
 </details>  
 
 ---
 
 # Know More 🐙  
-Learn more about the Coral Protocol at [https://docs.coralprotocol.org/CoralDoc/Introduction/WhatisCoralProtocol](https://docs.coralprotocol.org/CoralDoc/Introduction/WhatisCoralProtocol).
+Learn more about the Coral Protocol at [Coral Documentation](https://docs.coralprotocol.org/CoralDoc/Introduction/WhatisCoralProtocol).
