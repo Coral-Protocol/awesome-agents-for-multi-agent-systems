@@ -1,15 +1,15 @@
-# Coral Reef of AI Agents 🪸🌊
+# Coral Reef of AI Agents 🪸
 
-Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! 🐠  
+Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! 
 Our reef splits into two zones:  
-- [Open Source Agents](#open-source-agents) 🌴  
-- [MCP Coralised Agents](#mcp-coralised-agents) ⚓  
+- Open Source Agents  
+- MCP Coralised Agents
 
 ---
 
 # Open Source Agents 🌴  
 
-## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent) 🧠🪸  
+## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent) 
 Deep-diving agent for web research, huge asset in the coral reef of agents  
 <details>  
 Name: Open Deep Research Coral Agent  
@@ -19,9 +19,8 @@ Explores vast digital oceans, extracting and reasoning over data with Coral Prot
 Framework: Next.js with React Server Components  
 Tools used: Firecrawl, AI SDK, OpenRouter, Camel  
 Default/recommended model: OpenAI GPT-4o  
-Keywords: Deep research, web scraping, AI reasoning, Coral Reef  
-Other details: Open-source research species. Supports multiple LLMs via AI SDK. Configurable timeout (default 300s).  
-Links: [GitHub](https://github.com/Coral-Protocol/open-deep-research-coral-agent)  
+
+ 
 </details>  
 
 ---
@@ -29,7 +28,7 @@ Links: [GitHub](https://github.com/Coral-Protocol/open-deep-research-coral-agent
 # MCP Coralised Agents ⚓  
 These agents are coralised with a single click using [The Coraliser](https://github.com/Coral-Protocol/coraliser).  
 
-## [Firecrawl Coral Agent](https://github.com/Coral-Protocol/firecrawl-coral-agent) 🌊📡  
+## [Firecrawl Coral Agent](https://github.com/Coral-Protocol/firecrawl-coral-agent) 
 Web-scraping agent thriving in the Coral Reef’s MCP  
 <details>  
 Name: Firecrawl Coral Agent  
@@ -39,12 +38,10 @@ Firecrawl agent capable of performing comprehensive web scraping, crawling, and 
 Framework: LangChain  
 Tools used: Firecrawl MCP Server Tools, Coral Server  
 Default/recommended model: GPT-4  
-Keywords:  
-Other details:  
-Links: [GitHub](https://github.com/Coral-Protocol/firecrawl-coral-agent)  
+ 
 </details>  
 
-## [Github Coral Agent](https://github.com/Coral-Protocol/github-coral-agent) 🐠📂  
+## [Github Coral Agent](https://github.com/Coral-Protocol/github-coral-agent) 
 GitHub management agent swimming in the Coral Reef  
 <details>  
 Name: Github Coral Agent  
@@ -54,9 +51,7 @@ GitHub agent capable of managing repositories, including creating, updating, and
 Framework: LangChain  
 Tools used: GitHub MCP Server Tools, Coral Server  
 Default/recommended model: GPT-4  
-Keywords:  
-Other details:  
-Links: [GitHub](https://github.com/Coral-Protocol/github-coral-agent)  
+
 </details>  
 
 ---
