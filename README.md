@@ -10,15 +10,15 @@ Our reef splits into two zones:
 # Open Source Agents 🌴  
 
 ## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent) 
-Deep-diving agent for web research, huge asset in the coral reef of agents  
+Deep-diving agent for web research
 <details>  
 Name: Open Deep Research Coral Agent  
 <details><summary>Description</summary>  
-Explores vast digital oceans, extracting and reasoning over data with Coral Protocol collaboration.  
+Open Deep Research is an experimental, fully open-source research assistant that automates deep research and produces comprehensive reports on any topic. It features two implementations - a workflow and a multi-agent architecture - each with distinct advantages. You can customize the entire research and writing process with specific models, prompts, report structure, and search tools.
 </details>  
 Framework: Camel AI, LangGraph
 Tools used: Custom Deep Research Tool, Coral Server
-Default/recommended model: OpenAI GPT-4o  
+AI model: OpenAI GPT-4o  
 
  
 </details>  
@@ -37,7 +37,7 @@ Firecrawl agent capable of performing comprehensive web scraping, crawling, and 
 </details>  
 Framework: LangChain  
 Tools used: Firecrawl MCP Server Tools, Coral Server  
-Default/recommended model: OpenAI GPT-4  
+AI model: OpenAI GPT-4  
  
 </details>  
 
@@ -50,7 +50,7 @@ GitHub agent capable of managing repositories, including creating, updating, and
 </details>  
 Framework: LangChain  
 Tools used: GitHub MCP Server Tools, Coral Server  
-Default/recommended model: OpenAI GPT-4  
+AI model: OpenAI GPT-4  
 
 </details>  
 
