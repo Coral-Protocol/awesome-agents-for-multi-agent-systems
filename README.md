@@ -2,8 +2,8 @@
 
 Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! 
 Our reef splits into two zones:  
-- [Open Source Agents](#open-source-agents)
-- [MCP Coralised Agents](#mcp-coralised-agents)
+- Open Source Agents
+- MCP Coralised Agents
 
 ---
 
