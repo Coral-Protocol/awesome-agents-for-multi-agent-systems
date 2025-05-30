@@ -27,45 +27,6 @@ Open Deep Research is an experimental, fully open-source research assistant that
 - AI model: OpenAI GPT-4o  
 </details>
 
-## [Software Testing Agents with LangChain, CAMEL-AI, and Crew](https://github.com/Coral-Protocol/software-testing-agents)
-
-<details>
-
-### Category
-
-Dev Tools, Software Testing, Multi-agent
-
-### Description
-
-A multi-agent software testing system built with Coral Protocol, integrating agents from LangChain, CAMEL-AI, and Crew.
-Supports automatic codebase understanding, pull request testing, unit test coverage analysis, and documentation consistency checking in any compatible GitHub repo.
-
-**Key Features:**
-
-* **Repository Understanding:** Summarizes repo structure, instructions, usage.
-* **Unit Test Execution:** Automatically runs unit tests for PRs.
-* **Test Coverage Analysis:** Checks if PR changes are fully covered by tests.
-* **Documentation Consistency:** Detects out-of-date README, API docs, etc. after PRs.
-
-### Details
-
-* Framework: LangChain, CAMEL-AI, CrewAI
-* Models: OpenAI GPT-4.1 (default), Groq Llama 3 70B (optional)
-* Orchestration: 7 cooperating agents (clone, diff review, test runner, doc checker, etc.)
-* Tools used: GitHub Checkout Tool, Get PR Files Tool (GitHub MCP), List Files Tool (Local/GitHub), Read Files Tool (Local/GitHub), Run Test Tools. 
-
-### Demo Videos
-
-* [Repo Understanding](https://youtu.be/nihOChs5l3k)
-* [Unit Test Execution](https://youtu.be/-ZYZEo96L1w)
-* [Test Coverage Evaluation](https://youtu.be/rq8zW02MEmw)
-* [Doc Consistency Checking](https://youtu.be/XOwLd7eNitw)
-
-</details>
-
----
-
-
 ---
 
 # MCP Coralised Agents ⚓  
