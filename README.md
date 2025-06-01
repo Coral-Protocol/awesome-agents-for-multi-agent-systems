@@ -9,6 +9,30 @@ Our reef splits into two zones:
 
 # Open Source Agents 🌴
 
+## [Coral Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+
+Coral Interface Agent
+
+<details>
+
+### Category
+
+General purpose, Build your own, Multi-agent
+
+### Description
+
+Accepts user instructions, manages workflow, and coordinates other agents.
+
+### Details
+
+* Framework: LangGraph
+* Tools used: Coral Server Tools
+* AI model: OpenAI GPT-4.1
+
+</details>
+
+---
+
 ## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent)
 
 Open Deep Research Coral Agent
@@ -41,7 +65,7 @@ Coral GitClone Agent
 
 ### Category
 
-Codebase Management, Infrastructure
+Software Testing
 
 ### Description
 
@@ -51,7 +75,7 @@ Automates the process of cloning GitHub repositories and checking out specific P
 
 * Framework: CrewAI
 * Tools used: Git CLI Tool, Coral Server Tools
-* Typical Use: Automated PR onboarding, CI/CD initialization
+* AI model: OpenAI GPT-4.1
 
 </details>
 
@@ -65,7 +89,7 @@ Coral CodeDiffReview Agent
 
 ### Category
 
-Code Analysis, Review Automation
+Software Testing
 
 ### Description
 
@@ -75,7 +99,7 @@ Examines pull request diffs to detect code changes, maps affected functions to t
 
 * Framework: CAMEL-AI
 * Tools used: GitHub MCP Server Tools, Coral Server Tools
-* Typical Use: Automated code review, test selection, change impact analysis
+* AI model: OpenAI GPT-4.1/Groq Llama 3.3 70B
 
 </details>
 
@@ -89,7 +113,7 @@ Coral UnitTestRunner Agent
 
 ### Category
 
-Automated Testing, DevOps
+Software Testing
 
 ### Description
 
@@ -99,7 +123,7 @@ Executes targeted unit tests, typically filtered from PR changes, using `pytest`
 
 * Framework: LangChain
 * Tools used: List Files Tool (Local), List File Tool (Local), CLI Tool, Coral Server Tools
-* Typical Use: Automated test runs for CI/CD, PR validation
+* AI model: OpenAI GPT-4.1
 
 </details>
 
@@ -113,7 +137,7 @@ Coral RepoUnderstanding Agent
 
 ### Category
 
-Code Intelligence, Documentation
+Software Testing
 
 ### Description
 
@@ -123,7 +147,7 @@ Scans the whole codebase to extract high-level architecture, key modules, and us
 
 * Framework: LangChain
 * Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
-* Typical Use: Onboarding docs, repo overviews, knowledge sharing
+* AI model: OpenAI GPT-4.1
 
 </details>
 
@@ -137,7 +161,7 @@ Coral RepoUnitTestAdvisor Agent
 
 ### Category
 
-Test Coverage Analysis, Review Automation
+Software Testing
 
 ### Description
 
@@ -147,7 +171,7 @@ Evaluates if all new or changed code in a PR is adequately covered by unit tests
 
 * Framework: LangChain
 * Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
-* Typical Use: PR test coverage reporting, QA automation
+* AI model: OpenAI GPT-4.1
 
 </details>
 
@@ -161,7 +185,7 @@ Coral RepoDocConsistencyChecker Agent
 
 ### Category
 
-Documentation, Consistency Checking
+Software Testing
 
 ### Description
 
@@ -171,7 +195,7 @@ Analyzes the impact of code changes on documentation files. Detects and flags ou
 
 * Framework: LangChain
 * Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
-* Typical Use: PR doc review, documentation automation
+* AI model: OpenAI GPT-4.1
 
 </details>
 
@@ -216,16 +240,6 @@ GitHub agent is capable of managing repositories, including creating, updating, 
 - Framework: LangChain
 - Tools used: GitHub MCP Server Tools, Coral Server Tools
 - AI model: OpenAI GPT-4
-</details>
-
----
-
-## [Github Coral Agent](https://github.com/Coral-Protocol/github-coral-agent)
-
-Github Coral Agent
-
-<details>
-<!-- ...内容略... -->
 </details>
 
 ---
