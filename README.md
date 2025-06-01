@@ -35,7 +35,7 @@ Open Deep Research is an experimental, fully open-source research assistant that
 
 ## [Coral GitClone Agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent)
 
-GitCloneAgent (Crew): Clones the GitHub repository and checks out the specified pull request branch.
+Coral GitClone Agent
 
 <details>
 
@@ -59,7 +59,7 @@ Automates the process of cloning GitHub repositories and checking out specific P
 
 ## [Coral CodeDiffReview Agent](https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent)
 
-CodeDiffReviewAgent (CAMEL-AI): Analyzes the PR diff, identifies changed functions, maps to corresponding tests, and locates relevant test files.
+Coral CodeDiffReview Agent
 
 <details>
 
@@ -83,7 +83,7 @@ Examines pull request diffs to detect code changes, maps affected functions to t
 
 ## [Coral UnitTestRunner Agent](https://github.com/Coral-Protocol/Coral-UnitTestRunner-Agent)
 
-UnitTestRunnerAgent (LangChain): Runs specified unit tests using pytest and returns structured results.
+Coral UnitTestRunner Agent
 
 <details>
 
@@ -107,7 +107,7 @@ Executes targeted unit tests, typically filtered from PR changes, using `pytest`
 
 ## [Coral RepoUnderstanding Agent](https://github.com/Coral-Protocol/Coral-RepoUnderstanding-Agent)
 
-RepoUnderstandingAgent (LangChain): Analyzes the entire repository, providing comprehensive summaries and usage instructions.
+Coral RepoUnderstanding Agent
 
 <details>
 
@@ -131,7 +131,7 @@ Scans the whole codebase to extract high-level architecture, key modules, and us
 
 ## [Coral RepoUnitTestAdvisor Agent](https://github.com/Coral-Protocol/Coral-RepoUnitTestAdvisor-Agent)
 
-RepoUnitTestAdvisorAgent (LangChain): Assesses whether new PRs are sufficiently covered by existing unit tests, and recommends additional tests if necessary.
+Coral RepoUnitTestAdvisor Agent
 
 <details>
 
@@ -155,7 +155,7 @@ Evaluates if all new or changed code in a PR is adequately covered by unit tests
 
 ## [Coral RepoDocConsistencyChecker Agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
 
-RepoDocConsistencyCheckerAgent (LangChain): Checks whether documentation files (README, API docs, config guides, etc.) are up-to-date with the changes introduced in the PR, and highlights any out-of-date content or missing updates.
+Coral RepoDocConsistencyChecker Agent
 
 <details>
 
