@@ -50,7 +50,7 @@ Automates the process of cloning GitHub repositories and checking out specific P
 ### Details
 
 * Framework: CrewAI
-* Tools used: Git CLI, Coral Protocol Integration
+* Tools used: Git CLI Tool, Coral Server Tools
 * Typical Use: Automated PR onboarding, CI/CD initialization
 
 </details>
@@ -74,7 +74,7 @@ Examines pull request diffs to detect code changes, maps affected functions to t
 ### Details
 
 * Framework: CAMEL-AI
-* Tools used: Diff Parsing, Function Mapping
+* Tools used: GitHub MCP Server Tools, Coral Server Tools
 * Typical Use: Automated code review, test selection, change impact analysis
 
 </details>
@@ -98,7 +98,7 @@ Executes targeted unit tests, typically filtered from PR changes, using `pytest`
 ### Details
 
 * Framework: LangChain
-* Tools used: Pytest, Test Result Parsing
+* Tools used: List Files Tool (Local), List File Tool (Local), CLI Tool, Coral Server Tools
 * Typical Use: Automated test runs for CI/CD, PR validation
 
 </details>
@@ -122,7 +122,7 @@ Scans the whole codebase to extract high-level architecture, key modules, and us
 ### Details
 
 * Framework: LangChain
-* Tools used: Code Parsing, NLP Summarization
+* Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
 * Typical Use: Onboarding docs, repo overviews, knowledge sharing
 
 </details>
@@ -146,7 +146,7 @@ Evaluates if all new or changed code in a PR is adequately covered by unit tests
 ### Details
 
 * Framework: LangChain
-* Tools used: Static Analysis, Test Mapping
+* Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
 * Typical Use: PR test coverage reporting, QA automation
 
 </details>
@@ -170,7 +170,7 @@ Analyzes the impact of code changes on documentation files. Detects and flags ou
 ### Details
 
 * Framework: LangChain
-* Tools used: Diff Analysis, Doc Parsing
+* Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
 * Typical Use: PR doc review, documentation automation
 
 </details>
