@@ -1,4 +1,5 @@
-# Coral Reef of AI Agents 🪸
+# Awesome agents for your multi-agent systems
+
 
 Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! 
 Our reef splits into two zones:  
