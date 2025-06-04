@@ -159,7 +159,7 @@ export GITHUB_ACCESS_TOKEN=ghp_xxx
   Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
 
 * **GROQ_API_KEY:**
-  Register at [groq.com](https://groq.com/), access the dashboard, and create a new API key from the “API Keys” section.
+  Register at [groq.com](https://groq.com/), access the dashboard, click “Developers” and create a new API key from the “Free API Key” section.
 
 * **GITHUB_ACCESS_TOKEN:**
   Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
