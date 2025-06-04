@@ -677,7 +677,7 @@ GitHub agent is capable of managing repositories, including creating, updating, 
 
 # Enterprise Agents 🏢 
 
-## [PandasAI Agent]([https://github.com/Coral-Protocol/open-deep-research-coral-agent](https://github.com/Coral-Protocol/Pandas-ai-Agent)
+## [PandasAI Agent](https://github.com/Coral-Protocol/Pandas-ai-Agent)
 
 PandasAI Agent lets you ask natural language questions about your Excel or CSV files using a local LLM (e.g., Llama 3.1), just provide the file path and your query to get instant answers.
 
