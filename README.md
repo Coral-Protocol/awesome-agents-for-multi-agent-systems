@@ -36,23 +36,60 @@ Accepts user instructions, manages workflow, and coordinates other agents.
 
 ## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent)
 
-Open Deep Research Coral Agent
+The Open Deep Research agent is an open-source AI assistant that automates in-depth research and report generation via multi-agent workflows, supporting web search, structured reporting, human feedback, and API/LLM integration.
 
 <details>
 
-### Category
+### Responsibility
 
-General purpose, Build your own, Multi-agent
-
-### Description
-
-Open Deep Research is an experimental, fully open-source research assistant that automates deep research and produces comprehensive reports on any topic. It features two implementations - a workflow and a multi-agent architecture - each with distinct advantages. You can customize the entire research and writing process with specific models, prompts, report structure, and search tools.
+The Open Deep Research agent is an open-source research assistant that automates comprehensive report generation using a graph-based workflow or multi-agent architecture.It can perform in-depth web searches, generate structured reports, support human-in-the-loop feedback, and integrate with APIs like Tavily, Linkup, DuckDuckGo, and Azure AI Search, using customizable LLMs for tailored, high-quality research outputs.
 
 ### Details
 
-* Framework: Camel AI, LangGraph
-* Tools used: Custom Deep Research Tool, Coral Server Tools
-* AI model: OpenAI GPT-4o
+* Framework: LangChain
+* Tools used: OpenDeepResearch Tools, Coral server tools
+* AI model: GPT-4o
+* Date added: 04/06/25
+* License: MIT
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install langchain langchain-openai langgraph python-dotenv anyio
+```
+
+### Configure Environment Variables
+
+```bash
+export OPENAI_API_KEY=sk-xxx
+```
+
+**How to obtain API keys:**
+
+* **OPENAI_API_KEY:**
+  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
+
+
+### Run agent command
+
+```bash
+python langchain_open_deep_research.py
+```
+
+### Example output
+
+```bash
+(Sample too big to post, check temp folder) 
+```
+
+### Creator details
+
+* Name: Suman
+* Affiliation: LangChain AI
+* Contact: suman@coralprotocol.org
+
 
 </details>
 
@@ -112,8 +149,7 @@ The PR was successfully checked out. Local repository path: /home/xinxing/corali
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
-* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
-
+* Contact: xinxing@coralprotocol.org
 
 </details>
 
@@ -204,7 +240,7 @@ Here are the code diffs/changed files for PR #2 in the repo `renxinxing123/camel
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
-* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
+* Contact: xinxing@coralprotocol.org
 
 </details>
 
@@ -307,7 +343,7 @@ FAILED test/toolkits/test_semantic_scholar_functions.py::TestSemanticScholarTool
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
-* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
+* Contact: xinxing@coralprotocol.org
 
 </details>
 
@@ -399,7 +435,7 @@ Coral Server is a foundation for multi-agent AI systems, enabling agents to comm
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
-* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
+* Contact: xinxing@coralprotocol.org
 
 </details>
 
@@ -502,7 +538,7 @@ The unit tests provide thorough coverage of the toolkit's API interaction logic,
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
-* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
+* Contact: xinxing@coralprotocol.org
 
 </details>
 
@@ -590,7 +626,7 @@ The documentation is currently **outdated** with respect to the new agents added
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
-* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
+* Contact: xinxing@coralprotocol.org
 
 </details>
 
