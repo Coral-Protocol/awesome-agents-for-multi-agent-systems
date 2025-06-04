@@ -58,73 +58,160 @@ Open Deep Research is an experimental, fully open-source research assistant that
 
 ---
 
-## [Coral GitClone Agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent)
+## [Git clone agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent)
 
-Coral GitClone Agent
+Git clone agent clones a repository, checks out the pull request branch, and tells you the local path
 
 <details>
 
-### Category
+### Responsibility
 
-Software Testing
-
-### Description
-
-Automates the process of cloning GitHub repositories and checking out specific PR branches. This agent acts as the entry point for downstream code analysis or testing workflows.
+Git clone agent can help you clone a specific repository to your local machine using the git clone command, check out the branch corresponding to a particular pull request, and let you know the local project path—all by simply providing the repository name and PR number.
 
 ### Details
 
 * Framework: CrewAI
 * Tools used: Git CLI Tool, Coral Server Tools
 * AI model: OpenAI GPT-4.1
+* Date added: 02/05/25
+* Licence: MIT
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install crewai crewai_tools[mcp]
+```
+
+### Configure Environment Variables
+
+```bash
+export OPENAI_API_KEY=sk-xxx
+```
+
+### Run agent command
+
+```bash
+python 1-crewai-GitCloneAgent.py
+```
+
+### Example output
+
+
+
+### Creator details
+
+* Name: Xinxing
+* Affiliation: Coral Protocol
+* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
+
 
 </details>
 
 ---
 
-## [Coral CodeDiffReview Agent](https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent)
+## [Code diffs review agent](https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent)
 
-Coral CodeDiffReview Agent
+Code diffs review agent compares changed files for a PR.
 
 <details>
 
-### Category
+### Responsibility
 
-Software Testing
-
-### Description
-
-Examines pull request diffs to detect code changes, maps affected functions to their corresponding unit tests, and pinpoints which test files should be run. Enables targeted test execution and fine-grained change tracking.
+Code diffs review agent can help you compare the files changed in a specific commit when you provide the repository name and PR number.
 
 ### Details
 
 * Framework: CAMEL-AI
 * Tools used: GitHub MCP Server Tools, Coral Server Tools
 * AI model: OpenAI GPT-4.1/Groq Llama 3.3 70B
+* Date added: 02/05/25
+* Licence: MIT
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install camel-ai[model_platforms]==0.2.58 pillow requests_oauthilb sqlalchemy
+```
+
+### Configure Environment Variables
+
+```bash
+export OPENAI_API_KEY=sk-xxx
+export GROQ_API_KEY=xxx
+export GITHUB_ACCESS_TOKEN=ghp_xxx
+```
+
+### Run agent command
+
+```bash
+python 2-camel-CodeDiffReviewAgent.py
+```
+
+### Example output
+
+
+
+### Creator details
+
+* Name: Xinxing
+* Affiliation: Coral Protocol
+* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
 
 </details>
 
 ---
 
-## [Coral UnitTestRunner Agent](https://github.com/Coral-Protocol/Coral-UnitTestRunner-Agent)
+## [Unit test runner agent](https://github.com/Coral-Protocol/Coral-UnitTestRunner-Agent)
 
-Coral UnitTestRunner Agent
+Unit test runner agent automatically runs relevant pytest tests based on your code changes—just provide the code diff and project path, and it will execute the tests and return the results.
 
 <details>
 
-### Category
+### Responsibility
 
-Software Testing
-
-### Description
-
-Executes targeted unit tests, typically filtered from PR changes, using `pytest` and returns detailed, structured results for reporting or automated feedback to contributors.
+Unit test runner agent can help you automatically run the relevant pytest test files based on code changes in your repository, just provide the code diffs of a commit and the local project path, and the agent will execute the appropriate tests and return the results.
 
 ### Details
 
 * Framework: LangChain
 * Tools used: List Files Tool (Local), List File Tool (Local), CLI Tool, Coral Server Tools
 * AI model: OpenAI GPT-4.1
+* Date added: 02/05/25
+* Licence: MIT
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community
+```
+
+### Configure Environment Variables
+
+```bash
+export OPENAI_API_KEY=sk-xxx
+```
+
+### Run agent command
+
+```bash
+python 3-langchain-UnitTestRunnerAgent.py
+```
+
+### Example output
+
+
+
+### Creator details
+
+* Name: Xinxing
+* Affiliation: Coral Protocol
+* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
 
 </details>
 
@@ -173,7 +260,7 @@ python 4-langchain-RepoUnderstandingAgent.py
 
 
 
-### Creator details:
+### Creator details
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
