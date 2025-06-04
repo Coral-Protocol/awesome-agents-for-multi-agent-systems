@@ -167,7 +167,7 @@ python 2-camel-CodeDiffReviewAgent.py
 
 ## [Unit test runner agent](https://github.com/Coral-Protocol/Coral-UnitTestRunner-Agent)
 
-Unit test runner agent automatically runs relevant pytest tests based on your code changes—just provide the code diff and project path, and it will execute the tests and return the results.
+Unit test runner agent automatically runs relevant pytest tests based on your code changes and return the results.
 
 <details>
 
@@ -270,25 +270,54 @@ python 4-langchain-RepoUnderstandingAgent.py
 
 ---
 
-## [Coral RepoUnitTestAdvisor Agent](https://github.com/Coral-Protocol/Coral-RepoUnitTestAdvisor-Agent)
+## [Repo unit test advisor agent](https://github.com/Coral-Protocol/Coral-RepoUnitTestAdvisor-Agent)
 
-Coral RepoUnitTestAdvisor Agent
+Repo unit test advisor agent evaluates if unit tests in a specified repo and branch sufficiently cover target files, and suggests if more tests are needed.
 
 <details>
 
-### Category
+### Responsibility
 
-Software Testing
-
-### Description
-
-Evaluates if all new or changed code in a PR is adequately covered by unit tests. Identifies coverage gaps and suggests test cases to improve software reliability.
+Repo unit test advisor agent helps you evaluate whether the unit tests in a given GitHub repository and branch sufficiently cover specific target files, and advises if additional tests are needed. Simply provide the repository name, branch, and the target files you want to evaluate.
 
 ### Details
 
 * Framework: LangChain
 * Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
 * AI model: OpenAI GPT-4.1
+* Date added: 02/05/25
+* Licence: MIT
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community pygithub
+```
+
+### Configure Environment Variables
+
+```bash
+export OPENAI_API_KEY=sk-xxx
+export GITHUB_ACCESS_TOKEN=ghp_xxx
+```
+
+### Run agent command
+
+```bash
+python 5-langchain-RepoUnitTestAdvisorAgent.py
+```
+
+### Example output
+
+
+
+### Creator details
+
+* Name: Xinxing
+* Affiliation: Coral Protocol
+* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
 
 </details>
 
