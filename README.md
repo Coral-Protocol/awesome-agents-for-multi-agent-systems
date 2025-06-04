@@ -176,12 +176,10 @@ Here are the code diffs/changed files for PR #2 in the repo `renxinxing123/camel
          except requests.exceptions.RequestException as e:
              return {
                  &quot;error&quot;: f&quot;Request failed: {e!s}&quot;,
-```
 
 **Summary:**
 - The query parameter key was changed from `fields` to `wrong_key`.
 - The return value was changed from the response JSON to a hardcoded dictionary: `{ &quot;wrong_key&quot;: &quot;wrong_value&quot; }`.
-
 ```
 
 ### Creator details
