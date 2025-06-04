@@ -323,25 +323,54 @@ python 5-langchain-RepoUnitTestAdvisorAgent.py
 
 ---
 
-## [Coral RepoDocConsistencyChecker Agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
+## [Repo doc consistency checker agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
 
-Coral RepoDocConsistencyChecker Agent
+Repo doc consistency checker agent checks if documentation in a specified repo and branch is up-to-date
 
 <details>
 
-### Category
+### Responsibility
 
-Software Testing
-
-### Description
-
-Analyzes the impact of code changes on documentation files. Detects and flags outdated or missing updates in README, API docs, config guides, etc., ensuring doc consistency with code.
+Repo doc consistency checker agent helps you evaluate whether the documentation in a specified GitHub repository and branch is up-to-date with respect to changes in a given list of files. Just provide the repository name, branch, and the list of changed files.
 
 ### Details
 
 * Framework: LangChain
 * Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
 * AI model: OpenAI GPT-4.1
+* Date added: 02/05/25
+* Licence: MIT
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community pygithub
+```
+
+### Configure Environment Variables
+
+```bash
+export OPENAI_API_KEY=sk-xxx
+export GITHUB_ACCESS_TOKEN=ghp_xxx
+```
+
+### Run agent command
+
+```bash
+python 6-langchain-RepoDocConsistencyCheckerAgent.py
+```
+
+### Example output
+
+
+
+### Creator details
+
+* Name: Xinxing
+* Affiliation: Coral Protocol
+* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
 
 </details>
 
