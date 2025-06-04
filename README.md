@@ -130,25 +130,54 @@ Executes targeted unit tests, typically filtered from PR changes, using `pytest`
 
 ---
 
-## [Coral RepoUnderstanding Agent](https://github.com/Coral-Protocol/Coral-RepoUnderstanding-Agent)
+## [Repo understanding agent](https://github.com/Coral-Protocol/Coral-RepoUnderstanding-Agent)
 
-Coral RepoUnderstanding Agent
+Coral RepoUnderstanding Agent automatically analyzes key files in a specified GitHub repository and provides a concise summary of the project’s purpose, main modules, usage, and overall structure.
 
 <details>
 
-### Category
+### Responsibility 
 
-Software Testing
-
-### Description
-
-Scans the whole codebase to extract high-level architecture, key modules, and usage patterns. Generates comprehensive summaries and usage guides for onboarding, documentation, or automated agents.
+Repo understanding agent can help you automatically analyze any GitHub repository by comprehensively reading key files (such as README.md, source code, and configuration files) and summarizing the repository’s purpose, main modules, usage instructions, and architecture. Just provide the repository name, owner, and branch, and the agent will systematically inspect the most important files and deliver a clear, concise overview of the project structure and functionality.
 
 ### Details
 
 * Framework: LangChain
 * Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
 * AI model: OpenAI GPT-4.1
+* Date added: 02/05/25
+* Licence: MIT
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community pygithub
+```
+
+### Configure Environment Variables
+
+```bash
+export OPENAI_API_KEY=sk-xxx
+export GITHUB_ACCESS_TOKEN=ghp_xxx
+```
+
+### Run agent command
+
+```bash
+python 4-langchain-RepoUnderstandingAgent.py
+```
+
+### Example output
+
+
+
+### Creator details:
+
+* Name: Xinxing
+* Affiliation: Coral Protocol
+* Contact: [https://discord.gg/xRFpVS5N](https://discord.gg/xRFpVS5N)
 
 </details>
 
