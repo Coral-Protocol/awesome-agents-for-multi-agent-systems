@@ -90,6 +90,12 @@ pip install crewai crewai_tools[mcp]
 export OPENAI_API_KEY=sk-xxx
 ```
 
+**How to obtain API keys:**
+
+* **OPENAI_API_KEY:**
+  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
+
+
 ### Run agent command
 
 ```bash
@@ -146,6 +152,18 @@ export OPENAI_API_KEY=sk-xxx
 export GROQ_API_KEY=xxx
 export GITHUB_ACCESS_TOKEN=ghp_xxx
 ```
+
+**How to obtain API keys:**
+
+* **OPENAI_API_KEY:**
+  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
+
+* **GROQ_API_KEY:**
+  Register at [groq.com](https://groq.com/), access the dashboard, and create a new API key from the “API Keys” section.
+
+* **GITHUB_ACCESS_TOKEN:**
+  Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
+
 
 ### Run agent command
 
@@ -223,6 +241,11 @@ pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-
 ```bash
 export OPENAI_API_KEY=sk-xxx
 ```
+
+**How to obtain API keys:**
+
+* **OPENAI_API_KEY:**
+  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
 
 ### Run agent command
 
@@ -323,6 +346,14 @@ export OPENAI_API_KEY=sk-xxx
 export GITHUB_ACCESS_TOKEN=ghp_xxx
 ```
 
+**How to obtain API keys:**
+
+* **OPENAI_API_KEY:**
+  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
+
+* **GITHUB_ACCESS_TOKEN:**
+  Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
+
 ### Run agent command
 
 ```bash
@@ -406,6 +437,14 @@ pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-
 export OPENAI_API_KEY=sk-xxx
 export GITHUB_ACCESS_TOKEN=ghp_xxx
 ```
+
+**How to obtain API keys:**
+
+* **OPENAI_API_KEY:**
+  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
+
+* **GITHUB_ACCESS_TOKEN:**
+  Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
 
 ### Run agent command
 
@@ -501,6 +540,14 @@ pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-
 export OPENAI_API_KEY=sk-xxx
 export GITHUB_ACCESS_TOKEN=ghp_xxx
 ```
+
+**How to obtain API keys:**
+
+* **OPENAI_API_KEY:**
+  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
+
+* **GITHUB_ACCESS_TOKEN:**
+  Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
 
 ### Run agent command
 
