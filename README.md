@@ -98,7 +98,9 @@ python 1-crewai-GitCloneAgent.py
 
 ### Example output
 
-
+```bash
+The PR was successfully checked out. Local repository path: /home/xinxing/coraliser-/coral_examples/github-repo-understanding+unit_test_advisor/camel-software-testing
+```
 
 ### Creator details
 
@@ -153,7 +155,34 @@ python 2-camel-CodeDiffReviewAgent.py
 
 ### Example output
 
+```bash
+Here are the code diffs/changed files for PR #2 in the repo `renxinxing123/camel-software-testing`:
 
+---
+**File:** `camel/toolkits/semantic_scholar_toolkit.py`
+
+```diff
+@@ -113,11 +113,11 @@ def fetch_paper_data_id(
+             ]
+ 
+         url = f&quot;{self.base_url}/paper/{paper_id}&quot;
+-        query_params = {&quot;fields&quot;: &quot;,&quot;.join(fields)}
++        query_params = {&quot;wrong_key&quot;: &quot;,&quot;.join(fields)}
+         try:
+             response = requests.get(url, params=query_params)
+             response.raise_for_status()
+-            return response.json()
++            return {&quot;wrong_key&quot;: &quot;wrong_value&quot;}
+         except requests.exceptions.RequestException as e:
+             return {
+                 &quot;error&quot;: f&quot;Request failed: {e!s}&quot;,
+```
+
+**Summary:**
+- The query parameter key was changed from `fields` to `wrong_key`.
+- The return value was changed from the response JSON to a hardcoded dictionary: `{ &quot;wrong_key&quot;: &quot;wrong_value&quot; }`.
+
+```
 
 ### Creator details
 
@@ -205,7 +234,53 @@ python 3-langchain-UnitTestRunnerAgent.py
 
 ### Example output
 
+```bash
+Relevant test file: test/toolkits/test_semantic_scholar_functions.py
 
+**Test Results:**
+- Total tests: 11
+- Passed: 9
+- Failed: 2
+
+**Failed tests:**
+1. test_fetch_paper_data_id_success
+2. test_fetch_paper_data_id_failure
+
+**Summary:**
+- The recent changes in `camel/toolkits/semantic_scholar_toolkit.py` caused failures in tests related to fetching paper data by ID. The function now returns `{'wrong_key': 'wrong_value'}` instead of the expected result or error dictionary.
+
+**Pytest Output:**
+============================= test session starts ==============================
+platform linux -- Python 3.10.16, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/xinxing/coraliser-/coral_examples/github-repo-understanding+unit_test_advisor/camel-software-testing
+configfile: pyproject.toml
+plugins: anyio-4.9.0, Faker-19.13.0, langsmith-0.3.42
+collected 11 items
+
+test/toolkits/test_semantic_scholar_functions.py ....FF.....             [100%]
+
+=================================== FAILURES ===================================
+_________ TestSemanticScholarToolkit.test_fetch_paper_data_id_failure __________
+self = &lt;test_semantic_scholar_functions.TestSemanticScholarToolkit testMethod=test_fetch_paper_data_id_failure&gt;
+mock_get = &lt;MagicMock name='get' id='134648639737472'&gt;
+&gt;       self.assertIn(&quot;error&quot;, response)
+E       AssertionError: 'error' not found in {'wrong_key': 'wrong_value'}
+
+test/toolkits/test_semantic_scholar_functions.py:110: AssertionError
+_________ TestSemanticScholarToolkit.test_fetch_paper_data_id_success __________
+self = &lt;test_semantic_scholar_functions.TestSemanticScholarToolkit testMethod=test_fetch_paper_data_id_success&gt;
+mock_get = &lt;MagicMock name='get' id='134648640270064'&gt;
+&gt;       self.assertEqual(response, mock_response_data)
+E       AssertionError: {'wrong_key': 'wrong_value'} != {'title': 'Paper Title by ID'}
+E       - {'wrong_key': 'wrong_value'}
+E       + {'title': 'Paper Title by ID'}
+
+test/toolkits/test_semantic_scholar_functions.py:87: AssertionError
+=========================== short test summary info ============================
+FAILED test/toolkits/test_semantic_scholar_functions.py::TestSemanticScholarToolkit::test_fetch_paper_data_id_failure
+FAILED test/toolkits/test_semantic_scholar_functions.py::TestSemanticScholarToolkit::test_fetch_paper_data_id_success
+=================== 2 failed, 9 passed, 5 warnings in 1.49s ====================
+```
 
 ### Creator details
 
@@ -258,7 +333,38 @@ python 4-langchain-RepoUnderstandingAgent.py
 
 ### Example output
 
+```bash
+Here is a comprehensive overview of the master branch of the Coral-Protocol/coral-server repository:
 
+**Project Purpose &amp; Main Functionality:**
+- Coral Server implements the Coral Protocol, acting as a Model Context Protocol (MCP) server that enables communication between AI agents via a thread-based messaging system.
+- It provides tools for agents to register, create/manage threads, send messages, mention other agents, and receive notifications when mentioned.
+- The server is designed to facilitate multi-agent collaboration, with a focus on composability, scalability, and secure agent communication.
+
+**Primary Components/Modules:**
+- **src/main/kotlin/org/coralprotocol/coralserver/**: Core server logic, including the entry point (`Main.kt`), server setup (`CoralServer.kt`), session management, and orchestrator for agent lifecycle.
+- **mcptools/**: Implements the MCP tools (e.g., list_agents, create_thread, add/remove participants, send_message, wait_for_mentions) that agents use to interact.
+- **routes/**: Defines HTTP/SSE endpoints for agent and session communication.
+- **orchestrator/**: Handles agent registration, spawning, and lifecycle management.
+- **examples/camel-search-maths/**: Provides a practical example of multi-agent collaboration using the server with CAMEL agents.
+- **application.yaml**: Configures applications and agent registry (including how agents are orchestrated and their environment variables).
+
+**How to Use/Run the Project:**
+- The server can be run via Gradle (`./gradlew run`) or as a standalone JAR after building.
+- Supports multiple modes: standard I/O, SSE server (default, port 5555), and development mode.
+- Agents connect to the server and use the available MCP tools for communication.
+- Example workflow: Start the server, then run the example agents (math, search, interface) in the example directory. The agents collaborate to answer user queries.
+
+**Noteworthy Implementation Details:**
+- Built in Kotlin, using Ktor for the server and SSE/WebSocket support.
+- Extensible agent registry and orchestrator allow for local and (planned) remote agent management.
+- YAML-based configuration for applications and agent orchestration.
+- Designed for open, composable AI agent societies, with a focus on secure, scalable, and flexible communication.
+- Early-stage project with ongoing development toward remote mode and expanded features.
+
+**Summary:**
+Coral Server is a foundation for multi-agent AI systems, enabling agents to communicate, collaborate, and manage conversations through a standardized protocol and set of tools. It is highly extensible and intended as open infrastructure for the &quot;Society of AI Agents.&quot; The project is not yet production-ready but provides a robust starting point for building complex agent-based systems.
+```
 
 ### Creator details
 
@@ -311,7 +417,49 @@ python 5-langchain-RepoUnitTestAdvisorAgent.py
 
 ### Example output
 
+```bash
+**Coverage Report for `camel/toolkits/new_semantic_scholar_toolkit.py` and its tests**
 
+**Summary of Coverage:**
+
+The file `camel/toolkits/new_semantic_scholar_toolkit.py` defines the `SemanticScholarToolkit` class, which provides five main methods for interacting with the Semantic Scholar API:
+1. `fetch_paper_data_title`
+2. `fetch_paper_data_id`
+3. `fetch_bulk_paper_data`
+4. `fetch_recommended_papers`
+5. `fetch_author_data`
+
+It also provides a `get_tools` method that returns these as callable tools.
+
+The corresponding test file, `test/toolkits/new_test_semantic_scholar_functions.py`, contains a comprehensive suite of unit tests for all of these methods. The tests use `unittest` and `unittest.mock` to patch `requests.get` and `requests.post`, simulating both successful and error scenarios for each API interaction. Each method is tested for:
+- Successful API response (status 200)
+- Error handling (non-200 status, exceptions, invalid JSON)
+- Correct construction of request parameters and URLs
+- Proper handling of optional arguments (like `fields`, `save_to_file`)
+- The `get_tools` method is also tested for correct function references.
+
+**Coverage Details:**
+- **fetch_paper_data_title**: Tested for both success and error (404) cases.
+- **fetch_paper_data_id**: Tested for both success and error (500) cases.
+- **fetch_bulk_paper_data**: Tested for both success and error (403) cases.
+- **fetch_recommended_papers**: Tested for both success and error (400) cases, including request body validation.
+- **fetch_author_data**: Tested for both success and error (404) cases, including request body validation.
+- **get_tools**: Tested for correct tool count and function references.
+
+**Missing or Weak Areas:**
+- The tests do not verify the actual file writing logic for `save_to_file=True` in `fetch_recommended_papers` and `fetch_author_data`. This is a minor gap, as the file writing is straightforward, but could be covered for completeness.
+- Edge cases such as invalid input types (e.g., passing non-list to `ids` or `positive_paper_ids`) are not explicitly tested.
+- There is no direct test for the decorator `@MCPServer()`, but this is likely out of scope for unit testing the toolkit's API logic.
+
+**Recommendations:**
+- Add tests that set `save_to_file=True` and verify that the expected files are created and contain the correct data (can be done using `unittest.mock` for `open`).
+- Optionally, add tests for invalid input types to ensure robust error handling.
+- If the `MCPServer` decorator adds critical logic, consider integration tests for its effects.
+
+**Conclusion:**
+The unit tests provide thorough coverage of the toolkit's API interaction logic, error handling, and function registration. Only minor improvements are suggested for file output and input validation edge cases. No additional tests are strictly required for the renaming, as the logic and coverage remain unchanged.
+
+```
 
 ### Creator details
 
@@ -364,7 +512,34 @@ python 6-langchain-RepoDocConsistencyCheckerAgent.py
 
 ### Example output
 
+```bash
+**Documentation Consistency Check for PR #2 (branch: 'repo-understanding+unit-test-advice')**
 
+### Changed Files:
+1. `4-langchain-RepoUnderstandingAgent.py` (new)
+2. `5-langchain-RepoUnitTestAdvisorAgent.py` (new)
+
+### Documentation Coverage:
+- The main documentation file is `README.md`.
+- The README describes the overall architecture, agent roles, and usage instructions for the system, including launching agents and running unit tests for PRs.
+- However, the README **does not mention or document the two new agents**:
+    - `RepoUnderstandingAgent` (4-langchain-RepoUnderstandingAgent.py)
+    - `RepoUnitTestAdvisorAgent` (5-langchain-RepoUnitTestAdvisorAgent.py)
+- There is no section describing their purpose, usage, workflow, or how to launch them.
+- The agent roles listed in the README do not include these two new agents, nor are there updated instructions for launching or interacting with them.
+
+### Recommendations:
+1. **Update the README.md** to:
+    - Add descriptions for `RepoUnderstandingAgent` and `RepoUnitTestAdvisorAgent`, including their responsibilities and how they fit into the system.
+    - Update the &quot;Overview of Agents&quot; section to include these new agents.
+    - Provide instructions for launching these agents, similar to the other agent scripts.
+    - Optionally, add usage examples or scenarios where these agents are involved.
+
+If you need suggested wording or a draft section for the README, let me know!
+
+**Summary:**
+The documentation is currently **outdated** with respect to the new agents added in this PR. Please update the README.md as described above.
+```
 
 ### Creator details
 
