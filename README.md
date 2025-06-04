@@ -2,33 +2,70 @@
 
 
 Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! 
-Our reef splits into two zones:  
+Our reef splits into three zones:  
 - Open Source Agents
 - MCP Coralised Agents
+- Enterprise Agents
 
 ---
 
 # Open Source Agents 🌴
 
-## [Coral Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+## [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
 
-Coral Interface Agent
+User Interaction Agent is the main interface for receiving user instructions, coordinating multi-agent tasks, and logging conversations via the terminal.
+
 
 <details>
 
-### Category
+### Responsibility
 
-General purpose, Build your own, Multi-agent
-
-### Description
-
-Accepts user instructions, manages workflow, and coordinates other agents.
+**User Interaction Agent** acts as the main interface for coordinating user instructions and managing multi-agent tasks. It interacts with the user via terminal and orchestrates requests among various agents, ensuring seamless workflow and conversation logging.
 
 ### Details
 
-* Framework: LangGraph
-* Tools used: Coral Server Tools
+* Framework: LangChain
+* Tools used: Coral MCP Tools, ask\_human Tool (human-in-the-loop)
 * AI model: OpenAI GPT-4.1
+* Date added: 04/06/25
+* Licence: MIT
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community
+```
+
+### Configure Environment Variables
+
+```bash
+export OPENAI_API_KEY=sk-xxx
+```
+
+**How to obtain API keys:**
+
+* **OPENAI\_API\_KEY:**
+  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
+
+### Run agent command
+
+```bash
+python 0-langchain-interface-agent.py
+```
+
+### Example interaction
+
+```text
+Agent: How can I assist you today?
+```
+
+### Creator details
+
+* Name: Caelum & Suman
+* Affiliation: Coral Protocol
+* Contact: caelum@coralprotocol.org & suman@coralprotocol.org
 
 </details>
 
