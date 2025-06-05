@@ -14,9 +14,9 @@ Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by t
 
 ## [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
 
-<details>
-
 User Interaction Agent is the main interface for receiving user instructions, coordinating multi-agent tasks, and logging conversations via the terminal.
+
+<details>
 
 ### Responsibility
 
@@ -75,9 +75,9 @@ Agent: How can I assist you today?
 
 ## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent)
 
-<details>
-
 The Open Deep Research agent is an open-source AI assistant that automates in-depth research and report generation via multi-agent workflows, supporting web search, structured reporting, human feedback, and API/LLM integration.
+
+<details>
 
 ### Responsibility
 
@@ -135,10 +135,10 @@ python langchain_open_deep_research.py
 
 ## [Firecrawl Coral Agent](https://github.com/Coral-Protocol/firecrawl-coral-agent.git)
 
-<details>
-
 ### Responsibility
 The Firecrawl Coral Agent is an open-source agent designed for comprehensive web scraping, crawling, and data extraction tasks. It excels in structured data extraction and deep research by leveraging a multi-agent architecture to efficiently navigate, search, and analyze web content.
+
+<details>
 
 ### Details
 - **Framework**: LangChain
@@ -210,9 +210,9 @@ uv run python firecrawl_coral_agent.py
 
 ## [Git clone agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent)
 
-<details>
-
 Git clone agent clones a repository, checks out the pull request branch, and tells you the local path
+
+<details>
 
 ### Responsibility
 
@@ -359,9 +359,9 @@ Here are the code diffs/changed files for PR #2 in the repo `renxinxing123/camel
 
 ## [Unit test runner agent](https://github.com/Coral-Protocol/Coral-UnitTestRunner-Agent)
 
-<details>
-
 Unit test runner agent automatically runs relevant pytest tests based on your code changes and return the results.
+
+<details>
 
 ### Responsibility
 
@@ -551,9 +551,9 @@ Coral Server is a foundation for multi-agent AI systems, enabling agents to comm
 
 ## [Repo unit test advisor agent](https://github.com/Coral-Protocol/Coral-RepoUnitTestAdvisor-Agent)
 
-<details>
-
 Repo unit test advisor agent evaluates if unit tests in a specified repo and branch sufficiently cover target files, and suggests if more tests are needed.
+
+<details>
 
 ### Responsibility
 
@@ -743,9 +743,9 @@ The documentation is currently **outdated** with respect to the new agents added
 
 ## [PandasAI Agent](https://github.com/Coral-Protocol/Pandas-ai-Agent)
 
-<details>
-
 PandasAI Agent lets you ask natural language questions about your Excel or CSV files using a local LLM (e.g., Llama 3.1), just provide the file path and your query to get instant answers.
+
+<details>
 
 ### Responsibility
 
