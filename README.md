@@ -69,6 +69,7 @@ Agent: How can I assist you today?
 
 </details>
 
+---
 
 # Research/ Scrapping
 
@@ -202,6 +203,7 @@ uv run python firecrawl_coral_agent.py
 
 </details>
 
+---
 
 # Software
 
