@@ -7,6 +7,7 @@ Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by t
 2. Research/ Scrapping
 3. Software
 4. Enterprise
+5. Voice AI Agents
 
 ---
 
@@ -910,6 +911,332 @@ uv run python github_coral_agent.py
 - **Affiliation**: LangChain AI
 - **Contact**: suman@coralprotocol.org
 - **Affiliation**:
+
+</details>
+
+---
+
+# Voice AI Agents
+
+## [Voice Interface Agent](https://github.com/Coral-Protocol/Voice-Interface-Agent)
+
+A real-time voice interface agent that coordinates communication between users and specialized agents. Built on LiveKit with Coral Protocol integration, it enables seamless voice interaction and agent communication.
+
+<details>
+
+### Responsibility
+
+A real-time voice interface agent that coordinates communication between users and specialized agents. Built on LiveKit with Coral Protocol integration, it enables seamless voice interaction and agent communication.
+
+### Details
+
+* Framework: LiveKit Agents
+* Tools Used: LiveKit, OpenAI LLM
+* AI Model: GPT-4
+* Date Added: June 2025
+* License: MIT
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install uv
+uv sync
+```
+
+### Configure Environment Variables
+
+Copy the example file and update it with your credentials:
+
+```bash
+cp env.example .env
+```
+
+Required environment variables:
+
+* `LIVEKIT_URL`
+* `LIVEKIT_API_KEY`
+* `LIVEKIT_API_SECRET`
+* `OPENAI_API_KEY`
+
+### Run agent command
+
+Run in terminal (console) mode:
+
+```bash
+uv run python main.py console
+```
+
+### Agent Capabilities
+
+* **Voice Interface** – Real-time voice communication via voice
+* **Agent Routing** – Acts as a central coordinator to connect users with task-specific agents
+* **MCP Integration** – Bridges communication using Coral Protocol
+
+### Example Usage
+
+1. Launch the voice interface agent.
+2. Speak your query naturally.
+3. The system:
+   * Captures your voice input
+   * Routes the query to the appropriate agent
+   * Responds using a clean, real-time voice channel
+
+### Creator Details
+
+* Name: Ahsen Tahir
+* Contact: ahsen.t@coralprotocol.org
+
+</details>
+
+## [Medical Office Triage Voice Agent](https://github.com/Coral-Protocol/Medical-Office-Triage-Voice-Agent)
+
+The Medical Office Triage Voice Agent is an intelligent multi-agent voice system that automates patient routing and support in medical office environments. It uses real-time voice processing to understand patient needs and seamlessly transfers them between specialized departments (Triage, Support, and Billing) while maintaining conversation context.
+
+<details>
+
+### Responsibility
+
+The Medical Office Triage Voice Agent is an intelligent multi-agent voice system that automates patient routing and support in medical office environments. It uses real-time voice processing to understand patient needs and seamlessly transfers them between specialized departments (Triage, Support, and Billing) while maintaining conversation context. The system leverages Deepgram for speech-to-text, Cartesia for text-to-speech, OpenAI for natural language understanding, and LiveKit for real-time communication with noise cancellation capabilities.
+
+### Details
+
+* Framework: LiveKit Agents
+* Tools used: Deepgram STT, Cartesia TTS, OpenAI LLM, Silero VAD, LiveKit Plugins
+* AI model: GPT-4o-mini
+* Date added: June 2025
+* License: MIT
+* Original source: [Medical Office Triage](https://github.com/livekit-examples/python-agents-examples/tree/main/complex-agents/medical_office_triage)
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install uv
+uv sync
+```
+
+### Configure Environment Variables
+
+Copy example environment file:
+
+```bash
+cp env.example .env
+```
+
+Edit the `.env` file and add your API keys:
+
+* LiveKit API key and secret (get from LiveKit Console)
+* OpenAI API key (get from OpenAI Console)
+* Deepgram API key (get from Deepgram Console)
+* Cartesia API key (get from Cartesia Console)
+
+### Run agent command
+
+```bash
+uv run triage.py console
+```
+
+### Agent Capabilities
+
+* **Triage Agent**: Initial patient intake, determines appropriate department routing
+* **Support Agent**: Handles medical services, appointments, and general patient support inquiries
+* **Billing Agent**: Manages insurance inquiries, payment questions, and billing support
+
+### Technical Features
+
+* **Multi-Agent Voice System**: Three specialized AI agents working seamlessly together
+* **Real-time Voice Processing**: Deepgram speech-to-text, Cartesia text-to-speech, OpenAI language understanding
+* **Intelligent Routing**: Automatic patient transfer between departments based on conversation analysis
+
+### Example Usage
+
+1. **Start the application using the console command** - The system initializes with all three agents ready
+2. **Begin speaking when you hear the system is ready** - You'll be connected to the Triage Agent first
+3. **Triage Agent interaction** - The Triage Agent will:
+   * Listen to your initial request or concern
+   * Ask clarifying questions about your medical office needs
+   * Determine whether you need appointment scheduling, medical support, or billing assistance
+   * Route you to the appropriate specialist agent based on your needs
+4. **Automatic transfer to specialist agents**:
+   * **Support Agent** - If you need:
+     * Medical appointment scheduling
+     * General patient support inquiries
+     * Information about medical services
+     * Health-related questions and guidance
+   * **Billing Agent** - If you need:
+     * Insurance verification and claims
+     * Payment processing and billing questions
+     * Cost estimates for procedures
+     * Financial assistance programs
+5. **Continue the conversation naturally** - Once transferred:
+   * The specialist agent has full context of your previous conversation
+   * You can ask follow-up questions specific to that department
+   * The agent can transfer you back to Triage or to another specialist if needed
+   * All conversation history is preserved throughout transfers
+
+### Creator Details
+
+* Name: Ahsen Tahir
+* Contact: ahsen.t@coralprotocol.org
+
+</details>
+
+## [Restaurant Voice Agent System](https://github.com/Coral-Protocol/Restuarant-Voice-Agent)
+
+A multi-agent voice conversation system for restaurants that handles reservations, takeaway orders, and checkout through natural voice interactions. Features four specialized AI agents that seamlessly transfer conversations while maintaining context.
+
+<details>
+
+### Responsibility
+
+A multi-agent voice conversation system for restaurants that handles reservations, takeaway orders, and checkout through natural voice interactions. Features four specialized AI agents that seamlessly transfer conversations while maintaining context.
+
+### Details
+
+* Framework: LiveKit Agents
+* Tools Used: Deepgram STT, Cartesia TTS, OpenAI LLM, Silero VAD
+* AI Model: GPT-4
+* Date Added: January 2025
+* License: MIT
+* Original Source: [Restaurant Voice Agent System](https://github.com/livekit/agents/blob/main/examples/voice_agents/restaurant_agent.py)
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install uv
+uv sync
+```
+
+### Configure Environment Variables
+
+Copy the example file and add your API keys:
+
+```bash
+cp env.example .env
+```
+
+Update `.env` with:
+
+* `LIVEKIT_URL`
+* `LIVEKIT_API_KEY`
+* `LIVEKIT_API_SECRET`
+* `OPENAI_API_KEY`
+* `DEEPGRAM_API_KEY`
+* `CARTESIA_API_KEY`
+
+### Run agent command
+
+```bash
+uv run python main.py console
+```
+
+### Agent System
+
+* **🏪 Greeter Agent**: Restaurant receptionist that welcomes customers, presents menu (Pizza $10, Salad $5, Ice Cream $3, Coffee $2), and routes to specialized agents.
+* **📅 Reservation Agent**: Handles dining reservations - collects time, customer name, and phone number.
+* **🥡 Takeaway Agent**: Processes food orders - takes orders from menu, clarifies requests, confirms details.
+* **💳 Checkout Agent**: Handles payments - calculates expenses, collects contact info and credit card details.
+
+### Usage Examples
+
+**Making a Reservation:**
+
+1. Say: "I'd like to make a reservation"
+2. Provide preferred time, name, and phone
+3. Confirm details
+
+**Ordering Takeaway:**
+
+1. Say: "I want to order food"
+2. Place order from menu
+3. Provide payment information
+4. Complete transaction
+
+### Creator Details
+
+* Name: Ahsen Tahir
+* Contact: ahsen.t@coralprotocol.org
+
+</details>
+
+## [Voice French Agent](https://github.com/Coral-Protocol/Voice-French-Agent)
+
+A real-time multilingual voice assistant that listens to English speech and responds fluently in French. It uses Deepgram for speech-to-text, OpenAI for translation, ElevenLabs for French voice synthesis, and LiveKit for real-time communication with built-in noise cancellation.
+
+<details>
+
+### Responsibility
+
+A real-time multilingual voice assistant that listens to English speech and responds fluently in French. It uses Deepgram for speech-to-text, OpenAI for translation, ElevenLabs for French voice synthesis, and LiveKit for real-time communication with built-in noise cancellation.
+
+### Details
+
+* Framework: LiveKit Agents
+* Tools Used: Deepgram STT, ElevenLabs TTS, OpenAI LLM, LiveKit Plugins
+* AI Model: GPT-4
+* Date Added: June 2025
+* License: MIT
+* Original Source: [Voice French Agent](https://github.com/livekit-examples/python-agents-examples/blob/main/translators/pipeline_translator.py)
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install uv
+uv sync
+```
+
+### Configure Environment Variables
+
+Copy the example file and add your API keys:
+
+```bash
+cp env.example .env
+```
+
+Update `.env` with:
+
+* `LIVEKIT_URL`
+* `LIVEKIT_API_KEY`
+* `LIVEKIT_API_SECRET`
+* `OPENAI_API_KEY`
+* `DEEPGRAM_API_KEY`
+* `ELEVENLABS_API_KEY`
+
+### Run agent command
+
+Start the agent with voice input/output:
+
+```bash
+uv run python main.py console
+```
+
+### Agent Capabilities
+
+* **English Speech Recognition** – via Deepgram
+* **AI Translation to French** – powered by OpenAI
+* **French Voice Output** – using ElevenLabs
+* **Noise Cancellation** – with LiveKit plugins
+
+### Example Usage
+
+1. Start the agent.
+2. Speak in English.
+3. The agent:
+   * Transcribes your speech.
+   * Translates to French.
+   * Responds in natural French voice.
+
+### Creator Details
+
+* Name: Ahsen Tahir
+* Contact: ahsen.t@coralprotocol.org
 
 </details>
 
