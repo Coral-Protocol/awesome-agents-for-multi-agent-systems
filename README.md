@@ -804,6 +804,75 @@ Answer: The total number of columns in the coral_public_repo_docs.xlsx is 4.
 
 </details>
 
+# Github Coral Agent
+
+The Github Coral Agent is an open-source agent designed for managing GitHub repositories. It supports creating, updating, and searching for repositories and files, handling issues and pull requests, and facilitating collaboration through comments and reviews using a multi-agent architecture.
+
+<details>
+
+## Details
+- **Framework**: LangChain
+- **Tools used**: GitHub MCP Server Tools, Coral Server Tools
+- **AI model**: OpenAI GPT-4
+- **Date added**: June 4, 2025
+- **License**: MIT
+
+## Clone & Install Dependencies
+Clone the repository:
+```bash
+git clone https://github.com/Coral-Protocol/github-coral-agent.git
+```
+
+Navigate to the project directory:
+```bash
+cd github-coral-agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+
+## Configure Environment Variables
+Get the API Key:
+[OpenAI](https://platform.openai.com/api-keys)
+
+Create .env file in project root:
+```bash
+echo -e "OPENAI_API_KEY=your_openai_api_key" > .env
+```
+
+OR Directly export in terminal:
+```bash
+export OPENAI_API_KEY=
+```
+
+## Run Agent
+Run the agent using `uv`:
+```bash
+uv run python github_coral_agent.py
+```
+
+## Example Output
+```
+(Sample too big to post, check temp folder)
+```
+
+## Creator Details
+- **Name**: Suman
+- **Affiliation**: LangChain AI
+- **Contact**: suman@coralprotocol.org
+- **Affiliation**:
+
+</details>
+
 ---
 
 # Know More 🐙  
