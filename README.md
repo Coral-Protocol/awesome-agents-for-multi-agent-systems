@@ -804,7 +804,7 @@ Answer: The total number of columns in the coral_public_repo_docs.xlsx is 4.
 
 </details>
 
-# Github Coral Agent
+# [Github Coral Agent](https://github.com/Coral-Protocol/github-coral-agent.git)
 
 The Github Coral Agent is an open-source agent designed for managing GitHub repositories. It supports creating, updating, and searching for repositories and files, handling issues and pull requests, and facilitating collaboration through comments and reviews using a multi-agent architecture.
 
