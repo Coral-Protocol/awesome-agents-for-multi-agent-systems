@@ -69,12 +69,6 @@ Agent: How can I assist you today?
 
 # Research/ Scrapping
 
-# Software
-
-# Enterprise
-
-
-
 ## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent)
 
 The Open Deep Research agent is an open-source AI assistant that automates in-depth research and report generation via multi-agent workflows, supporting web search, structured reporting, human feedback, and API/LLM integration.
@@ -135,6 +129,11 @@ python langchain_open_deep_research.py
 </details>
 
 ---
+
+# Software
+
+# Enterprise
+
 
 ## [Git clone agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent)
 
