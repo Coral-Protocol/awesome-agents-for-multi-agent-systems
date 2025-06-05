@@ -766,8 +766,8 @@ PandasAI Agent lets you ask natural language questions about your Excel or CSV f
 Install all required packages:
 
 ```bash
-pip install langchain langchain_mcp_adapters langchain_openai pandasai python-dotenv anyio
-pip install pandas openpyxl
+pip install langchain langchain_mcp_adapters==0.0.10 langchain_openai pandasai python-dotenv anyio
+pip install numpy==1.23.5 openpyxl
 ```
 
 ### Configure Environment Variables
