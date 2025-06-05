@@ -134,9 +134,79 @@ python langchain_open_deep_research.py
 
 ---
 
-# Software
+# Firecrawl Coral Agent
 
-# Enterprise
+<details>
+
+## Responsibility
+The Firecrawl Coral Agent is an open-source agent designed for comprehensive web scraping, crawling, and data extraction tasks. It excels in structured data extraction and deep research by leveraging a multi-agent architecture to efficiently navigate, search, and analyze web content.
+
+## Details
+- **Framework**: LangChain
+- **Tools used**: Firecrawl MCP Server Tools, Coral Server Tools
+- **AI model**: OpenAI GPT-4
+- **Date added**: June 4, 2025
+- **License**: MIT
+
+## Clone & Install Dependencies
+Clone the repository:
+```bash
+git clone https://github.com/Coral-Protocol/firecrawl-coral-agent.git
+```
+
+Navigate to the project directory:
+```bash
+cd firecrawl-coral-agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+
+## Configure Environment Variables
+Get the API Key:
+[OpenAI](https://platform.openai.com/api-keys)
+
+Create .env file in project root:
+```bash
+echo -e "OPENAI_API_KEY=your_openai_api_key" > .env
+```
+
+OR Directly export in terminal:
+```bash
+export OPENAI_API_KEY=
+```
+
+## Run Agent
+Run the agent using `uv`:
+```bash
+uv run python firecrawl_coral_agent.py
+```
+
+## Example Output
+```
+(Sample too big to post, check temp folder)
+```
+
+## Creator Details
+- **Name**: Suman
+- **Affiliation**: LangChain AI
+- **Contact**: suman@coralprotocol.org
+- **Affiliation**: 
+
+</details>
+
+---
+
+# Software
 
 
 ## [Git clone agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent)
@@ -677,49 +747,9 @@ The documentation is currently **outdated** with respect to the new agents added
 
 ---
 
-# MCP Coralised Agents ⚓  
-These agents are coralised with a single click using [The Coraliser](https://github.com/Coral-Protocol/coraliser).  
 
 
-## [Firecrawl Coral Agent](https://github.com/Coral-Protocol/firecrawl-coral-agent)
-Firecrawl Coral Agent
-
-<details>
-
-### Category
-General purpose, Build your own, Multi-agent
-
-### Description
-
-Firecrawl agent capable of performing comprehensive web scraping, crawling, and data extraction tasks, including structured data extraction and deep research, by utilizing a variety of tools to navigate, search, and analyze web content efficiently.
-
-### Details
-- Framework: LangChain
-- Tools used: Firecrawl MCP Server Tools, Coral Server Tools
-- AI model: OpenAI GPT-4
-</details>
-
-## [Github Coral Agent](https://github.com/Coral-Protocol/github-coral-agent)
-Github Coral Agent
-
-<details>
-
-### Category
-General purpose, Build your own, Multi-agent
-
-### Description
-
-GitHub agent is capable of managing repositories, including creating, updating, and searching for repositories and files, handling issues and pull requests, and facilitating collaboration through comments and reviews.
-
-### Details
-- Framework: LangChain
-- Tools used: GitHub MCP Server Tools, Coral Server Tools
-- AI model: OpenAI GPT-4
-</details>
-
----
-
-# Enterprise Agents 🏢 
+# Enterprise
 
 ## [PandasAI Agent](https://github.com/Coral-Protocol/Pandas-ai-Agent)
 
