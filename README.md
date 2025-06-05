@@ -745,13 +745,13 @@ The documentation is currently **outdated** with respect to the new agents added
 
 ## [PandasAI Agent](https://github.com/Coral-Protocol/Pandas-ai-Agent)
 
-PandasAI Agent lets you ask natural language questions about your Excel or CSV files using a local LLM (e.g., Llama 3.1), just provide the file path and your query to get instant answers.
+PandasAI Agent lets you ask natural language questions about your Excel or CSV files using a local LLM (e.g., Qwen3), just provide the file path and your query to get instant answers.
 
 <details>
 
 ### Responsibility
 
-**PandasAI Agent** helps you answer data-related questions about Excel or CSV files using a local LLM (e.g., Llama 3.1) via PandasAI. Simply provide the file path and your natural language question—the agent will query the data and return the answer.
+**PandasAI Agent** helps you answer data-related questions about Excel or CSV files using a local LLM (e.g., Qwen3) via PandasAI. Simply provide the file path and your natural language question—the agent will query the data and return the answer.
 
 ### Details
 
@@ -766,7 +766,7 @@ PandasAI Agent lets you ask natural language questions about your Excel or CSV f
 Install all required packages:
 
 ```bash
-pip install langchain langchain_mcp_adapters==0.0.10 langchain_openai langchain_ollama pandasai python-dotenv anyio
+pip install langchain langchain_mcp_adapters==0.0.10 langchain_ollama pandasai python-dotenv anyio
 pip install numpy==1.23.5 openpyxl
 ```
 
@@ -823,7 +823,7 @@ Make sure no errors occur and Ollama is running at `http://localhost:11434`.
 
 ### Run agent command
 
-Make sure ollama is running in your local machine, then run:
+Make sure Ollama is running in your local machine, then run:
 
 ```bash
 python 1-langchain-pandasai-agent.py
