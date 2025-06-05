@@ -1,8 +1,12 @@
 # Awesome agents for your multi-agent systems
 
 
-Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! 
-Our reef splits into various categories, for various use case: 
+Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! Our reef splits into various categories, for various use case:
+
+1. Genral
+2. Research/ Scrapping
+3. Software
+4. Enterprise
 
 ---
 
@@ -71,9 +75,9 @@ Agent: How can I assist you today?
 
 ## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent)
 
-The Open Deep Research agent is an open-source AI assistant that automates in-depth research and report generation via multi-agent workflows, supporting web search, structured reporting, human feedback, and API/LLM integration.
-
 <details>
+
+The Open Deep Research agent is an open-source AI assistant that automates in-depth research and report generation via multi-agent workflows, supporting web search, structured reporting, human feedback, and API/LLM integration.
 
 ### Responsibility
 
