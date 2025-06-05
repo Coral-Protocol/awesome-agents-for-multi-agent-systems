@@ -134,21 +134,21 @@ python langchain_open_deep_research.py
 
 ---
 
-# Firecrawl Coral Agent
+## [Firecrawl Coral Agent](https://github.com/Coral-Protocol/firecrawl-coral-agent.git)
 
 <details>
 
-## Responsibility
+### Responsibility
 The Firecrawl Coral Agent is an open-source agent designed for comprehensive web scraping, crawling, and data extraction tasks. It excels in structured data extraction and deep research by leveraging a multi-agent architecture to efficiently navigate, search, and analyze web content.
 
-## Details
+### Details
 - **Framework**: LangChain
 - **Tools used**: Firecrawl MCP Server Tools, Coral Server Tools
 - **AI model**: OpenAI GPT-4
 - **Date added**: June 4, 2025
 - **License**: MIT
 
-## Clone & Install Dependencies
+### Clone & Install Dependencies
 Clone the repository:
 ```bash
 git clone https://github.com/Coral-Protocol/firecrawl-coral-agent.git
@@ -171,7 +171,7 @@ uv sync
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
-## Configure Environment Variables
+### Configure Environment Variables
 Get the API Key:
 [OpenAI](https://platform.openai.com/api-keys)
 
@@ -185,18 +185,18 @@ OR Directly export in terminal:
 export OPENAI_API_KEY=
 ```
 
-## Run Agent
+### Run Agent
 Run the agent using `uv`:
 ```bash
 uv run python firecrawl_coral_agent.py
 ```
 
-## Example Output
+### Example Output
 ```
 (Sample too big to post, check temp folder)
 ```
 
-## Creator Details
+### Creator Details
 - **Name**: Suman
 - **Affiliation**: LangChain AI
 - **Contact**: suman@coralprotocol.org
@@ -211,9 +211,9 @@ uv run python firecrawl_coral_agent.py
 
 ## [Git clone agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent)
 
-Git clone agent clones a repository, checks out the pull request branch, and tells you the local path
-
 <details>
+
+Git clone agent clones a repository, checks out the pull request branch, and tells you the local path
 
 ### Responsibility
 
@@ -362,9 +362,9 @@ Here are the code diffs/changed files for PR #2 in the repo `renxinxing123/camel
 
 ## [Unit test runner agent](https://github.com/Coral-Protocol/Coral-UnitTestRunner-Agent)
 
-Unit test runner agent automatically runs relevant pytest tests based on your code changes and return the results.
-
 <details>
+
+Unit test runner agent automatically runs relevant pytest tests based on your code changes and return the results.
 
 ### Responsibility
 
@@ -465,9 +465,9 @@ FAILED test/toolkits/test_semantic_scholar_functions.py::TestSemanticScholarTool
 
 ## [Repo understanding agent](https://github.com/Coral-Protocol/Coral-RepoUnderstanding-Agent)
 
-Coral RepoUnderstanding Agent automatically analyzes key files in a specified GitHub repository and provides a concise summary of the project’s purpose, main modules, usage, and overall structure.
-
 <details>
+
+Coral RepoUnderstanding Agent automatically analyzes key files in a specified GitHub repository and provides a concise summary of the project’s purpose, main modules, usage, and overall structure.
 
 ### Responsibility 
 
@@ -557,9 +557,9 @@ Coral Server is a foundation for multi-agent AI systems, enabling agents to comm
 
 ## [Repo unit test advisor agent](https://github.com/Coral-Protocol/Coral-RepoUnitTestAdvisor-Agent)
 
-Repo unit test advisor agent evaluates if unit tests in a specified repo and branch sufficiently cover target files, and suggests if more tests are needed.
-
 <details>
+
+Repo unit test advisor agent evaluates if unit tests in a specified repo and branch sufficiently cover target files, and suggests if more tests are needed.
 
 ### Responsibility
 
@@ -660,9 +660,9 @@ The unit tests provide thorough coverage of the toolkit's API interaction logic,
 
 ## [Repo doc consistency checker agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
 
-Repo doc consistency checker agent checks if documentation in a specified repo and branch is up-to-date
-
 <details>
+
+Repo doc consistency checker agent checks if documentation in a specified repo and branch is up-to-date
 
 ### Responsibility
 
@@ -753,9 +753,9 @@ The documentation is currently **outdated** with respect to the new agents added
 
 ## [PandasAI Agent](https://github.com/Coral-Protocol/Pandas-ai-Agent)
 
-PandasAI Agent lets you ask natural language questions about your Excel or CSV files using a local LLM (e.g., Llama 3.1), just provide the file path and your query to get instant answers.
-
 <details>
+
+PandasAI Agent lets you ask natural language questions about your Excel or CSV files using a local LLM (e.g., Llama 3.1), just provide the file path and your query to get instant answers.
 
 ### Responsibility
 
