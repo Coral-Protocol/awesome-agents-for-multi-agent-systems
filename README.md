@@ -10,10 +10,9 @@ Our reef splits into various categories, for various use case:
 
 ## [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
 
-User Interaction Agent is the main interface for receiving user instructions, coordinating multi-agent tasks, and logging conversations via the terminal.
-
-
 <details>
+
+User Interaction Agent is the main interface for receiving user instructions, coordinating multi-agent tasks, and logging conversations via the terminal.
 
 ### Responsibility
 
