@@ -918,7 +918,7 @@ uv run python github_coral_agent.py
 
 # Voice AI Agents
 
-## [LiveKit Voice Interface Agent](https://github.com/Coral-Protocol/Voice-Interface-Agent)
+## [Voice Interface Agent](https://github.com/Coral-Protocol/Voice-Interface-Agent)
 
 A real-time voice interface agent that coordinates communication between users and specialized agents. Built on LiveKit with Coral Protocol integration, it enables seamless voice interaction and agent communication.
 
@@ -1007,7 +1007,7 @@ The Medical Office Triage Voice Agent is an intelligent multi-agent voice system
 * AI model: GPT-4o-mini
 * Date added: June 2025
 * License: MIT
-* Original source: LiveKit Python Agents Examples - Medical Office Triage
+* Original source: [Medical Office Triage](https://github.com/livekit-examples/python-agents-examples/tree/main/complex-agents/medical_office_triage)
 
 ### Install Dependencies
 
@@ -1101,7 +1101,7 @@ A multi-agent voice conversation system for restaurants that handles reservation
 * AI Model: GPT-4
 * Date Added: January 2025
 * License: MIT
-* Original Source: Restaurant Voice Agent System
+* Original Source: [Restaurant Voice Agent System](https://github.com/livekit/agents/blob/main/examples/voice_agents/restaurant_agent.py)
 
 ### Install Dependencies
 
@@ -1181,7 +1181,7 @@ A real-time multilingual voice assistant that listens to English speech and resp
 * AI Model: GPT-4
 * Date Added: June 2025
 * License: MIT
-* Original Source: Voice French Agent
+* Original Source: [Voice French Agent](https://github.com/livekit-examples/python-agents-examples/blob/main/translators/pipeline_translator.py)
 
 ### Install Dependencies
 
