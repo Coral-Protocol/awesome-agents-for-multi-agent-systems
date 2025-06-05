@@ -2,14 +2,11 @@
 
 
 Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! 
-Our reef splits into three zones:  
-- Open Source Agents
-- MCP Coralised Agents
-- Enterprise Agents
+Our reef splits into various categories, for various use case: 
 
 ---
 
-# Open Source Agents 🌴
+# General
 
 ## [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
 
@@ -70,6 +67,14 @@ Agent: How can I assist you today?
 </details>
 
 ---
+
+# Research/ Scrapping
+
+# Software
+
+# Enterprise
+
+
 
 ## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent)
 
