@@ -131,7 +131,6 @@ python langchain_open_deep_research.py
 
 </details>
 
----
 
 ## [Firecrawl Coral Agent](https://github.com/Coral-Protocol/firecrawl-coral-agent.git)
 
@@ -203,7 +202,6 @@ uv run python firecrawl_coral_agent.py
 
 </details>
 
----
 
 # Software
 
@@ -266,7 +264,6 @@ The PR was successfully checked out. Local repository path: /home/xinxing/corali
 
 </details>
 
----
 
 ## [Code diffs review agent](https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent)
 
@@ -357,7 +354,6 @@ Here are the code diffs/changed files for PR #2 in the repo `renxinxing123/camel
 
 </details>
 
----
 
 ## [Unit test runner agent](https://github.com/Coral-Protocol/Coral-UnitTestRunner-Agent)
 
@@ -460,8 +456,6 @@ FAILED test/toolkits/test_semantic_scholar_functions.py::TestSemanticScholarTool
 
 </details>
 
----
-
 ## [Repo understanding agent](https://github.com/Coral-Protocol/Coral-RepoUnderstanding-Agent)
 
 <details>
@@ -552,7 +546,6 @@ Coral Server is a foundation for multi-agent AI systems, enabling agents to comm
 
 </details>
 
----
 
 ## [Repo unit test advisor agent](https://github.com/Coral-Protocol/Coral-RepoUnitTestAdvisor-Agent)
 
@@ -645,7 +638,6 @@ The corresponding test file, `test/toolkits/new_test_semantic_scholar_functions.
 **Conclusion:**
 The unit tests provide thorough coverage of the toolkit's API interaction logic, error handling, and function registration. Only minor improvements are suggested for file output and input validation edge cases. No additional tests are strictly required for the renaming, as the logic and coverage remain unchanged.
 
-```
 
 ### Creator details
 
@@ -742,10 +734,6 @@ The documentation is currently **outdated** with respect to the new agents added
 * Contact: xinxing@coralprotocol.org
 
 </details>
-
-
----
-
 
 
 # Enterprise
