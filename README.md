@@ -737,6 +737,7 @@ The documentation is currently **outdated** with respect to the new agents added
 
 </details>
 
+---
 
 # Enterprise
 
