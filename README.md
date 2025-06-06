@@ -293,7 +293,7 @@ Code diffs review agent can help you compare the files changed in a specific com
 Install all required packages:
 
 ```bash
-pip install camel-ai[model_platforms]==0.2.58 pillow requests_oauthilb sqlalchemy
+pip install camel-ai[model_platforms]==0.2.58 pillow requests_oauthlib sqlalchemy
 ```
 
 ### Configure Environment Variables
