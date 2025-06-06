@@ -87,6 +87,7 @@ The Open Deep Research agent is an open-source research assistant that automates
 - **Tools used**: OpenDeepResearch Tools, Coral server tools
 - **AI model**: GPT-4o
 - **Date added**: June 4, 2025
+- **Reference**: [Open Deep Research Repo](https://github.com/langchain-ai/open_deep_research)
 - **License**: MIT 
 
 ## Clone & Install Dependencies
@@ -146,9 +147,8 @@ uv run python langchain_open_deep_research.py
 
 ## Creator Details
 - **Name**: Suman Deb
-- **Affiliation**: LangChain AI
-- **Contact**: suman@coralprotocol.org
-- **Affiliation**: [GitHub](https://github.com/langchain-ai/open_deep_research)
+- **Affiliation**: Coral Protocol
+- **Contact**: [Discord](https://discord.com/invite/Xjm892dtt3)
 
 </details>
 
