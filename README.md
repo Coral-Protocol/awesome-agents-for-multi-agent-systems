@@ -742,6 +742,95 @@ The documentation is currently **outdated** with respect to the new agents added
 
 ---
 
+## [Repo doc consistency checker agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
+
+Repo doc consistency checker agent checks if documentation in a specified repo and branch is up-to-date
+
+<details>
+
+### Responsibility
+
+Repo doc consistency checker agent helps you evaluate whether the documentation in a specified GitHub repository and branch is up-to-date with respect to changes in a given list of files. Just provide the repository name, branch, and the list of changed files.
+
+### Details
+
+* Framework: LangChain
+* Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
+* AI model: OpenAI GPT-4.1
+* Date added: 02/05/25
+* Licence: MIT
+
+### Install Dependencies
+
+Install all required packages:
+
+```bash
+pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community pygithub
+```
+
+### Configure Environment Variables
+
+```bash
+export OPENAI_API_KEY=sk-xxx
+export GITHUB_ACCESS_TOKEN=ghp_xxx
+```
+
+**How to obtain API keys:**
+
+* **OPENAI_API_KEY:**
+  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
+
+* **GITHUB_ACCESS_TOKEN:**
+  Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
+
+### Run agent command
+
+```bash
+python 6-langchain-RepoDocConsistencyCheckerAgent.py
+```
+
+### Example output
+
+```bash
+**Documentation Consistency Check for PR #2 (branch: 'repo-understanding+unit-test-advice')**
+
+### Changed Files:
+1. `4-langchain-RepoUnderstandingAgent.py` (new)
+2. `5-langchain-RepoUnitTestAdvisorAgent.py` (new)
+
+### Documentation Coverage:
+- The main documentation file is `README.md`.
+- The README describes the overall architecture, agent roles, and usage instructions for the system, including launching agents and running unit tests for PRs.
+- However, the README **does not mention or document the two new agents**:
+    - `RepoUnderstandingAgent` (4-langchain-RepoUnderstandingAgent.py)
+    - `RepoUnitTestAdvisorAgent` (5-langchain-RepoUnitTestAdvisorAgent.py)
+- There is no section describing their purpose, usage, workflow, or how to launch them.
+- The agent roles listed in the README do not include these two new agents, nor are there updated instructions for launching or interacting with them.
+
+### Recommendations:
+1. **Update the README.md** to:
+    - Add descriptions for `RepoUnderstandingAgent` and `RepoUnitTestAdvisorAgent`, including their responsibilities and how they fit into the system.
+    - Update the &quot;Overview of Agents&quot; section to include these new agents.
+    - Provide instructions for launching these agents, similar to the other agent scripts.
+    - Optionally, add usage examples or scenarios where these agents are involved.
+
+If you need suggested wording or a draft section for the README, let me know!
+
+**Summary:**
+The documentation is currently **outdated** with respect to the new agents added in this PR. Please update the README.md as described above.
+```
+
+### Creator details
+
+* Name: Xinxing
+* Affiliation: Coral Protocol
+* Contact: xinxing@coralprotocol.org
+
+</details>
+
+
+---
+
 # Enterprise
 
 ## [PandasAI Agent](https://github.com/Coral-Protocol/Pandas-ai-Agent)
