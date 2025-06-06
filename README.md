@@ -3,7 +3,7 @@
 
 Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! Our reef splits into various categories, for various use case:
 
-1. Genral
+1. General
 2. Research/ Scrapping
 3. Software
 4. Enterprise
