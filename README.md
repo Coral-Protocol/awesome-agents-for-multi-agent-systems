@@ -653,9 +653,9 @@ FAILED test/toolkits/test_semantic_scholar_functions.py::TestSemanticScholarTool
 
 ## [Repo understanding agent](https://github.com/Coral-Protocol/Coral-RepoUnderstanding-Agent)
 
-<details>
+Repo understanding agent automatically analyzes key files in a specified GitHub repository and provides a concise summary of the project’s purpose, main modules, usage, and overall structure.
 
-Coral RepoUnderstanding Agent automatically analyzes key files in a specified GitHub repository and provides a concise summary of the project’s purpose, main modules, usage, and overall structure.
+<details>
 
 ### Responsibility 
 
