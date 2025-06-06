@@ -1120,7 +1120,7 @@ uv sync
 Copy the example file and update it with your credentials:
 
 ```bash
-cp env.example .env
+cp .env.example .env
 ```
 
 Required environment variables:
@@ -1193,7 +1193,7 @@ uv sync
 Copy example environment file:
 
 ```bash
-cp env.example .env
+cp .env.example .env
 ```
 
 Edit the `.env` file and add your API keys:
@@ -1287,7 +1287,7 @@ uv sync
 Copy the example file and add your API keys:
 
 ```bash
-cp env.example .env
+cp .env.example .env
 ```
 
 Update `.env` with:
@@ -1367,7 +1367,7 @@ uv sync
 Copy the example file and add your API keys:
 
 ```bash
-cp env.example .env
+cp .env.example .env
 ```
 
 Update `.env` with:
