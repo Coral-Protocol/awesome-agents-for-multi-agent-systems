@@ -9,6 +9,8 @@ Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by t
 4. Enterprise
 5. Voice Agents
 
+<img width="1300" alt="Coral-AI_Agents_Landscape_v3b" src="https://github.com/user-attachments/assets/2bf43f96-a4e6-41bd-913e-6c8ca44e87af" />
+
 ---
 
 # General
