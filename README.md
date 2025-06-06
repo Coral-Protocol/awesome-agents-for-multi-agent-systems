@@ -7,6 +7,7 @@ Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by t
 2. Research/ Scrapping
 3. Software
 4. Enterprise
+5. Voice Agents
 
 ---
 
@@ -18,54 +19,92 @@ User Interaction Agent is the main interface for receiving user instructions, co
 
 <details>
 
-### Responsibility
+## Responsibility
 
 **User Interaction Agent** acts as the main interface for coordinating user instructions and managing multi-agent tasks. It interacts with the user via terminal and orchestrates requests among various agents, ensuring seamless workflow and conversation logging.
 
-### Details
 
-* Framework: LangChain
-* Tools used: Coral MCP Tools, ask\_human Tool (human-in-the-loop)
-* AI model: OpenAI GPT-4.1
-* Date added: 04/06/25
-* Licence: MIT
+## Details
+- **Framework**: LangChain
+- **Tools used**: Coral MCP Tools, ask_human Tool (human-in-the-loop)
+- **AI model**: GPT-4o
+- **Date added**: June 4, 2025
+- **License**: MIT 
 
-### Install Dependencies
+## Clone & Install Dependencies
 
-Install all required packages:
+1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
+<details>
 
-```bash
-pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community
-```
+This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
 
-### Configure Environment Variables
 
 ```bash
-export OPENAI_API_KEY=sk-xxx
+git clone https://github.com/Coral-Protocol/coral-server.git
 ```
 
-**How to obtain API keys:**
+Navigate to the project directory:
+```bash
+cd coral-server
+```
+Run the server
+```bash
+cd ./gradlew run
+```
+</details>
 
-* **OPENAI\_API\_KEY:**
-  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
+2. Agent Installation
 
-### Run agent command
+In a new terminal clone the repository
+```bash
+git clone https://github.com/Coral-Protocol/Coral-Interface-Agent.git
+```
+Navigate to the project directory:
+```bash
+cd Coral-Interface-Agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+## Configure Environment Variables
+Get the API Key:
+[OpenAI](https://platform.openai.com/api-keys)
+
+
+Create .env file in project root
+```bash
+echo -e "OPENAI_API_KEY=your_openai_api_key" > .env
+```
+
+OR Directly export in terminal
 
 ```bash
-python 0-langchain-interface-agent.py
+export OPENAI_API_KEY=
 ```
 
-### Example interaction
+## Run Agent
+Run the agent using `uv`:
+```bash
+uv run python 0-langchain-interface.py
+```
+
+## Example Output
 
 ```text
 Agent: How can I assist you today?
 ```
 
-### Creator details
-
-* Name: Suman Deb
-* Affiliation: Coral Protocol
-* Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
+## Creator Details
+- **Name**: Suman Deb
+- **Affiliation**: Coral Protocol
+- **Contact**: [Discord](https://discord.com/invite/Xjm892dtt3)
 
 </details>
 
@@ -91,7 +130,69 @@ The Open Deep Research agent is an open-source research assistant that automates
 - **License**: MIT 
 
 ## Clone & Install Dependencies
-Clone the repository:
+
+1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
+<details>
+
+This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
+
+
+```bash
+git clone https://github.com/Coral-Protocol/coral-server.git
+```
+
+Navigate to the project directory:
+```bash
+cd coral-server
+```
+Run the server
+```bash
+cd ./gradlew run
+```
+</details>
+
+2. Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+<details>
+
+
+If you are trying to run Open Deep Research agent and require an input, you can either create your agent which communicates on the coral server or run and register the Interface Agent on the Coral Server. In a new terminal clone the repository:
+
+
+```bash
+git clone https://github.com/Coral-Protocol/Coral-Interface-Agent.git
+```
+Navigate to the project directory:
+```bash
+cd Coral-Interface-Agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+Configure API Key
+```bash
+export OPENAI_API_KEY=
+```
+
+Run the agent using `uv`:
+```bash
+uv run python 0-langchain-interface.py
+```
+
+</details>
+
+
+3. Agent Installation
+
+<details>
+
+In a new terminal clone the repository:
 ```bash
 git clone https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent.git
 ```
@@ -112,6 +213,8 @@ uv sync
 ```
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+
+</details>
 
 ## Configure Environment Variables
 Get the API Key:
