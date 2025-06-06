@@ -13,6 +13,8 @@ Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by t
 
 ---
 
+
+
 # General
 
 ## [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
@@ -419,30 +421,48 @@ Git clone agent can help you clone a specific repository to your local machine u
 * Date added: 02/05/25
 * Licence: MIT
 
-### Install Dependencies
-
-Install all required packages:
-
+## Clone & Install Dependencies
+Clone the repository:
 ```bash
-pip install crewai==0.121.1 crewai_tools[mcp]==0.46.0
+git clone https://github.com/Coral-Protocol/github-coral-agent.git
 ```
+
+Navigate to the project directory:
+```bash
+cd github-coral-agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 ### Configure Environment Variables
 
+Copy the example file and update it with your credentials:
+
 ```bash
-export OPENAI_API_KEY=sk-xxx
+cp .env.example .env
 ```
 
-**How to obtain API keys:**
+Required environment variables:
+
+* `OPENAI_API_KEY`
 
 * **OPENAI_API_KEY:**
   Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
 
-
-### Run agent command
-
+## Run Agent
+Run the agent using `uv`:
 ```bash
-python 1-crewai-GitCloneAgent.py
+uv run 1-crewai-GitCloneAgent.py
 ```
 
 ### Example output
@@ -478,23 +498,42 @@ Code diffs review agent can help you compare the files changed in a specific com
 * Date added: 02/05/25
 * Licence: MIT
 
-### Install Dependencies
-
-Install all required packages:
-
+## Clone & Install Dependencies
+Clone the repository:
 ```bash
-pip install camel-ai[model_platforms]==0.2.58 pillow requests_oauthilb sqlalchemy
+git clone https://github.com/Coral-Protocol/github-coral-agent.git
 ```
+
+Navigate to the project directory:
+```bash
+cd github-coral-agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 ### Configure Environment Variables
 
+Copy the example file and update it with your credentials:
+
 ```bash
-export OPENAI_API_KEY=sk-xxx
-export GROQ_API_KEY=xxx
-export GITHUB_ACCESS_TOKEN=ghp_xxx
+cp .env.example .env
 ```
 
-**How to obtain API keys:**
+Required environment variables:
+
+* `OPENAI_API_KEY`
+* `GROQ_API_KEY`
+* `GITHUB_ACCESS_TOKEN`
 
 * **OPENAI_API_KEY:**
   Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
@@ -504,12 +543,11 @@ export GITHUB_ACCESS_TOKEN=ghp_xxx
 
 * **GITHUB_ACCESS_TOKEN:**
   Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
-
-
-### Run agent command
-
+  
+## Run Agent
+Run the agent using `uv`:
 ```bash
-python 2-camel-CodeDiffReviewAgent.py
+uv run 2-camel-CodeDiffReviewAgent.py
 ```
 
 ### Example output
@@ -568,29 +606,48 @@ Unit test runner agent can help you automatically run the relevant pytest test f
 * Date added: 02/05/25
 * Licence: MIT
 
-### Install Dependencies
-
-Install all required packages:
-
+## Clone & Install Dependencies
+Clone the repository:
 ```bash
-pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community
+git clone https://github.com/Coral-Protocol/github-coral-agent.git
 ```
+
+Navigate to the project directory:
+```bash
+cd github-coral-agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 ### Configure Environment Variables
 
+Copy the example file and update it with your credentials:
+
 ```bash
-export OPENAI_API_KEY=sk-xxx
+cp .env.example .env
 ```
 
-**How to obtain API keys:**
+Required environment variables:
+
+* `OPENAI_API_KEY`
 
 * **OPENAI_API_KEY:**
   Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
-
-### Run agent command
-
+  
+## Run Agent
+Run the agent using `uv`:
 ```bash
-python 3-langchain-UnitTestRunnerAgent.py
+uv run 3-langchain-UnitTestRunnerAgent.py
 ```
 
 ### Example output
@@ -669,33 +726,52 @@ Repo understanding agent can help you automatically analyze any GitHub repositor
 * Date added: 02/05/25
 * Licence: MIT
 
-### Install Dependencies
-
-Install all required packages:
-
+## Clone & Install Dependencies
+Clone the repository:
 ```bash
-pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community pygithub
+git clone https://github.com/Coral-Protocol/github-coral-agent.git
 ```
+
+Navigate to the project directory:
+```bash
+cd github-coral-agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 ### Configure Environment Variables
 
+Copy the example file and update it with your credentials:
+
 ```bash
-export OPENAI_API_KEY=sk-xxx
-export GITHUB_ACCESS_TOKEN=ghp_xxx
+cp .env.example .env
 ```
 
-**How to obtain API keys:**
+Required environment variables:
+
+* `OPENAI_API_KEY`
+* `GITHUB_ACCESS_TOKEN`
 
 * **OPENAI_API_KEY:**
   Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
 
 * **GITHUB_ACCESS_TOKEN:**
   Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
-
-### Run agent command
-
+  
+## Run Agent
+Run the agent using `uv`:
 ```bash
-python 4-langchain-RepoUnderstandingAgent.py
+uv run 4-langchain-RepoUnderstandingAgent.py
 ```
 
 ### Example output
@@ -760,33 +836,52 @@ Repo unit test advisor agent helps you evaluate whether the unit tests in a give
 * Date added: 02/05/25
 * Licence: MIT
 
-### Install Dependencies
-
-Install all required packages:
-
+## Clone & Install Dependencies
+Clone the repository:
 ```bash
-pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community pygithub
+git clone https://github.com/Coral-Protocol/github-coral-agent.git
 ```
+
+Navigate to the project directory:
+```bash
+cd github-coral-agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 ### Configure Environment Variables
 
+Copy the example file and update it with your credentials:
+
 ```bash
-export OPENAI_API_KEY=sk-xxx
-export GITHUB_ACCESS_TOKEN=ghp_xxx
+cp .env.example .env
 ```
 
-**How to obtain API keys:**
+Required environment variables:
+
+* `OPENAI_API_KEY`
+* `GITHUB_ACCESS_TOKEN`
 
 * **OPENAI_API_KEY:**
   Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
 
 * **GITHUB_ACCESS_TOKEN:**
   Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
-
-### Run agent command
-
+  
+## Run Agent
+Run the agent using `uv`:
 ```bash
-python 5-langchain-RepoUnitTestAdvisorAgent.py
+uv run 5-langchain-RepoUnitTestAdvisorAgent.py
 ```
 
 ### Example output
@@ -832,7 +927,7 @@ The corresponding test file, `test/toolkits/new_test_semantic_scholar_functions.
 
 **Conclusion:**
 The unit tests provide thorough coverage of the toolkit's API interaction logic, error handling, and function registration. Only minor improvements are suggested for file output and input validation edge cases. No additional tests are strictly required for the renaming, as the logic and coverage remain unchanged.
-
+```
 
 ### Creator details
 
@@ -846,9 +941,9 @@ The unit tests provide thorough coverage of the toolkit's API interaction logic,
 
 ## [Repo doc consistency checker agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
 
-<details>
+Repo doc consistency checker agent checks if documentation in a specified repo and branch is up-to-date.
 
-Repo doc consistency checker agent checks if documentation in a specified repo and branch is up-to-date
+<details>
 
 ### Responsibility
 
@@ -862,33 +957,52 @@ Repo doc consistency checker agent helps you evaluate whether the documentation 
 * Date added: 02/05/25
 * Licence: MIT
 
-### Install Dependencies
-
-Install all required packages:
-
+## Clone & Install Dependencies
+Clone the repository:
 ```bash
-pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community pygithub
+git clone https://github.com/Coral-Protocol/github-coral-agent.git
 ```
+
+Navigate to the project directory:
+```bash
+cd github-coral-agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 ### Configure Environment Variables
 
+Copy the example file and update it with your credentials:
+
 ```bash
-export OPENAI_API_KEY=sk-xxx
-export GITHUB_ACCESS_TOKEN=ghp_xxx
+cp .env.example .env
 ```
 
-**How to obtain API keys:**
+Required environment variables:
+
+* `OPENAI_API_KEY`
+* `GITHUB_ACCESS_TOKEN`
 
 * **OPENAI_API_KEY:**
   Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
 
 * **GITHUB_ACCESS_TOKEN:**
   Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
-
-### Run agent command
-
+  
+## Run Agent
+Run the agent using `uv`:
 ```bash
-python 6-langchain-RepoDocConsistencyCheckerAgent.py
+uv run 6-langchain-RepoDocConsistencyCheckerAgent.py
 ```
 
 ### Example output
@@ -929,95 +1043,6 @@ The documentation is currently **outdated** with respect to the new agents added
 * Contact: xinxing@coralprotocol.org
 
 </details>
-
----
-
-## [Repo doc consistency checker agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
-
-Repo doc consistency checker agent checks if documentation in a specified repo and branch is up-to-date
-
-<details>
-
-### Responsibility
-
-Repo doc consistency checker agent helps you evaluate whether the documentation in a specified GitHub repository and branch is up-to-date with respect to changes in a given list of files. Just provide the repository name, branch, and the list of changed files.
-
-### Details
-
-* Framework: LangChain
-* Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
-* AI model: OpenAI GPT-4.1
-* Date added: 02/05/25
-* Licence: MIT
-
-### Install Dependencies
-
-Install all required packages:
-
-```bash
-pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community pygithub
-```
-
-### Configure Environment Variables
-
-```bash
-export OPENAI_API_KEY=sk-xxx
-export GITHUB_ACCESS_TOKEN=ghp_xxx
-```
-
-**How to obtain API keys:**
-
-* **OPENAI_API_KEY:**
-  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
-
-* **GITHUB_ACCESS_TOKEN:**
-  Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
-
-### Run agent command
-
-```bash
-python 6-langchain-RepoDocConsistencyCheckerAgent.py
-```
-
-### Example output
-
-```bash
-**Documentation Consistency Check for PR #2 (branch: 'repo-understanding+unit-test-advice')**
-
-### Changed Files:
-1. `4-langchain-RepoUnderstandingAgent.py` (new)
-2. `5-langchain-RepoUnitTestAdvisorAgent.py` (new)
-
-### Documentation Coverage:
-- The main documentation file is `README.md`.
-- The README describes the overall architecture, agent roles, and usage instructions for the system, including launching agents and running unit tests for PRs.
-- However, the README **does not mention or document the two new agents**:
-    - `RepoUnderstandingAgent` (4-langchain-RepoUnderstandingAgent.py)
-    - `RepoUnitTestAdvisorAgent` (5-langchain-RepoUnitTestAdvisorAgent.py)
-- There is no section describing their purpose, usage, workflow, or how to launch them.
-- The agent roles listed in the README do not include these two new agents, nor are there updated instructions for launching or interacting with them.
-
-### Recommendations:
-1. **Update the README.md** to:
-    - Add descriptions for `RepoUnderstandingAgent` and `RepoUnitTestAdvisorAgent`, including their responsibilities and how they fit into the system.
-    - Update the &quot;Overview of Agents&quot; section to include these new agents.
-    - Provide instructions for launching these agents, similar to the other agent scripts.
-    - Optionally, add usage examples or scenarios where these agents are involved.
-
-If you need suggested wording or a draft section for the README, let me know!
-
-**Summary:**
-The documentation is currently **outdated** with respect to the new agents added in this PR. Please update the README.md as described above.
-```
-
-### Creator details
-
-* Name: Xinxing
-* Affiliation: Coral Protocol
-* Contact: xinxing@coralprotocol.org
-
-</details>
-
 
 ---
 
