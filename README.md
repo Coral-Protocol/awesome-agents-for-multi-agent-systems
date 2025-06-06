@@ -1,13 +1,12 @@
 # Awesome agents for your multi-agent systems
 
 
-Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by Coral Protocol! Our reef splits into various categories, for various use case:
+Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! Our reef splits into various categories, for various use case:
 
 1. Genral
 2. Research/ Scrapping
 3. Software
 4. Enterprise
-5. Voice AI Agents
 
 ---
 
@@ -66,7 +65,7 @@ Agent: How can I assist you today?
 
 * Name: Caelum & Suman
 * Affiliation: Coral Protocol
-* Contact: caelum@coralprotocol.org & suman@coralprotocol.org
+* Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
 
 </details>
 
@@ -127,8 +126,8 @@ python langchain_open_deep_research.py
 ### Creator details
 
 * Name: Suman
-* Affiliation: LangChain AI
-* Contact: suman@coralprotocol.org
+* Affiliation: Coral Protocol
+* Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
 
 
 </details>
@@ -146,8 +145,9 @@ The Firecrawl Coral Agent is an open-source agent designed for comprehensive web
 ### Details
 - **Framework**: LangChain
 - **Tools used**: Firecrawl MCP Server Tools, Coral Server Tools
-- **AI model**: OpenAI GPT-4
+- **AI model**: OpenAI GPT-4o
 - **Date added**: June 4, 2025
+- **Reference**: [Firecrawl MCP Repo](https://github.com/mendableai/firecrawl)
 - **License**: MIT
 
 ### Clone & Install Dependencies
@@ -176,6 +176,77 @@ This command will read the `pyproject.toml` file and install all specified depen
 ### Configure Environment Variables
 Get the API Key:
 [OpenAI](https://platform.openai.com/api-keys)
+[Firecrawl](https://www.firecrawl.dev/app/api-keys)
+
+Rename the sample environment file to `.env` and add the keys:
+```bash
+mv .env_sample .env
+```
+Check if the environment file has correct URL for Coral Server and adjust the parameters accordingly.
+
+### Run Agent
+Run the agent using `uv`:
+```bash
+uv run python firecrawl_coral_agent.py
+```
+
+### Example Output
+```
+The Model Context Protocol (MCP) is an innovative open-source standard designed to enhance the interaction between artificial intelligence (AI) models and external tools and data sources. Introduced by Anthropic in November 2024, MCP addresses a critical challenge in the AI space by enabling seamless integration among diverse applications, particularly large language models (LLMs). This protocol streamlines data sharing and context management, offering a cohesive framework that allows AI systems to access real-time information efficiently. By eliminating the need for custom integrations, MCP fosters a more dynamic and interconnected AI ecosystem, thus empowering developers to create responsive and context-aware applications.
+
+```
+
+### Creator Details
+- **Name**: Suman Deb
+- **Affiliation**: Coral Protocol
+- **Contact**: [Discord](https://discord.com/invite/Xjm892dtt3)
+
+</details>
+
+---
+
+# Software
+
+## [Github Coral Agent](https://github.com/Coral-Protocol/github-coral-agent.git)
+
+The Github Coral Agent is an open-source agent designed for managing GitHub repositories. It supports creating, updating, and searching for repositories and files, handling issues and pull requests, and facilitating collaboration through comments and reviews using a multi-agent architecture.
+
+<details>
+
+## Details
+- **Framework**: LangChain
+- **Tools used**: GitHub MCP Server Tools, Coral Server Tools
+- **AI model**: OpenAI GPT-4
+- **Date added**: June 4, 2025
+- **Reference**: [GitHub MCP Repo](https://github.com/github/github-mcp-server)
+- **License**: MIT
+
+## Clone & Install Dependencies
+Clone the repository:
+```bash
+git clone https://github.com/Coral-Protocol/github-coral-agent.git
+```
+
+Navigate to the project directory:
+```bash
+cd github-coral-agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+
+## Configure Environment Variables
+Get the API Key:
+[OpenAI](https://platform.openai.com/api-keys)
 
 Create .env file in project root:
 ```bash
@@ -187,28 +258,23 @@ OR Directly export in terminal:
 export OPENAI_API_KEY=
 ```
 
-### Run Agent
+## Run Agent
 Run the agent using `uv`:
 ```bash
-uv run python firecrawl_coral_agent.py
+uv run python github_coral_agent.py
 ```
 
-### Example Output
+## Example Output
 ```
 (Sample too big to post, check temp folder)
 ```
 
-### Creator Details
+## Creator Details
 - **Name**: Suman
-- **Affiliation**: LangChain AI
-- **Contact**: suman@coralprotocol.org
-- **Affiliation**: 
+- **Affiliation**: Coral Protocol
+- **Contact**: [Discord](https://discord.com/invite/Xjm892dtt3)
 
 </details>
-
----
-
-# Software
 
 
 ## [Git clone agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent)
@@ -234,7 +300,7 @@ Git clone agent can help you clone a specific repository to your local machine u
 Install all required packages:
 
 ```bash
-pip install crewai==0.121.1 crewai_tools[mcp]==0.46.0
+pip install crewai crewai_tools[mcp]
 ```
 
 ### Configure Environment Variables
@@ -293,7 +359,7 @@ Code diffs review agent can help you compare the files changed in a specific com
 Install all required packages:
 
 ```bash
-pip install camel-ai[model_platforms]==0.2.58 pillow requests_oauthlib sqlalchemy
+pip install camel-ai[model_platforms]==0.2.58 pillow requests_oauthilb sqlalchemy
 ```
 
 ### Configure Environment Variables
@@ -463,9 +529,9 @@ FAILED test/toolkits/test_semantic_scholar_functions.py::TestSemanticScholarTool
 
 ## [Repo understanding agent](https://github.com/Coral-Protocol/Coral-RepoUnderstanding-Agent)
 
-Repo understanding agent automatically analyzes key files in a specified GitHub repository and provides a concise summary of the project’s purpose, main modules, usage, and overall structure.
-
 <details>
+
+Coral RepoUnderstanding Agent automatically analyzes key files in a specified GitHub repository and provides a concise summary of the project’s purpose, main modules, usage, and overall structure.
 
 ### Responsibility 
 
@@ -742,112 +808,23 @@ The documentation is currently **outdated** with respect to the new agents added
 
 ---
 
-## [Repo doc consistency checker agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
-
-Repo doc consistency checker agent checks if documentation in a specified repo and branch is up-to-date
-
-<details>
-
-### Responsibility
-
-Repo doc consistency checker agent helps you evaluate whether the documentation in a specified GitHub repository and branch is up-to-date with respect to changes in a given list of files. Just provide the repository name, branch, and the list of changed files.
-
-### Details
-
-* Framework: LangChain
-* Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
-* AI model: OpenAI GPT-4.1
-* Date added: 02/05/25
-* Licence: MIT
-
-### Install Dependencies
-
-Install all required packages:
-
-```bash
-pip install langchain-mcp-adapters==0.0.10 langchain-openai langchain langchain-core langchain-community pygithub
-```
-
-### Configure Environment Variables
-
-```bash
-export OPENAI_API_KEY=sk-xxx
-export GITHUB_ACCESS_TOKEN=ghp_xxx
-```
-
-**How to obtain API keys:**
-
-* **OPENAI_API_KEY:**
-  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
-
-* **GITHUB_ACCESS_TOKEN:**
-  Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
-
-### Run agent command
-
-```bash
-python 6-langchain-RepoDocConsistencyCheckerAgent.py
-```
-
-### Example output
-
-```bash
-**Documentation Consistency Check for PR #2 (branch: 'repo-understanding+unit-test-advice')**
-
-### Changed Files:
-1. `4-langchain-RepoUnderstandingAgent.py` (new)
-2. `5-langchain-RepoUnitTestAdvisorAgent.py` (new)
-
-### Documentation Coverage:
-- The main documentation file is `README.md`.
-- The README describes the overall architecture, agent roles, and usage instructions for the system, including launching agents and running unit tests for PRs.
-- However, the README **does not mention or document the two new agents**:
-    - `RepoUnderstandingAgent` (4-langchain-RepoUnderstandingAgent.py)
-    - `RepoUnitTestAdvisorAgent` (5-langchain-RepoUnitTestAdvisorAgent.py)
-- There is no section describing their purpose, usage, workflow, or how to launch them.
-- The agent roles listed in the README do not include these two new agents, nor are there updated instructions for launching or interacting with them.
-
-### Recommendations:
-1. **Update the README.md** to:
-    - Add descriptions for `RepoUnderstandingAgent` and `RepoUnitTestAdvisorAgent`, including their responsibilities and how they fit into the system.
-    - Update the &quot;Overview of Agents&quot; section to include these new agents.
-    - Provide instructions for launching these agents, similar to the other agent scripts.
-    - Optionally, add usage examples or scenarios where these agents are involved.
-
-If you need suggested wording or a draft section for the README, let me know!
-
-**Summary:**
-The documentation is currently **outdated** with respect to the new agents added in this PR. Please update the README.md as described above.
-```
-
-### Creator details
-
-* Name: Xinxing
-* Affiliation: Coral Protocol
-* Contact: xinxing@coralprotocol.org
-
-</details>
-
-
----
-
 # Enterprise
 
 ## [PandasAI Agent](https://github.com/Coral-Protocol/Pandas-ai-Agent)
 
-PandasAI Agent lets you ask natural language questions about your Excel or CSV files using a local LLM (e.g., Qwen3), just provide the file path and your query to get instant answers.
+PandasAI Agent lets you ask natural language questions about your Excel or CSV files using a local LLM (e.g., Llama 3.1), just provide the file path and your query to get instant answers.
 
 <details>
 
 ### Responsibility
 
-**PandasAI Agent** helps you answer data-related questions about Excel or CSV files using a local LLM (e.g., Qwen3) via PandasAI. Simply provide the file path and your natural language question—the agent will query the data and return the answer.
+**PandasAI Agent** helps you answer data-related questions about Excel or CSV files using a local LLM (e.g., Llama 3.1) via PandasAI. Simply provide the file path and your natural language question—the agent will query the data and return the answer.
 
 ### Details
 
 * Framework: LangChain
 * Tools used: PandasAI Tools, Coral MCP Tools
-* AI model: Qwen3 via Ollama
+* AI model: OpenAI GPT-4.1 / Llama3.1 via Ollama
 * Date added: 04/06/25
 * Licence: MIT
 
@@ -856,64 +833,24 @@ PandasAI Agent lets you ask natural language questions about your Excel or CSV f
 Install all required packages:
 
 ```bash
-pip install langchain langchain_mcp_adapters==0.0.10 langchain_ollama pandasai python-dotenv anyio
-pip install numpy==1.23.5 openpyxl
+pip install langchain langchain_mcp_adapters langchain_openai pandasai python-dotenv anyio
+pip install pandas openpyxl
 ```
 
-### Install and Run Ollama (for Local LLM)
-
-PandasAI Agent uses Ollama to run local model Qwen3. Please make sure you have Ollama installed and the desired model downloaded before running the agent.
-
-**Step 1: Install Ollama**
-
-* **Linux/macOS:**
-  Follow the official instructions: [https://ollama.com/download](https://ollama.com/download)
-  Or run:
-
-  ```bash
-  curl -fsSL https://ollama.com/install.sh | sh
-  ```
-
-* **Windows:**
-  Download the installer from [Ollama’s website](https://ollama.com/download).
-
-**Step 2: Download Qwen3 model**
-
-To pull the latest Qwen3 model:
+### Configure Environment Variables
 
 ```bash
-ollama pull qwen3:latest
+export OPENAI_API_KEY=sk-xxx
 ```
 
-**Step 3: Start Ollama Service**
+**How to obtain API keys:**
 
-Ollama usually starts automatically. If not, start it manually:
-
-```bash
-ollama serve
-```
-
-**Step 4: Verify the model is running**
-
-You can check with:
-
-```bash
-ollama list
-```
-
-and
-
-```bash
-ollama run qwen3:latest
-```
-
-Make sure no errors occur and Ollama is running at `http://localhost:11434`.
-
----
+* **OPENAI_API_KEY:**
+  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
 
 ### Run agent command
 
-Make sure Ollama is running in your local machine, then run:
+Make sure Pllama is running in your local machine, then run:
 
 ```bash
 python 1-langchain-pandasai-agent.py
@@ -931,75 +868,6 @@ Answer: The total number of columns in the coral_public_repo_docs.xlsx is 4.
 * Name: Xinxing
 * Affiliation: Coral Protocol
 * Contact: xinxing@coralprotocol.org
-
-</details>
-
-## [Github Coral Agent](https://github.com/Coral-Protocol/github-coral-agent.git)
-
-The Github Coral Agent is an open-source agent designed for managing GitHub repositories. It supports creating, updating, and searching for repositories and files, handling issues and pull requests, and facilitating collaboration through comments and reviews using a multi-agent architecture.
-
-<details>
-
-## Details
-- **Framework**: LangChain
-- **Tools used**: GitHub MCP Server Tools, Coral Server Tools
-- **AI model**: OpenAI GPT-4
-- **Date added**: June 4, 2025
-- **License**: MIT
-
-## Clone & Install Dependencies
-Clone the repository:
-```bash
-git clone https://github.com/Coral-Protocol/github-coral-agent.git
-```
-
-Navigate to the project directory:
-```bash
-cd github-coral-agent
-```
-
-Install `uv`:
-```bash
-pip install uv
-```
-
-Install dependencies from `pyproject.toml` using `uv`:
-```bash
-uv sync
-```
-
-This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
-
-## Configure Environment Variables
-Get the API Key:
-[OpenAI](https://platform.openai.com/api-keys)
-
-Create .env file in project root:
-```bash
-echo -e "OPENAI_API_KEY=your_openai_api_key" > .env
-```
-
-OR Directly export in terminal:
-```bash
-export OPENAI_API_KEY=
-```
-
-## Run Agent
-Run the agent using `uv`:
-```bash
-uv run python github_coral_agent.py
-```
-
-## Example Output
-```
-(Sample too big to post, check temp folder)
-```
-
-## Creator Details
-- **Name**: Suman
-- **Affiliation**: LangChain AI
-- **Contact**: suman@coralprotocol.org
-- **Affiliation**:
 
 </details>
 
