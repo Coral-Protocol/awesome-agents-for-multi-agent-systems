@@ -424,7 +424,7 @@ Git clone agent can help you clone a specific repository to your local machine u
 Install all required packages:
 
 ```bash
-pip install crewai crewai_tools[mcp]
+pip install crewai==0.121.1 crewai_tools[mcp]==0.46.0
 ```
 
 ### Configure Environment Variables
