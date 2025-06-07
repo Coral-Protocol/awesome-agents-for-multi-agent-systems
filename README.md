@@ -424,12 +424,12 @@ Git clone agent can help you clone a specific repository to your local machine u
 ## Clone & Install Dependencies
 Clone the repository:
 ```bash
-git clone https://github.com/Coral-Protocol/github-coral-agent.git
+git clone https://github.com/Coral-Protocol/Coral-GitClone-Agent.git
 ```
 
 Navigate to the project directory:
 ```bash
-cd github-coral-agent
+cd Coral-GitClone-Agent
 ```
 
 Install `uv`:
@@ -501,12 +501,12 @@ Code diffs review agent can help you compare the files changed in a specific com
 ## Clone & Install Dependencies
 Clone the repository:
 ```bash
-git clone https://github.com/Coral-Protocol/github-coral-agent.git
+git clone https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent.git
 ```
 
 Navigate to the project directory:
 ```bash
-cd github-coral-agent
+cd Coral-CodeDiffReview-Agent
 ```
 
 Install `uv`:
@@ -609,12 +609,12 @@ Unit test runner agent can help you automatically run the relevant pytest test f
 ## Clone & Install Dependencies
 Clone the repository:
 ```bash
-git clone https://github.com/Coral-Protocol/github-coral-agent.git
+git clone https://github.com/Coral-Protocol/Coral-UnitTestRunner-Agent.git
 ```
 
 Navigate to the project directory:
 ```bash
-cd github-coral-agent
+cd Coral-UnitTestRunner-Agent
 ```
 
 Install `uv`:
@@ -729,12 +729,12 @@ Repo understanding agent can help you automatically analyze any GitHub repositor
 ## Clone & Install Dependencies
 Clone the repository:
 ```bash
-git clone https://github.com/Coral-Protocol/github-coral-agent.git
+git clone https://github.com/Coral-Protocol/Coral-RepoUnderstanding-Agent.git
 ```
 
 Navigate to the project directory:
 ```bash
-cd github-coral-agent
+cd Coral-RepoUnderstanding-Agent
 ```
 
 Install `uv`:
@@ -839,12 +839,12 @@ Repo unit test advisor agent helps you evaluate whether the unit tests in a give
 ## Clone & Install Dependencies
 Clone the repository:
 ```bash
-git clone https://github.com/Coral-Protocol/github-coral-agent.git
+git clone https://github.com/Coral-Protocol/Coral-RepoUnitTestAdvisor-Agent.git
 ```
 
 Navigate to the project directory:
 ```bash
-cd github-coral-agent
+cd Coral-RepoUnitTestAdvisor-Agent
 ```
 
 Install `uv`:
@@ -960,12 +960,12 @@ Repo doc consistency checker agent helps you evaluate whether the documentation 
 ## Clone & Install Dependencies
 Clone the repository:
 ```bash
-git clone https://github.com/Coral-Protocol/github-coral-agent.git
+git clone https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent.git
 ```
 
 Navigate to the project directory:
 ```bash
-cd github-coral-agent
+cd Coral-RepoDocConsistencyChecker-Agent
 ```
 
 Install `uv`:
