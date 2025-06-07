@@ -1056,42 +1056,100 @@ PandasAI Agent lets you ask natural language questions about your Excel or CSV f
 
 ### Responsibility
 
-**PandasAI Agent** helps you answer data-related questions about Excel or CSV files using a local LLM (e.g., Llama 3.1) via PandasAI. Simply provide the file path and your natural language question—the agent will query the data and return the answer.
+**PandasAI Agent** helps you answer data-related questions about Excel or CSV files using a local LLM (e.g., Llama 3.1/Qwen3) via PandasAI. Simply provide the file path and your natural language question—the agent will query the data and return the answer.
 
 ### Details
 
 * Framework: LangChain
 * Tools used: PandasAI Tools, Coral MCP Tools
-* AI model: OpenAI GPT-4.1 / Llama3.1 via Ollama
+* AI model: Llama3.1/Qwen3 via Ollama
 * Date added: 04/06/25
 * Licence: MIT
 
-### Install Dependencies
+### Install and Run Ollama (for Local LLM)
 
-Install all required packages:
+PandasAI Agent uses Ollama to run local LLM Qwen3. Please make sure you have Ollama installed and the desired model downloaded before running the agent.
+
+**Step 1: Install Ollama**
+
+* **Linux/macOS:**
+  Follow the official instructions: [https://ollama.com/download](https://ollama.com/download)
+  Or run:
+
+  ```bash
+  curl -fsSL https://ollama.com/install.sh | sh
+  ```
+
+* **Windows:**
+  Download the installer from [Ollama’s website](https://ollama.com/download).
+
+**Step 2: Download Local model**
+
+To pull the latest llama3.1/Qwen3 model:
 
 ```bash
-pip install langchain langchain_mcp_adapters langchain_openai pandasai python-dotenv anyio
-pip install pandas openpyxl
+ollama pull llama3.1:latest
 ```
+
+```bash
+ollama pull qwen3:latest
+```
+
+**Step 3: Start Ollama Service**
+
+Ollama usually starts automatically. If not, start it manually:
+
+```bash
+ollama serve
+```
+
+**Step 4: Verify the model is running**
+
+You can check with:
+
+```bash
+ollama list
+```
+
+Make sure no errors occur and Ollama is running at `http://localhost:11434`.
+
+---
+
+## Clone & Install Dependencies
+Clone the repository:
+```bash
+git clone https://github.com/Coral-Protocol/Pandas-ai-Agent.git
+```
+
+Navigate to the project directory:
+```bash
+cd Pandas-ai-Agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 ### Configure Environment Variables
 
+Copy the example file and update it with your credentials:
+
 ```bash
-export OPENAI_API_KEY=sk-xxx
+cp .env.example .env
 ```
 
-**How to obtain API keys:**
-
-* **OPENAI_API_KEY:**
-  Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
-
-### Run agent command
-
-Make sure Pllama is running in your local machine, then run:
-
+## Run Agent
+Run the agent using `uv`:
 ```bash
-python 1-langchain-pandasai-agent.py
+uv run 1-langchain-pandasai-agent.py
 ```
 
 ### Example output
@@ -1100,6 +1158,8 @@ python 1-langchain-pandasai-agent.py
 Question: What are the total number of columns in the coral_public_repo_docs.xlsx
 Answer: The total number of columns in the coral_public_repo_docs.xlsx is 4.
 ```
+
+**🎬 [Watch Video Demo](https://youtu.be/4pa4M5uUV84)**
 
 ### Creator details
 
