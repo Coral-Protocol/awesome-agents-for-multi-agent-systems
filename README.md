@@ -1151,7 +1151,7 @@ Question: What are the total number of columns in the coral_public_repo_docs.xls
 Answer: The total number of columns in the coral_public_repo_docs.xlsx is 4.
 ```
 
-**🎬 [Watch Video Demo](https://youtu.be/4pa4M5uUV84)**
+**🎬 [Watch Video Demo](https://youtu.be/aq6du6XRzGE)**
 
 ### Creator details
 
