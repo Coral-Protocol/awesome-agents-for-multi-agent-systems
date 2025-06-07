@@ -1138,14 +1138,6 @@ uv sync
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
-### Configure Environment Variables
-
-Copy the example file and update it with your credentials:
-
-```bash
-cp .env.example .env
-```
-
 ## Run Agent
 Run the agent using `uv`:
 ```bash
