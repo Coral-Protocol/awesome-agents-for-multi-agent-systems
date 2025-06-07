@@ -1050,7 +1050,7 @@ The documentation is currently **outdated** with respect to the new agents added
 
 ## [PandasAI Agent](https://github.com/Coral-Protocol/Pandas-ai-Agent)
 
-PandasAI Agent lets you ask natural language questions about your Excel or CSV files using a local LLM (e.g., Llama 3.1), just provide the file path and your query to get instant answers.
+PandasAI Agent lets you ask natural language questions about your Excel or CSV files using a local LLM (e.g., Llama 3.1/Qwen3), just provide the file path and your query to get instant answers.
 
 <details>
 
