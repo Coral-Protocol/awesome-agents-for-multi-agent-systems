@@ -114,13 +114,13 @@ Agent: How can I assist you today?
 
 ## [Human-in-the-Loop Communication Agent](https://github.com/Coral-Protocol/Human-in-the-Loop-Communication-Agent)
 
-A communication agent that waits for messages from other agents and responds with requested fun content. Built with human-in-the-loop confirmation system using Coral integration.
+A communication agent that waits for messages from other agents and responds with requested fun content. Built with human-in-the-loop confirmation using [Agno framework](https://docs.agno.com/introduction).
 
 <details>
 
 ## Responsibility
 
-A communication agent that waits for messages from other agents and responds with requested fun content. Built with human-in-the-loop confirmation system using Coral integration.
+A communication agent that waits for messages from other agents and responds with requested fun content. Built with human-in-the-loop confirmation using [Agno framework](https://docs.agno.com/introduction).
 
 ## Details
 - **Framework**: Agno Agent Framework
@@ -133,12 +133,12 @@ A communication agent that waits for messages from other agents and responds wit
 
 Clone the repository:
 ```bash
-git clone https://github.com/Coral-Protocol/Human-in-the-Loop-Communication-Agent.git
+git clone https://github.com/Coral-Protocol/Human-In-Loop-Agent
 ```
 
 Navigate to the project directory:
 ```bash
-cd Human-in-the-Loop-Communication-Agent
+cd Human-In-Loop-Agent
 ```
 
 Install `uv`:
