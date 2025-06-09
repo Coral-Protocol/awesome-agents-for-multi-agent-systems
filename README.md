@@ -112,6 +112,95 @@ Agent: How can I assist you today?
 
 </details>
 
+## [Human-in-the-Loop Communication Agent](https://github.com/Coral-Protocol/Human-in-the-Loop-Communication-Agent)
+
+A communication agent that waits for messages from other agents and responds with requested fun content. Built with human-in-the-loop confirmation system using Coral integration.
+
+<details>
+
+## Responsibility
+
+A communication agent that waits for messages from other agents and responds with requested fun content. Built with human-in-the-loop confirmation system using Coral integration.
+
+## Details
+- **Framework**: Agno Agent Framework
+- **Tools Used**: Coral Tools, generate_joke, generate_quote, generate_fact
+- **AI Model**: GPT-4o  
+- **Date Added**: June 2025
+- **License**: MIT
+
+## Clone & Install Dependencies
+
+Clone the repository:
+```bash
+git clone https://github.com/Coral-Protocol/Human-in-the-Loop-Communication-Agent.git
+```
+
+Navigate to the project directory:
+```bash
+cd Human-in-the-Loop-Communication-Agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+## Configure Environment Variables
+
+Create a `.env` file in the project root and add your credentials:
+
+```bash
+"OPENAI_API_KEY=your_openai_api_key_here"
+```
+## Run Agent
+
+Run the agent:
+```bash
+uv run python main.py
+```
+
+## Agent Capabilities
+
+- **Human-in-the-Loop Confirmation** – User approval system for all tool calls with retry functionality  
+- **Content Generation** – Provides facts, motivational quotes, and jokes upon request
+
+## Workflow
+
+1. **Discovery Phase**: Lists all available agents in the system
+2. **Listening Phase**: Continuously waits for mentions from other agents
+3. **Content Generation**: Responds to requests with appropriate content:
+   - Facts
+   - Quotes  
+   - Jokes
+4. **Response Delivery**: Sends generated content back to the requesting agent
+5. **Loop Continuation**: Returns to listening for more mentions
+
+## Choice Explanation
+
+- **y**: Yes, accept the response and run the tool
+- **n**: Do not accept the response and do not run the tool  
+- **retry**: Retry running the tool again for better response
+
+## Example Usage
+
+1. Launch the [Interface agent](https://github.com/Coral-Protocol/Voice-Interface-Agent)
+2. Run the Human in loop agent
+3. Ask the interface agent to "ask the human in loop agent to get me a fact/joke/quote"
+4. The interface agent will ask the human in loop agent and then the Human in loop agent will get the response back
+
+## Creator Details
+- **Name**: Ahsen Tahir
+- **Contact**: ahsen.t@coralprotocol.org
+- **Source**: Based on [awesome-ai-apps](https://github.com/Arindam200/awesome-ai-apps/tree/main/simple_ai_agents/human_in_the_loop_agent)
+
+</details>
+
 ---
 
 # Research/ Scrapping
