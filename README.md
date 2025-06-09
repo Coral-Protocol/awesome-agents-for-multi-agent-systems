@@ -637,7 +637,7 @@ Required environment variables:
 
 Code diffs review agent is powered by GitHub MCP, which needs to be launched using docker.
 
-### 1. **Linux (Ubuntu)**
+### 1. **Linux**
 
 1. **Install Docker Engine:**
 
