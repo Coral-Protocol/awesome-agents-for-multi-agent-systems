@@ -632,6 +632,104 @@ Required environment variables:
 
 * **GITHUB_ACCESS_TOKEN:**
   Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
+
+## Docker Installation
+
+Code diffs review agent is powered by GitHub MCP, which needs to be launched using docker.
+
+### 1. **Linux (Ubuntu)**
+
+1. **Install Docker Engine:**
+
+   Open a terminal and run:
+
+   ```bash
+   curl -fsSL https://get.docker.com -o get-docker.sh
+   sudo sh get-docker.sh
+   ```
+
+2. **Add your user to the docker group:**
+
+   Replace `$USER` with your computer's username. For example, if your username is `julia`, use `sudo usermod -aG docker julia`.
+
+   ```bash
+   sudo usermod -aG docker $USER
+   ```
+
+3. **Apply group changes:**
+
+   Log out and log back in, or run:
+
+   ```bash
+   newgrp docker
+   ```
+
+4. **Verify Docker is working:**
+
+   ```bash
+   docker --version
+   docker run hello-world
+   ```
+
+### 2. **macOS**
+
+1. **Download Docker Desktop for Mac:**
+
+   Go to the Docker website [docker.com](https://www.docker.com/) and download the Docker Desktop installer for your chip (Intel or Apple Silicon).
+
+2. **Install Docker Desktop:**
+
+   Open the `.dmg` file and drag the Docker icon into the Applications folder.
+
+3. **Run Docker Desktop:**
+
+   Open Docker Desktop from your Applications folder. You may need to enter your password.
+
+4. **Verify Docker is working:**
+
+   Open the Terminal and run:
+
+   ```bash
+   docker --version
+   docker run hello-world
+   ```
+
+### 3. **Windows (with WSL 2)**
+
+1. **Enable WSL 2:**
+
+   Open PowerShell as Administrator and run:
+
+   ```powershell
+   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+   wsl --set-default-version 2
+   ```
+
+2. **Install a Linux distribution (such as Ubuntu):**
+
+   ```powershell
+   wsl --install -d Ubuntu
+   ```
+
+3. **Download and install Docker Desktop for Windows:**
+
+   Download the installer from the Docker website [docker.com](https://www.docker.com/) and follow the setup instructions. Make sure to check “Enable WSL 2 Windows Features” during installation.
+
+4. **Configure WSL 2 integration:**
+
+   Open Docker Desktop, go to Settings > General, and ensure “Use the WSL 2 based engine” is enabled.
+   Then, in Settings > Resources > WSL Integration, turn on integration for your installed Linux distribution (such as Ubuntu), and click Apply & Restart.
+
+5. **Verify Docker is working:**
+
+   Open a terminal in your Linux distribution or PowerShell and run:
+
+   ```bash
+   docker --version
+   docker run hello-world
+   ```
+
   
 ## Run Agent
 Run the agent using `uv`:
