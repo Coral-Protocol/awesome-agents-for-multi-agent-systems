@@ -112,7 +112,7 @@ Agent: How can I assist you today?
 
 </details>
 
-## [Human-in-the-Loop Communication Agent](https://github.com/Coral-Protocol/Human-in-the-Loop-Communication-Agent)
+## [Human-in-the-Loop Agent](https://github.com/Coral-Protocol/Human-In-Loop-Agent)
 
 A communication agent that waits for messages from other agents and responds with requested fun content. Built with human-in-the-loop confirmation using [Agno framework](https://docs.agno.com/introduction).
 
