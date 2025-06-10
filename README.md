@@ -641,6 +641,12 @@ Navigate to the project directory:
 ```bash
 cd coral-server
 ```
+
+To run crewai agent, please switch to this branch:
+```bash
+git checkout coral-server-crewai
+```
+
 Run the server
 ```bash
 ./gradlew run
