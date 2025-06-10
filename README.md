@@ -1465,7 +1465,7 @@ Answer: The total number of columns in the coral_public_repo_docs.xlsx is 4.
 
 ## [Voice Interface Agent](https://github.com/Coral-Protocol/Voice-Interface-Agent)
 
-A real-time voice interface agent that coordinates communication between users and specialized agents. Built on LiveKit with Coral Protocol integration, it enables seamless voice interaction and agent communication.
+Real-time voice interface coordinating communication between users and specialized agents via LiveKit and Coral Protocol.
 
 <details>
 
@@ -1537,7 +1537,7 @@ uv run python main.py console
 
 ## [Medical Office Triage Voice Agent](https://github.com/Coral-Protocol/Medical-Office-Triage-Voice-Agent)
 
-The Medical Office Triage Voice Agent is an intelligent multi-agent voice system that automates patient routing and support in medical office environments. It uses real-time voice processing to understand patient needs and seamlessly transfers them between specialized departments (Triage, Support, and Billing) while maintaining conversation context.
+Automates patient triage and department routing through real-time voice interactions in medical offices.
 
 <details>
 
@@ -1631,7 +1631,7 @@ uv run triage.py console
 
 ## [Restaurant Voice Agent System](https://github.com/Coral-Protocol/Restuarant-Voice-Agent)
 
-A multi-agent voice conversation system for restaurants that handles reservations, takeaway orders, and checkout through natural voice interactions. Features four specialized AI agents that seamlessly transfer conversations while maintaining context.
+Manages restaurant reservations, orders, and checkout using a multi-agent voice conversation system.
 
 <details>
 
@@ -1711,7 +1711,7 @@ uv run python main.py console
 
 ## [Voice French Agent](https://github.com/Coral-Protocol/Voice-French-Agent)
 
-A real-time multilingual voice assistant that listens to English speech and responds fluently in French. It uses Deepgram for speech-to-text, OpenAI for translation, ElevenLabs for French voice synthesis, and LiveKit for real-time communication with built-in noise cancellation.
+Multilingual voice assistant translating English speech to fluent French responses in real time.
 
 <details>
 
