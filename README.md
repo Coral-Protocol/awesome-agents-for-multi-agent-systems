@@ -1068,7 +1068,7 @@ Required environment variables:
   
 ## Run Agent
 
-Unit test runner agent is supposed to receive local repo path and changed files as inputs, so please also run **Git clone agent** and **Code diffs review agent** to get proper inputs.
+Unit test runner agent is supposed to receive local repo path and changed files as inputs, so please also run [Git clone agent](#git-clone-agent) and [Git clone agent](#code-diffs-review-agent) to get proper inputs.
 
 Run the agent using `uv`:
 ```bash
@@ -1459,7 +1459,7 @@ uv run 5-langchain-RepoUnitTestAdvisorAgent.py
 
 ### Example Input/output
 
-Repo unit test advisor agent is supposed to take target changed file as input, sp please also run **Code diffs review agent** to get proper input.
+Repo unit test advisor agent is supposed to take target changed file as input, sp please also run [Git clone agent](#git-clone-agent) to get proper input.
 
 ```bash
 #Send message to the interface agent:
@@ -1656,7 +1656,7 @@ uv run 6-langchain-RepoDocConsistencyCheckerAgent.py
 
 ### Example Input/output
 
-Repo doc consistency checker agent is supposed to take target changed file as input, sp please also run **Code diffs review agent** to get proper input.
+Repo doc consistency checker agent is supposed to take target changed file as input, sp please also run [Git clone agent](#git-clone-agent) to get proper input.
 
 ```bash
 #Send the message to the interface agent:
