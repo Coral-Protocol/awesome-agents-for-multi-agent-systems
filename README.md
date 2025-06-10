@@ -1,8 +1,10 @@
 # Awesome agents for your multi-agent systems
 
+Welcome, you can mix and match any agent from this list to create a multi-agent system as they are all following [Coral Protocol](https://docs.coralprotocol.org/CoralDoc/Introduction/WhatisCoralProtocol), meaning any agent from any framework or language can collaborate.
 
-Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! Our reef splits into various categories, for various use case:
+[Follow this guide](https://docs.coralprotocol.org/CoralDoc/Guide/awesome-softwaretesting) to build your agentic application today.
 
+Choose agents from these categories!
 [1. General](#general)  
 [2. Research /Scrapping](#research-scrapping)  
 [3. Software](#software)  
