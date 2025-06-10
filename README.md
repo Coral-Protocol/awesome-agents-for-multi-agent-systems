@@ -3,11 +3,11 @@
 
 Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! Our reef splits into various categories, for various use case:
 
-1. General
-2. Research/ Scrapping
-3. Software
-4. Enterprise
-5. Voice Agents
+[1. General](#general)
+[2. Research/ Scrapping](#Research/Scrapping)
+[3. Software]()
+[4. Enterprise]()
+[5. Voice Agents]()
 
 <img width="1300" alt="Coral-AI_Agents_Landscape_v3b" src="https://github.com/user-attachments/assets/2bf43f96-a4e6-41bd-913e-6c8ca44e87af" />
 
