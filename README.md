@@ -5,6 +5,7 @@ Welcome, you can mix and match any agent from this list to create a multi-agent 
 [Follow this guide](https://docs.coralprotocol.org/CoralDoc/Guide/awesome-softwaretesting) to build your agentic application today.
 
 Choose agents from these categories!
+
 [1. General](#general)  
 [2. Research /Scrapping](#research-scrapping)  
 [3. Software](#software)  
