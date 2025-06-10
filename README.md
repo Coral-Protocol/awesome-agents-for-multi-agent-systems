@@ -1109,7 +1109,7 @@ FAILED test/toolkits/test_semantic_scholar_functions.py::TestSemanticScholarTool
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
-* Contact: xinxing@coralprotocol.org
+* Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
 
 </details>
 
