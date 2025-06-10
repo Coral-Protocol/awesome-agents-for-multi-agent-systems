@@ -642,10 +642,11 @@ Navigate to the project directory:
 cd coral-server
 ```
 
-To run crewai agent, please switch to this branch:
+**To run crewai agent, please switch to this branch:**
 ```bash
 git checkout coral-server-crewai
 ```
+If your multi-agents system includes crewai agent, **ALL** agents should be run on this server!
 
 Run the server
 ```bash
