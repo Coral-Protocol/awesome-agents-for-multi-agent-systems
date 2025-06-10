@@ -771,6 +771,8 @@ Code diffs review agent can help you compare the files changed in a specific com
 * Date added: 02/05/25
 * Licence: MIT
 
+## Clone & Install Dependencies
+
 1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
 <details>
 
@@ -832,7 +834,6 @@ uv run python 0-langchain-interface.py
 
 <details>
 
-## Clone & Install Dependencies
 Clone the repository:
 ```bash
 git clone https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent.git
@@ -948,6 +949,8 @@ Unit test runner agent can help you automatically run the relevant pytest test f
 * Date added: 02/05/25
 * Licence: MIT
 
+## Clone & Install Dependencies
+
 1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
 <details>
 
@@ -1009,7 +1012,6 @@ uv run python 0-langchain-interface.py
 
 <details>
 
-## Clone & Install Dependencies
 Clone the repository:
 ```bash
 git clone https://github.com/Coral-Protocol/Coral-UnitTestRunner-Agent.git
@@ -1132,6 +1134,68 @@ Repo understanding agent can help you automatically analyze any GitHub repositor
 * Licence: MIT
 
 ## Clone & Install Dependencies
+
+1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
+<details>
+
+
+This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
+
+
+```bash
+git clone https://github.com/Coral-Protocol/coral-server.git
+```
+
+Navigate to the project directory:
+```bash
+cd coral-server
+```
+Run the server
+```bash
+./gradlew run
+```
+</details>
+
+2. Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+<details>
+
+
+If you are trying to run Open Deep Research agent and require an input, you can either create your agent which communicates on the coral server or run and register the Interface Agent on the Coral Server. In a new terminal clone the repository:
+
+
+```bash
+git clone https://github.com/Coral-Protocol/Coral-Interface-Agent.git
+```
+Navigate to the project directory:
+```bash
+cd Coral-Interface-Agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+Configure API Key
+```bash
+export OPENAI_API_KEY=
+```
+
+Run the agent using `uv`:
+```bash
+uv run python 0-langchain-interface.py
+```
+
+</details>
+
+3. Agent Installation
+
+<details>
+
 Clone the repository:
 ```bash
 git clone https://github.com/Coral-Protocol/Coral-RepoUnderstanding-Agent.git
@@ -1153,6 +1217,8 @@ uv sync
 ```
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+
+</details>
 
 ### Configure Environment Variables
 
@@ -1218,7 +1284,7 @@ Coral Server is a foundation for multi-agent AI systems, enabling agents to comm
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
-* Contact: xinxing@coralprotocol.org
+* Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
 
 </details>
 
@@ -1242,6 +1308,68 @@ Repo unit test advisor agent helps you evaluate whether the unit tests in a give
 * Licence: MIT
 
 ## Clone & Install Dependencies
+
+1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
+<details>
+
+
+This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
+
+
+```bash
+git clone https://github.com/Coral-Protocol/coral-server.git
+```
+
+Navigate to the project directory:
+```bash
+cd coral-server
+```
+Run the server
+```bash
+./gradlew run
+```
+</details>
+
+2. Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+<details>
+
+
+If you are trying to run Open Deep Research agent and require an input, you can either create your agent which communicates on the coral server or run and register the Interface Agent on the Coral Server. In a new terminal clone the repository:
+
+
+```bash
+git clone https://github.com/Coral-Protocol/Coral-Interface-Agent.git
+```
+Navigate to the project directory:
+```bash
+cd Coral-Interface-Agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+Configure API Key
+```bash
+export OPENAI_API_KEY=
+```
+
+Run the agent using `uv`:
+```bash
+uv run python 0-langchain-interface.py
+```
+
+</details>
+
+3. Agent Installation
+
+<details>
+
 Clone the repository:
 ```bash
 git clone https://github.com/Coral-Protocol/Coral-RepoUnitTestAdvisor-Agent.git
@@ -1263,6 +1391,8 @@ uv sync
 ```
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+
+</details>
 
 ### Configure Environment Variables
 
@@ -1338,7 +1468,7 @@ The unit tests provide thorough coverage of the toolkit's API interaction logic,
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
-* Contact: xinxing@coralprotocol.org
+* Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
 
 </details>
 
@@ -1363,6 +1493,68 @@ Repo doc consistency checker agent helps you evaluate whether the documentation 
 * Licence: MIT
 
 ## Clone & Install Dependencies
+
+1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
+<details>
+
+
+This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
+
+
+```bash
+git clone https://github.com/Coral-Protocol/coral-server.git
+```
+
+Navigate to the project directory:
+```bash
+cd coral-server
+```
+Run the server
+```bash
+./gradlew run
+```
+</details>
+
+2. Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+<details>
+
+
+If you are trying to run Open Deep Research agent and require an input, you can either create your agent which communicates on the coral server or run and register the Interface Agent on the Coral Server. In a new terminal clone the repository:
+
+
+```bash
+git clone https://github.com/Coral-Protocol/Coral-Interface-Agent.git
+```
+Navigate to the project directory:
+```bash
+cd Coral-Interface-Agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+Configure API Key
+```bash
+export OPENAI_API_KEY=
+```
+
+Run the agent using `uv`:
+```bash
+uv run python 0-langchain-interface.py
+```
+
+</details>
+
+3. Agent Installation
+
+<details>
+
 Clone the repository:
 ```bash
 git clone https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent.git
@@ -1384,6 +1576,8 @@ uv sync
 ```
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+
+</details>
 
 ### Configure Environment Variables
 
@@ -1445,7 +1639,7 @@ The documentation is currently **outdated** with respect to the new agents added
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
-* Contact: xinxing@coralprotocol.org
+* Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
 
 </details>
 
@@ -1521,6 +1715,68 @@ Make sure no errors occur and Ollama is running at `http://localhost:11434`.
 ---
 
 ## Clone & Install Dependencies
+
+1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
+<details>
+
+
+This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
+
+
+```bash
+git clone https://github.com/Coral-Protocol/coral-server.git
+```
+
+Navigate to the project directory:
+```bash
+cd coral-server
+```
+Run the server
+```bash
+./gradlew run
+```
+</details>
+
+2. Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+<details>
+
+
+If you are trying to run Open Deep Research agent and require an input, you can either create your agent which communicates on the coral server or run and register the Interface Agent on the Coral Server. In a new terminal clone the repository:
+
+
+```bash
+git clone https://github.com/Coral-Protocol/Coral-Interface-Agent.git
+```
+Navigate to the project directory:
+```bash
+cd Coral-Interface-Agent
+```
+
+Install `uv`:
+```bash
+pip install uv
+```
+Install dependencies from `pyproject.toml` using `uv`:
+```bash
+uv sync
+```
+
+Configure API Key
+```bash
+export OPENAI_API_KEY=
+```
+
+Run the agent using `uv`:
+```bash
+uv run python 0-langchain-interface.py
+```
+
+</details>
+
+3. Agent Installation
+
+<details>
+
 Clone the repository:
 ```bash
 git clone https://github.com/Coral-Protocol/Pandas-ai-Agent.git
@@ -1543,6 +1799,8 @@ uv sync
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
+</details>
+
 ## Run Agent
 Run the agent using `uv`:
 ```bash
@@ -1562,7 +1820,7 @@ Answer: The total number of columns in the coral_public_repo_docs.xlsx is 4.
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
-* Contact: xinxing@coralprotocol.org
+* Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
 
 </details>
 
