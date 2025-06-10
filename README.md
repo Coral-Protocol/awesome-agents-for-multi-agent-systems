@@ -4,7 +4,7 @@
 Dive into the vibrant Coral Reef, a thriving ecosystem of AI agents crafted by the Coral Protocol! Our reef splits into various categories, for various use case:
 
 [1. General](#general)  
-[2. Research/Scrapping](#research/scrapping)
+[2. Research/Scrapping](#research)
 [3. Software](#software)  
 [4. Enterprise](#enterprise)  
 [5. Voice Agents](#voice-ai-agents)  
@@ -201,7 +201,7 @@ uv run python main.py
 
 ---
 
-# Research/Scrapping
+# Research
 
 ## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent)
 
