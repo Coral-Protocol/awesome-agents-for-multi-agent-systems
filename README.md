@@ -1067,12 +1067,20 @@ Required environment variables:
   Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
   
 ## Run Agent
+
+Unit test runner agent is supposed to receive local repo path and changed files as inputs, so please also run **Git clone agent** and **Code diffs review agent** to get proper inputs.
+
 Run the agent using `uv`:
 ```bash
 uv run 3-langchain-UnitTestRunnerAgent.py
 ```
 
-### Example output
+### Example Input/output
+
+```bash
+#Send message to the interface agent:
+Please execute the unit test for the '2' PR in repo 'renxinxing123/camel-software-testing'.
+```
 
 ```bash
 Relevant test file: test/toolkits/test_semantic_scholar_functions.py
@@ -1265,7 +1273,12 @@ Run the agent using `uv`:
 uv run 4-langchain-RepoUnderstandingAgent.py
 ```
 
-### Example output
+### Example Input/output
+
+```bash
+#Send message to the interface agent:
+Please give me a comprehensive instruction of the master branch of Coral-Protocol/coral-server.
+```
 
 ```bash
 Here is a comprehensive overview of the master branch of the Coral-Protocol/coral-server repository:
@@ -1444,7 +1457,14 @@ Run the agent using `uv`:
 uv run 5-langchain-RepoUnitTestAdvisorAgent.py
 ```
 
-### Example output
+### Example Input/output
+
+Repo unit test advisor agent is supposed to take target changed file as input, sp please also run **Code diffs review agent** to get proper input.
+
+```bash
+#Send message to the interface agent:
+I created a new branch, `new-semantic-scholar-toolkit`, in the repository `renxinxing123/camel-software-testing` and opened a new pull request (#3). For the changed files, could you please help me check whether the corresponding unit tests fully cover all necessary cases? Are there any additional tests that should be added?
+```
 
 ```bash
 **Coverage Report for `camel/toolkits/new_semantic_scholar_toolkit.py` and its tests**
@@ -1634,7 +1654,14 @@ Run the agent using `uv`:
 uv run 6-langchain-RepoDocConsistencyCheckerAgent.py
 ```
 
-### Example output
+### Example Input/output
+
+Repo doc consistency checker agent is supposed to take target changed file as input, sp please also run **Code diffs review agent** to get proper input.
+
+```bash
+#Send the message to the interface agent:
+I created a new branch 'repo-understanding+unit-test-advice' in the repo 'renxinxing123/software-testing-agents-test' and opened a new PR (#2), could you please help me check if the relevant doc covered all the changes from the PR?
+```
 
 ```bash
 **Documentation Consistency Check for PR #2 (branch: 'repo-understanding+unit-test-advice')**
