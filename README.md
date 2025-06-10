@@ -1656,7 +1656,7 @@ uv run 6-langchain-RepoDocConsistencyCheckerAgent.py
 
 ### Example Input/output
 
-Repo doc consistency checker agent is supposed to take target changed file as input, sp please also run [Git clone agent](#git-clone-agent) to get proper input.
+Repo doc consistency checker agent is supposed to take target changed file as input, sp please also run [Code diffs review agent](https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent) to get proper input.
 
 ```bash
 #Send the message to the interface agent:
