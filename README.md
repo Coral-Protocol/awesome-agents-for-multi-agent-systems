@@ -1068,7 +1068,7 @@ Required environment variables:
   
 ## Run Agent
 
-Unit test runner agent is supposed to receive local repo path and changed files as inputs, so please also run [Git clone agent](#git-clone-agent) and [Git clone agent](#code-diffs-review-agent) to get proper inputs.
+Unit test runner agent is supposed to receive local repo path and changed files as inputs, so please also run [Git clone agent](#git-clone-agent) and [Code diffs review agent](#code-diffs-review-agent) to get proper inputs.
 
 Run the agent using `uv`:
 ```bash
