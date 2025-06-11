@@ -711,15 +711,20 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync
+uv sync --active
 ```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 Copy the client sse.py from utils to mcp package
 ```bash
 cp -r utils/sse.py .venv/lib/python3.10/site-packages/mcp/client/sse.py
 ```
 
-This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+OR Copy this for windows
+```bash
+cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
+```
 
 </details>
 
@@ -827,7 +832,7 @@ pip install uv
 ```
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync
+uv sync 
 ```
 
 Configure API Key
@@ -863,15 +868,20 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync
+uv sync --active
 ```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 Copy the client sse.py from utils to mcp package
 ```bash
 cp -r utils/sse.py .venv/lib/python3.10/site-packages/mcp/client/sse.py
 ```
 
-This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+OR Copy this for windows
+```bash
+cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
+```
 
 </details>
 
@@ -1046,15 +1056,20 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync
+uv sync --active
 ```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 Copy the client sse.py from utils to mcp package
 ```bash
 cp -r utils/sse.py .venv/lib/python3.10/site-packages/mcp/client/sse.py
 ```
 
-This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+OR Copy this for windows
+```bash
+cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
+```
 
 </details>
 
@@ -1243,15 +1258,20 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync
+uv sync --active
 ```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 Copy the client sse.py from utils to mcp package
 ```bash
 cp -r utils/sse.py .venv/lib/python3.10/site-packages/mcp/client/sse.py
 ```
 
-This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+OR Copy this for windows
+```bash
+cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
+```
 
 </details>
 
@@ -1427,15 +1447,20 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync
+uv sync --active
 ```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 Copy the client sse.py from utils to mcp package
 ```bash
 cp -r utils/sse.py .venv/lib/python3.10/site-packages/mcp/client/sse.py
 ```
 
-This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+OR Copy this for windows
+```bash
+cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
+```
 
 </details>
 
@@ -1624,15 +1649,20 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync
+uv sync --active
 ```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 Copy the client sse.py from utils to mcp package
 ```bash
 cp -r utils/sse.py .venv/lib/python3.10/site-packages/mcp/client/sse.py
 ```
 
-This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+OR Copy this for windows
+```bash
+cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
+```
 
 </details>
 
@@ -1858,15 +1888,20 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync
+uv sync --active
 ```
+
+This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
 Copy the client sse.py from utils to mcp package
 ```bash
 cp -r utils/sse.py .venv/lib/python3.10/site-packages/mcp/client/sse.py
 ```
 
-This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+OR Copy this for windows
+```bash
+cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
+```
 
 </details>
 
