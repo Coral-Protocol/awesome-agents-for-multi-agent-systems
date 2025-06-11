@@ -1077,9 +1077,11 @@ Required environment variables:
 Unit test runner agent is supposed to receive local repo path and changed files as inputs, so please also run [Git clone agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent) and [Code diffs review agent](https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent) to get proper inputs.
 
 Run the agent using `uv`:
+
 ```bash
 uv run 3-langchain-UnitTestRunnerAgent.py
 ```
+
 </details>
 
 ### 4. Example
@@ -1277,6 +1279,7 @@ Required environment variables:
 <details>
 
 Run the agent using `uv`:
+
 ```bash
 uv run 4-langchain-RepoUnderstandingAgent.py
 ```
@@ -1460,6 +1463,7 @@ Required environment variables:
 ### 3. Run Agent
 
 <details>
+   
 Run the agent using `uv`:
   
 ```bash
@@ -1874,10 +1878,11 @@ cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
 ### 3.Run Agent
 
 <details>
+   
 Run the agent using `uv`:
   
 ```bash
-uv run 1-langchain-pandasai-agent.py
+uv run 1-langchain-PandasAiAgent.py
 ```
 </details>
 
