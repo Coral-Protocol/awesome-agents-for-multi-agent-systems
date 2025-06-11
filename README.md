@@ -612,11 +612,11 @@ Git clone agent clones a repository, checks out the pull request branch, and tel
 
 <details>
 
-### Responsibility
+## Responsibility
 
 Git clone agent can help you clone a specific repository to your local machine using the git clone command, check out the branch corresponding to a particular pull request, and let you know the local project path—all by simply providing the repository name and PR number.
 
-### Details
+## Details
 
 * Framework: CrewAI
 * Tools used: Git CLI Tool, Coral Server Tools
@@ -624,37 +624,11 @@ Git clone agent can help you clone a specific repository to your local machine u
 * Date added: 02/05/25
 * Licence: MIT
 
-## Clone & Install Dependencies
+## Use the Agent
 
-1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
-<details>
+### 1. Clone & Install Dependencies
 
-
-This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
-
-
-```bash
-git clone https://github.com/Coral-Protocol/coral-server.git
-```
-
-Navigate to the project directory:
-```bash
-cd coral-server
-```
-
-**To run crewai agent, please switch to this branch:**
-```bash
-git checkout coral-server-crewai
-```
-If your multi-agents system includes crewai agent, **ALL** agents should be run on this server!
-
-Run the server
-```bash
-./gradlew run
-```
-</details>
-
-2. Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
 <details>
 
 
@@ -690,7 +664,7 @@ uv run python 0-langchain-interface.py
 
 </details>
 
-3. Agent Installation
+Agent Installation
 
 <details>
    
@@ -704,6 +678,12 @@ Navigate to the project directory:
 cd Coral-GitClone-Agent
 ```
 
+**To run crewai agent, please switch to this branch:**
+```bash
+git checkout coral-server-crewai
+```
+If your multi-agents system includes crewai agent, **ALL** agents should be run on this server!
+
 Install `uv`:
 ```bash
 pip install uv
@@ -711,7 +691,7 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync --active
+uv sync
 ```
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
@@ -729,7 +709,9 @@ cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
 </details>
 
 
-### Configure Environment Variables
+### 2. Configure Environment Variables
+
+<details>
 
 Copy the example file and update it with your credentials:
 
@@ -744,28 +726,45 @@ Required environment variables:
 * **OPENAI_API_KEY:**
   Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
 
-## Run Agent
+</details>
+
+### 3. Run Agent
+
+<details>
+
 Run the agent using `uv`:
+
 ```bash
 uv run 1-crewai-GitCloneAgent.py
 ```
 
-### Example Input/output
+</details>
+
+### 4. Example
+
+<details>
+
+Input:
 
 ```bash
 #Send message to the interface agent:
 Please fetch the code of '2' PR in repo 'renxinxing123/camel-software-testing'.
 ```
 
+Output:
+
 ```bash
 The PR was successfully checked out. Local repository path: /home/xinxing/coraliser-/coral_examples/github-repo-understanding+unit_test_advisor/camel-software-testing
 ```
 
-### Creator details
+</details>
+
+## Creator details
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
 * Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
+
 
 </details>
 
@@ -776,11 +775,11 @@ Code diffs review agent compares changed files for a PR.
 
 <details>
 
-### Responsibility
+## Responsibility
 
 Code diffs review agent can help you compare the files changed in a specific commit when you provide the repository name and PR number.
 
-### Details
+## Details
 
 * Framework: CAMEL-AI
 * Tools used: GitHub MCP Server Tools, Coral Server Tools
@@ -788,30 +787,11 @@ Code diffs review agent can help you compare the files changed in a specific com
 * Date added: 02/05/25
 * Licence: MIT
 
-## Clone & Install Dependencies
+## Use the Agent
 
-1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
-<details>
+### 1. Clone & Install Dependencies
 
-
-This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
-
-
-```bash
-git clone https://github.com/Coral-Protocol/coral-server.git
-```
-
-Navigate to the project directory:
-```bash
-cd coral-server
-```
-Run the server
-```bash
-./gradlew run
-```
-</details>
-
-2. Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
 <details>
 
 
@@ -832,7 +812,7 @@ pip install uv
 ```
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync 
+uv sync
 ```
 
 Configure API Key
@@ -847,7 +827,7 @@ uv run python 0-langchain-interface.py
 
 </details>
 
-3. Agent Installation
+Agent Installation
 
 <details>
 
@@ -868,7 +848,7 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync --active
+uv sync
 ```
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
@@ -885,7 +865,9 @@ cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
 
 </details>
 
-### Configure Environment Variables
+### 2. Configure Environment Variables
+
+<details>
 
 Copy the example file and update it with your credentials:
 
@@ -908,19 +890,31 @@ Required environment variables:
 * **GITHUB_ACCESS_TOKEN:**
   Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
 
+</details>
   
-## Run Agent
+### 3. Run Agent
+
+<details>
+  
 Run the agent using `uv`:
 ```bash
 uv run 2-camel-CodeDiffReviewAgent.py
 ```
 
-### Example Input/output
+</details>
+
+### 4. Example
+
+<details>
+
+Input:
 
 ```bash
 #Send message to the interface agent:
 Please get the code diffs for PR #2 in the repo `renxinxing123/camel-software-testing`
 ```
+
+Output:
 
 ```bash
 Here are the code diffs/changed files for PR #2 in the repo `renxinxing123/camel-software-testing`:
@@ -949,11 +943,14 @@ Here are the code diffs/changed files for PR #2 in the repo `renxinxing123/camel
 - The return value was changed from the response JSON to a hardcoded dictionary: `{ &quot;wrong_key&quot;: &quot;wrong_value&quot; }`.
 ```
 
-### Creator details
+</details>
+
+## Creator details
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
 * Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
+
 
 </details>
 
@@ -964,11 +961,11 @@ Unit test runner agent automatically runs relevant pytest tests based on your co
 
 <details>
 
-### Responsibility
+## Responsibility
 
 Unit test runner agent can help you automatically run the relevant pytest test files based on code changes in your repository, just provide the code diffs of a commit and the local project path, and the agent will execute the appropriate tests and return the results.
 
-### Details
+## Details
 
 * Framework: LangChain
 * Tools used: List Files Tool (Local), List File Tool (Local), CLI Tool, Coral Server Tools
@@ -976,30 +973,11 @@ Unit test runner agent can help you automatically run the relevant pytest test f
 * Date added: 02/05/25
 * Licence: MIT
 
-## Clone & Install Dependencies
+## Use the Agent
 
-1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
-<details>
+### 1.Clone & Install Dependencies
 
-
-This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
-
-
-```bash
-git clone https://github.com/Coral-Protocol/coral-server.git
-```
-
-Navigate to the project directory:
-```bash
-cd coral-server
-```
-Run the server
-```bash
-./gradlew run
-```
-</details>
-
-2. Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
 <details>
 
 
@@ -1035,7 +1013,7 @@ uv run python 0-langchain-interface.py
 
 </details>
 
-3. Agent Installation
+Agent Installation
 
 <details>
 
@@ -1056,7 +1034,7 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync --active
+uv sync
 ```
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
@@ -1073,7 +1051,9 @@ cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
 
 </details>
 
-### Configure Environment Variables
+### 2. Configure Environment Variables
+
+<details>
 
 Copy the example file and update it with your credentials:
 
@@ -1087,22 +1067,33 @@ Required environment variables:
 
 * **OPENAI_API_KEY:**
   Sign up at [platform.openai.com](https://platform.openai.com/), go to “API Keys” under your account, and click “Create new secret key.”
-  
-## Run Agent
 
-Unit test runner agent is supposed to receive local repo path and changed files as inputs, so please also run [Git clone agent](#git-clone-agent) and [Code diffs review agent](#code-diffs-review-agent) to get proper inputs.
+</details>
+
+### 3. Run Agent
+
+<details>
+
+Unit test runner agent is supposed to receive local repo path and changed files as inputs, so please also run [Git clone agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent) and [Code diffs review agent](https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent) to get proper inputs.
 
 Run the agent using `uv`:
 ```bash
 uv run 3-langchain-UnitTestRunnerAgent.py
 ```
+</details>
 
-### Example Input/output
+### 4. Example
+
+<details>
+
+Input:
 
 ```bash
 #Send message to the interface agent:
 Please execute the unit test for the '2' PR in repo 'renxinxing123/camel-software-testing'.
 ```
+
+Output:
 
 ```bash
 Relevant test file: test/toolkits/test_semantic_scholar_functions.py
@@ -1152,7 +1143,9 @@ FAILED test/toolkits/test_semantic_scholar_functions.py::TestSemanticScholarTool
 =================== 2 failed, 9 passed, 5 warnings in 1.49s ====================
 ```
 
-### Creator details
+</details>
+
+## Creator details
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
@@ -1166,11 +1159,11 @@ Repo understanding agent automatically analyzes key files in a specified GitHub 
 
 <details>
 
-### Responsibility 
+## Responsibility 
 
 Repo understanding agent can help you automatically analyze any GitHub repository by comprehensively reading key files (such as README.md, source code, and configuration files) and summarizing the repository’s purpose, main modules, usage instructions, and architecture. Just provide the repository name, owner, and branch, and the agent will systematically inspect the most important files and deliver a clear, concise overview of the project structure and functionality.
 
-### Details
+## Details
 
 * Framework: LangChain
 * Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
@@ -1258,7 +1251,7 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync --active
+uv sync
 ```
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
@@ -1346,6 +1339,7 @@ Coral Server is a foundation for multi-agent AI systems, enabling agents to comm
 * Affiliation: Coral Protocol
 * Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
 
+
 </details>
 
 
@@ -1355,11 +1349,11 @@ Repo unit test advisor agent evaluates if unit tests in a specified repo and bra
 
 <details>
 
-### Responsibility
+## Responsibility
 
 Repo unit test advisor agent helps you evaluate whether the unit tests in a given GitHub repository and branch sufficiently cover specific target files, and advises if additional tests are needed. Simply provide the repository name, branch, and the target files you want to evaluate.
 
-### Details
+## Details
 
 * Framework: LangChain
 * Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
@@ -1367,30 +1361,11 @@ Repo unit test advisor agent helps you evaluate whether the unit tests in a give
 * Date added: 02/05/25
 * Licence: MIT
 
-## Clone & Install Dependencies
+## Use the Agent
 
-1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
-<details>
+### 1. Clone & Install Dependencies
 
-
-This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
-
-
-```bash
-git clone https://github.com/Coral-Protocol/coral-server.git
-```
-
-Navigate to the project directory:
-```bash
-cd coral-server
-```
-Run the server
-```bash
-./gradlew run
-```
-</details>
-
-2. Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
 <details>
 
 
@@ -1426,7 +1401,7 @@ uv run python 0-langchain-interface.py
 
 </details>
 
-3. Agent Installation
+Agent Installation
 
 <details>
 
@@ -1447,7 +1422,7 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync --active
+uv sync
 ```
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
@@ -1464,7 +1439,9 @@ cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
 
 </details>
 
-### Configure Environment Variables
+### 2. Configure Environment Variables
+
+<details>
 
 Copy the example file and update it with your credentials:
 
@@ -1482,22 +1459,33 @@ Required environment variables:
 
 * **GITHUB_ACCESS_TOKEN:**
   Log in to [github.com](https://github.com/), go to **Settings → Developer settings → Personal access tokens**, then “Generate new token,” select the required scopes, and copy the generated token.
+
+</details>
   
-## Run Agent
+### 3. Run Agent
+
+<details>
 Run the agent using `uv`:
+  
 ```bash
 uv run 5-langchain-RepoUnitTestAdvisorAgent.py
 ```
+</details>
 
-### Example Input/output
+### 4. Example
 
-Repo unit test advisor agent is supposed to take target changed file as input, sp please also run [Code diffs review agent](#code-diffs-review-agent) to get proper input.
+<details>
+
+Repo unit test advisor agent is supposed to take target changed file as input, sp please also run [Code diffs review agent](https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent) to get proper input.
+
+Input:
 
 ```bash
 #Send message to the interface agent:
 I created a new branch, `new-semantic-scholar-toolkit`, in the repository `renxinxing123/camel-software-testing` and opened a new pull request (#3). For the changed files, could you please help me check whether the corresponding unit tests fully cover all necessary cases? Are there any additional tests that should be added?
 ```
 
+Output:
 ```bash
 **Coverage Report for `camel/toolkits/new_semantic_scholar_toolkit.py` and its tests**
 
@@ -1541,11 +1529,14 @@ The corresponding test file, `test/toolkits/new_test_semantic_scholar_functions.
 The unit tests provide thorough coverage of the toolkit's API interaction logic, error handling, and function registration. Only minor improvements are suggested for file output and input validation edge cases. No additional tests are strictly required for the renaming, as the logic and coverage remain unchanged.
 ```
 
-### Creator details
+</details>
+
+## Creator details
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
 * Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
+
 
 </details>
 
@@ -1557,11 +1548,11 @@ Repo doc consistency checker agent checks if documentation in a specified repo a
 
 <details>
 
-### Responsibility
+## Responsibility
 
 Repo doc consistency checker agent helps you evaluate whether the documentation in a specified GitHub repository and branch is up-to-date with respect to changes in a given list of files. Just provide the repository name, branch, and the list of changed files.
 
-### Details
+## Details
 
 * Framework: LangChain
 * Tools used: PyGithub List File Tool, PyGithub Read File Tool, Coral Server Tools
@@ -1649,7 +1640,7 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync --active
+uv sync
 ```
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
@@ -1693,7 +1684,7 @@ uv run 6-langchain-RepoDocConsistencyCheckerAgent.py
 
 ### Example Input/output
 
-Repo doc consistency checker agent is supposed to take target changed file as input, sp please also run [Code diffs review agent](#code-diffs-review-agent) to get proper input.
+Repo doc consistency checker agent is supposed to take target changed file as input, sp please also run [Code diffs review agent](https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent) to get proper input.
 
 ```bash
 #Send the message to the interface agent:
@@ -1735,6 +1726,7 @@ The documentation is currently **outdated** with respect to the new agents added
 * Affiliation: Coral Protocol
 * Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
 
+
 </details>
 
 ---
@@ -1747,11 +1739,11 @@ PandasAI Agent lets you ask natural language questions about your Excel or CSV f
 
 <details>
 
-### Responsibility
+## Responsibility
 
 **PandasAI Agent** helps you answer data-related questions about Excel or CSV files using a local LLM (e.g., Llama 3.1/Qwen3) via PandasAI. Simply provide the file path and your natural language question—the agent will query the data and return the answer.
 
-### Details
+## Details
 
 * Framework: LangChain
 * Tools used: PandasAI Tools, Coral MCP Tools
@@ -1759,7 +1751,11 @@ PandasAI Agent lets you ask natural language questions about your Excel or CSV f
 * Date added: 04/06/25
 * Licence: MIT
 
-### Install and Run Ollama (for Local LLM)
+## Use the Agent
+
+### 1.Install and Run Ollama (for Local LLM)
+
+<details>
 
 PandasAI Agent uses Ollama to run local LLM Qwen3. Please make sure you have Ollama installed and the desired model downloaded before running the agent.
 
@@ -1806,32 +1802,11 @@ ollama list
 
 Make sure no errors occur and Ollama is running at `http://localhost:11434`.
 
----
-
-## Clone & Install Dependencies
-
-1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
-<details>
-
-
-This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
-
-
-```bash
-git clone https://github.com/Coral-Protocol/coral-server.git
-```
-
-Navigate to the project directory:
-```bash
-cd coral-server
-```
-Run the server
-```bash
-./gradlew run
-```
 </details>
 
-2. Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
+### 2.Clone & Install Dependencies
+
+Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
 <details>
 
 
@@ -1867,7 +1842,7 @@ uv run python 0-langchain-interface.py
 
 </details>
 
-3. Agent Installation
+Agent Installation
 
 <details>
 
@@ -1888,7 +1863,7 @@ pip install uv
 
 Install dependencies from `pyproject.toml` using `uv`:
 ```bash
-uv sync --active
+uv sync
 ```
 
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
@@ -1905,26 +1880,40 @@ cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
 
 </details>
 
-## Run Agent
+### 3.Run Agent
+
+<details>
 Run the agent using `uv`:
+  
 ```bash
 uv run 1-langchain-pandasai-agent.py
 ```
+</details>
 
-### Example output
+### 4.Example 
+
+<details>
+Input:
 
 ```bash
 Question: What are the total number of columns in the coral_public_repo_docs.xlsx
+```
+Output:
+
+```bash
 Answer: The total number of columns in the coral_public_repo_docs.xlsx is 4.
 ```
 
 **🎬 [Watch Video Demo](https://youtu.be/aq6du6XRzGE)**
 
-### Creator details
+</details>
+
+## Creator details
 
 * Name: Xinxing
 * Affiliation: Coral Protocol
 * Contact: [Discord](https://discord.com/invite/Xjm892dtt3)
+
 
 </details>
 
