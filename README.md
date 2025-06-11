@@ -1545,8 +1545,6 @@ Repo doc consistency checker agent checks if documentation in a specified repo a
 
 ## Responsibility
 
-## Responsibility
-
 Repo doc consistency checker agent helps you evaluate whether the documentation in a specified GitHub repository and branch is up-to-date with respect to changes in a given list of files. Just provide the repository name, branch, and the list of changed files.
 
 ## Details
