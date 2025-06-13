@@ -1111,7 +1111,6 @@ The current unit tests provide strong coverage of the main functionality and err
 
 </details>
 
----
 
 ## [Repo doc consistency checker agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
 
