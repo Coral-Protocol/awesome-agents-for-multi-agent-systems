@@ -226,115 +226,83 @@ The Open Deep Research agent is an open-source research assistant that automates
 - **Reference**: [Open Deep Research Repo](https://github.com/langchain-ai/open_deep_research)
 - **License**: MIT 
 
-## Clone & Install Dependencies
 
-1. Run [Coral Server](https://github.com/Coral-Protocol/coral-server)
-<details>
+## Use the Agent  
 
-
-This agent runs on Coral Server, follow the instrcutions below to run the server. In a new terminal clone the repository:
+### 1. Clone & Install Dependencies
 
 
-```bash
-git clone https://github.com/Coral-Protocol/coral-server.git
-```
+<details>  
 
-Navigate to the project directory:
-```bash
-cd coral-server
-```
-Run the server
-```bash
-./gradlew run
-```
-</details>
-
-2. Run [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)
-<details>
-
-
-If you are trying to run Open Deep Research agent and require an input, you can either create your agent which communicates on the coral server or run and register the Interface Agent on the Coral Server. In a new terminal clone the repository:
-
+Ensure that the [Coral Server](https://github.com/Coral-Protocol/coral-server) is running on your system. If you are trying to run Open Deep Research agent and require an input, you can either create your agent which communicates on the coral server or run and register the [Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent) on the Coral Server.  
 
 ```bash
-git clone https://github.com/Coral-Protocol/Coral-Interface-Agent.git
-```
-Navigate to the project directory:
-```bash
-cd Coral-Interface-Agent
-```
-
-Install `uv`:
-```bash
-pip install uv
-```
-Install dependencies from `pyproject.toml` using `uv`:
-```bash
-uv sync
-```
-
-Configure API Key
-```bash
-export OPENAI_API_KEY=
-```
-
-Run the agent using `uv`:
-```bash
-uv run python 0-langchain-interface.py
-```
-
-</details>
-
-
-3. Agent Installation
-
-<details>
-
-In a new terminal clone the repository:
-```bash
+# In a new terminal clone the repository:
 git clone https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent.git
-```
 
-Navigate to the project directory:
-```bash
+# Navigate to the project directory:
 cd Coral-OpenDeepResearch-Agent
-```
 
-Install `uv`:
-```bash
+# Install `uv`:
 pip install uv
-```
 
-Install dependencies from `pyproject.toml` using `uv`:
-```bash
+# Install dependencies from `pyproject.toml` using `uv`:
 uv sync
-```
 
-This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
+# Copy the client sse.py from utils to mcp package (Linux/ Mac)
+cp -r utils/sse.py .venv/lib/python3.13/site-packages/mcp/client/sse.py
+
+# OR Copy this for Windows
+cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
+
+```
 
 </details>
+ 
 
-## Configure Environment Variables
+### 2. Configure Environment Variables
+
+<details>
+ 
 Get the API Key:
-[Linkup](https://app.linkup.so/api-keys)
+[Linkup](https://app.linkup.so/api-keys) || 
 [OpenAI](https://platform.openai.com/api-keys)
 
 
-Create .env file in project root
 ```bash
+# Create .env file in project root
 cp -r .env_sample .env
 ```
+Check if the .env file has correct URL for Coral Server and adjust the parameters accordingly.
 
-## Run Agent
-Run the agent using `uv`:
+</details>
+
+
+### 3. Run Agent
+
+<details>
+
 ```bash
+# Run the agent using `uv`:
 uv run python langchain_open_deep_research.py
 ```
+</details>
 
-## Example Output
-```
+
+### 4. Example
+
+<details>
+
+
+```bash
+# Input:
+Write me a report on Model Context Protocol.
+
+#Output:
 The research report will be displayed directly in the console output when you run the agent.
 ```
+</details>
+
 
 ## Creator Details
 - **Name**: Suman Deb
