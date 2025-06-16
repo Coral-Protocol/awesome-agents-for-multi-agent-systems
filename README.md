@@ -241,13 +241,6 @@ pip install uv
 
 # Install dependencies from `pyproject.toml` using `uv`:
 uv sync
-
-# Copy the client sse.py from utils to mcp package (Linux/ Mac)
-cp -r utils/sse.py .venv/lib/python3.13/site-packages/mcp/client/sse.py
-
-# OR Copy this for Windows
-cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
-
 ```
 
 </details>
@@ -342,13 +335,6 @@ pip install uv
 
 # Install dependencies from `pyproject.toml` using `uv`:
 uv sync
-
-# Copy the client sse.py from utils to mcp package (Linux/ Mac)
-cp -r utils/sse.py .venv/lib/python3.13/site-packages/mcp/client/sse.py
-
-# OR Copy this for Windows
-cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
-
 ```
 
 </details>
@@ -445,13 +431,6 @@ pip install uv
 
 # Install dependencies from `pyproject.toml` using `uv`:
 uv sync
-
-# Copy the client sse.py from utils to mcp package (Linux/ Mac)
-cp -r utils/sse.py .venv/lib/python3.13/site-packages/mcp/client/sse.py
-
-# OR Copy this for Windows
-cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
-
 ```
 
 </details>
