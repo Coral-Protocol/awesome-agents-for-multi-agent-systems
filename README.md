@@ -612,6 +612,12 @@ pip install uv
 
 # Install dependencies from `pyproject.toml` using `uv`:
 uv sync
+
+# Copy the client sse.py from utils to mcp package (Linux/Mac):
+cp -r utils/sse.py .venv/lib/python3.10/site-packages/mcp/client/sse.py
+
+# OR for Windows:
+cp -r utils\sse.py .venv\Lib\site-packages\mcp\client\sse.py
 ```
 This command will read the `pyproject.toml` file and install all specified dependencies in a virtual environment managed by `uv`.
 
