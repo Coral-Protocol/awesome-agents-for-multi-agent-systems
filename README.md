@@ -1571,7 +1571,7 @@ uv run triage.py console
 - **Contact**: [Discord](https://discord.com/invite/Xjm892dtt3)
 </details>
 
-## [Restaurant Voice Agent System](https://github.com/Coral-Protocol/Restuarant-Voice-Agent)
+## [Restaurant Voice Agent System](https://github.com/Coral-Protocol/Restaurant-Voice-Agent)
 
 Manages restaurant reservations, orders, and checkout using a multi-agent voice conversation system.
 
