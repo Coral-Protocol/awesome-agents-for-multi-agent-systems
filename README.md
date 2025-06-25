@@ -6,12 +6,13 @@ Welcome, you can mix and match any agent from this list to create a multi-agent 
 
 Choose agents from these categories!
 
-[1. General](#general)  
-[2. Research /Scrapping](#research-scrapping)  
-[3. Software](#software)  
-[4. Enterprise](#enterprise)  
-[5. Voice AI Agents](#voice-ai-agents)
-[6. Consumer](#consumer)  
+1. [General](#general)
+2. [Research /Scrapping](#research-scrapping)
+3. [Software](#software)
+4. [Enterprise](#enterprise)
+5. [Voice AI Agents](#voice-ai-agents)
+6. [Consumer](#consumer)
+ 
 
 <img width="1300" alt="Coral-AI_Agents_Landscape_v3b" src="https://github.com/user-attachments/assets/2bf43f96-a4e6-41bd-913e-6c8ca44e87af" />
 
