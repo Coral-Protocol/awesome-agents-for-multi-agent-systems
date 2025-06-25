@@ -109,7 +109,7 @@ Multilingual voice assistant translating English speech to fluent French respons
 
 ---
 
-# Enterprise
+# consumer
 
 ## [Monzo Agent](https://github.com/Coral-Protocol/Coral-Monzo-Agent)
 
