@@ -10,7 +10,8 @@ Choose agents from these categories!
 [2. Research /Scrapping](#research-scrapping)  
 [3. Software](#software)  
 [4. Enterprise](#enterprise)  
-[5. Voice AI Agents](#voice-ai-agents)  
+[5. Voice AI Agents](#voice-ai-agents)
+[6. Consumer](#consumer)  
 
 <img width="1300" alt="Coral-AI_Agents_Landscape_v3b" src="https://github.com/user-attachments/assets/2bf43f96-a4e6-41bd-913e-6c8ca44e87af" />
 
@@ -105,6 +106,14 @@ Manages restaurant reservations, orders, and checkout using a multi-agent voice 
 
 Multilingual voice assistant translating English speech to fluent French responses in real time.
 
+
+---
+
+# Enterprise
+
+## [Monzo Agent](https://github.com/Coral-Protocol/Coral-Monzo-Agent)
+
+The Monzo Agent allows you to securely access and analyze your Monzo banking data using a local LLM, ensuring privacy and security.
 
 ---
 
