@@ -83,9 +83,9 @@ Repo doc consistency checker agent checks if documentation in a specified repo a
 
 # Enterprise
 
-## [PandasAI Agent](https://github.com/Coral-Protocol/Pandas-ai-Agent)
+## [Pandas Agent](https://github.com/Coral-Protocol/Coral-Pandas-Agent)
 
-PandasAI Agent lets you ask natural language questions about your Excel or CSV files using a local LLM (e.g., Llama 3.1/Qwen3), just provide the file path and your query to get instant answers.
+Coral Pandas Agent interacts with other agents and performs data analysis on pandas DataFrames to fulfill user requests.
 
 ---
 
