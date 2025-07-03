@@ -87,6 +87,11 @@ Repo doc consistency checker agent checks if documentation in a specified repo a
 
 Coral Pandas Agent interacts with other agents and performs data analysis on pandas DataFrames to fulfill user requests.
 
+## [Monzo Agent](https://github.com/Coral-Protocol/Coral-Monzo-Agent)
+
+The Monzo Agent allows you to securely access and analyze your Monzo banking data using a local LLM, ensuring privacy and security.
+
+
 ---
 
 # Voice AI Agents
@@ -106,15 +111,6 @@ Manages restaurant reservations, orders, and checkout using a multi-agent voice 
 ## [Voice French Agent](https://github.com/Coral-Protocol/Voice-French-Agent)
 
 Multilingual voice assistant translating English speech to fluent French responses in real time.
-
-
----
-
-# Consumer
-
-## [Monzo Agent](https://github.com/Coral-Protocol/Coral-Monzo-Agent)
-
-The Monzo Agent allows you to securely access and analyze your Monzo banking data using a local LLM, ensuring privacy and security.
 
 ---
 
