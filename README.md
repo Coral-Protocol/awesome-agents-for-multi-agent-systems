@@ -32,21 +32,21 @@ A communication agent that waits for messages from other agents and responds wit
 
 # Research /Scrapping
 
-## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/open-deep-research-coral-agent)
+## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent)
 
 The Open Deep Research agent is an open-source AI assistant that automates in-depth research and report generation via multi-agent workflows, supporting web search, structured reporting, human feedback, and API/LLM integration.
 
 
-## [Firecrawl Coral Agent](https://github.com/Coral-Protocol/firecrawl-coral-agent.git)
+## [Firecrawl Coral Agent](https://github.com/Coral-Protocol/Coral-FirecrawlMCP-Agent)
 The Firecrawl Coral Agent is an open-source agent designed for comprehensive web scraping, crawling, and data extraction tasks.
 
 ---
 
 # Software
 
-## [Github Coral Agent](https://github.com/Coral-Protocol/github-coral-agent.git)
+## [Github Coral Agent](https://github.com/Coral-Protocol/Coral-GithubMCP-Agent)
 
-The Github Coral Agent is an open-source agent designed for managing GitHub repositories.
+The Github Coral Agent is an open-source agent designed for managing GitHub repositories using the Github MCP.
 
 
 ## [Git clone agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent)
