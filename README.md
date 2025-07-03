@@ -23,11 +23,6 @@ Choose agents from these categories!
 
 User Interaction Agent is the main interface for receiving user instructions, coordinating multi-agent tasks, and logging conversations via the terminal.
 
-
-## [Human-in-the-Loop Agent](https://github.com/Coral-Protocol/Human-In-Loop-Agent)
-
-A communication agent that waits for messages from other agents and responds with requested fun content. Built with human-in-the-loop confirmation using [Agno framework](https://docs.agno.com/introduction).
-
 ---
 
 # Research /Scrapping
@@ -95,19 +90,19 @@ The Monzo Agent allows you to securely access and analyze your Monzo banking dat
 
 # Voice AI Agents
 
-## [Voice Interface Agent](https://github.com/Coral-Protocol/Voice-Interface-Agent)
+## [Voice Interface Agent](https://github.com/Coral-Protocol/Coral-VoiceInterface-Agent)
 
 Real-time voice interface coordinating communication between users and specialized agents via LiveKit and Coral Protocol.
 
-## [Medical Office Triage Voice Agent](https://github.com/Coral-Protocol/Medical-Office-Triage-Voice-Agent)
+## [Medical Office Triage Voice Agent](https://github.com/Coral-Protocol/Coral-MedicalOfficeTriage-Agent)
 
 Automates patient triage and department routing through real-time voice interactions in medical offices.
 
-## [Restaurant Voice Agent System](https://github.com/Coral-Protocol/Restaurant-Voice-Agent)
+## [Restaurant Voice Agent System](https://github.com/Coral-Protocol/Coral-RestaurantVoice-Agent)
 
 Manages restaurant reservations, orders, and checkout using a multi-agent voice conversation system.
 
-## [Voice French Agent](https://github.com/Coral-Protocol/Voice-French-Agent)
+## [Voice French Agent](https://github.com/Coral-Protocol/Coral-VoiceFrench-Agent)
 
 Multilingual voice assistant translating English speech to fluent French responses in real time.
 
