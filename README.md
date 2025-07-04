@@ -85,6 +85,10 @@ Coral Pandas Agent interacts with other agents and performs data analysis on pan
 
 The Monzo Agent allows you to securely access and analyze your Monzo banking data using a local LLM, ensuring privacy and security.
 
+## [ACI DEV Agent](https://github.com/Coral-Protocol/Coral-AciDevMCP-Agent)
+
+ACI.dev is the open-source infrastructure layer for AI-agent tool-use and VibeOps. It gives AI agents intent-aware access to 600+ tools with multi-tenant auth, granular permissions, and dynamic tool discovery—exposed as either direct function calls or through a Unified Model-Context-Protocol (MCP) server.
+
 
 ---
 
