@@ -89,7 +89,7 @@ The Monzo Agent allows you to securely access and analyze your Monzo banking dat
 
 ACI.dev is the open-source infrastructure layer for AI-agent tool-use and VibeOps. It gives AI agents intent-aware access to 600+ tools with multi-tenant auth, granular permissions, and dynamic tool discovery—exposed as either direct function calls or through a Unified Model-Context-Protocol (MCP) server.
 
-[BlackboxAI Agent](https://github.com/Coral-Protocol/Coral-BlackboxAI-Agent)
+## [BlackboxAI Agent](https://github.com/Coral-Protocol/Coral-BlackboxAI-Agent)
 BLACKBOX AI is a coding-focused AI platform that delivers precise, context-aware support to streamline software development and tackle complex programming challenges efficiently.
 
 ---
