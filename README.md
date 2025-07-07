@@ -21,7 +21,7 @@ Choose agents from these categories!
 
 User Interaction Agent is the main interface for receiving user instructions, coordinating multi-agent tasks, and logging conversations via the terminal.
 
-## [ACI DEV Agent](https://github.com/Coral-Protocol/Coral-AciDevMCP-Agent)
+## [ACI DEV MCP Agent](https://github.com/Coral-Protocol/Coral-AciDevMCP-Agent)
 
 ACI.dev is the open-source infrastructure layer for AI-agent tool-use and VibeOps. It gives AI agents intent-aware access to 600+ tools with multi-tenant auth, granular permissions, and dynamic tool discovery—exposed as either direct function calls or through a Unified Model-Context-Protocol (MCP) server.
 
