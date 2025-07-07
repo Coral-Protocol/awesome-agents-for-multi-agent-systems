@@ -78,6 +78,8 @@ Repo doc consistency checker agent checks if documentation in a specified repo a
 ## [BlackboxAI Agent](https://github.com/Coral-Protocol/Coral-BlackboxAI-Agent)
 BLACKBOX AI is a coding-focused AI platform that delivers precise, context-aware support to streamline software development and tackle complex programming challenges efficiently.
 
+## [JFrog MCP Agent](https://github.com/Coral-Protocol/Coral-JFrogMCP-Agent)
+JFrog MCP Agent is a specialized agent for managing and interacting with JFrog Artifactory repositories, providing comprehensive repository management, package information retrieval, and vulnerability assessment capabilities.
 
 ---
 
