@@ -12,9 +12,7 @@ Choose agents from these categories!
 4. [Enterprise](#enterprise)
 5. [Voice AI Agents](#voice-ai-agents)
  
-
-<img width="1300" alt="Coral-AI_Agents_Landscape_v3b" src="https://github.com/user-attachments/assets/2bf43f96-a4e6-41bd-913e-6c8ca44e87af" />
-
+![Awesome List](/images/Coral-AI_Agents.png)
 ---
 
 # General
