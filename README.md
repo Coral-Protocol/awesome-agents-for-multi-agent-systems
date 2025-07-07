@@ -71,7 +71,7 @@ Repo understanding agent automatically analyzes key files in a specified GitHub 
 Repo unit test advisor agent evaluates if unit tests in a specified repo and branch sufficiently cover target files, and suggests if more tests are needed.
 
 
-## [Repo Doc Consistency hecker agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
+## [Repo Doc Consistency Checker agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
 
 Repo doc consistency checker agent checks if documentation in a specified repo and branch is up-to-date.
 
