@@ -21,55 +21,63 @@ Choose agents from these categories!
 
 User Interaction Agent is the main interface for receiving user instructions, coordinating multi-agent tasks, and logging conversations via the terminal.
 
+## [ACI DEV Agent](https://github.com/Coral-Protocol/Coral-AciDevMCP-Agent)
+
+ACI.dev is the open-source infrastructure layer for AI-agent tool-use and VibeOps. It gives AI agents intent-aware access to 600+ tools with multi-tenant auth, granular permissions, and dynamic tool discovery—exposed as either direct function calls or through a Unified Model-Context-Protocol (MCP) server.
+
 ---
 
 # Research /Scrapping
 
-## [Open Deep Research Coral Agent](https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent)
+## [Open Deep Research Agent](https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent)
 
 The Open Deep Research agent is an open-source AI assistant that automates in-depth research and report generation via multi-agent workflows, supporting web search, structured reporting, human feedback, and API/LLM integration.
 
 
-## [Firecrawl Coral Agent](https://github.com/Coral-Protocol/Coral-FirecrawlMCP-Agent)
+## [Firecrawl MCP Agent](https://github.com/Coral-Protocol/Coral-FirecrawlMCP-Agent)
 The Firecrawl Coral Agent is an open-source agent designed for comprehensive web scraping, crawling, and data extraction tasks.
 
 ---
 
 # Software
 
-## [Github Coral Agent](https://github.com/Coral-Protocol/Coral-GithubMCP-Agent)
+## [Github MCP Agent](https://github.com/Coral-Protocol/Coral-GithubMCP-Agent)
 
 The Github Coral Agent is an open-source agent designed for managing GitHub repositories using the Github MCP.
 
 
-## [Git clone agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent)
+## [Git Clone Agent](https://github.com/Coral-Protocol/Coral-GitClone-Agent)
 
 Git clone agent clones a repository, checks out the pull request branch, and tells you the local path
 
 
-## [Code diffs review agent](https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent)
+## [Code Diffs Review Agent](https://github.com/Coral-Protocol/Coral-CodeDiffReview-Agent)
 
 Code diffs review agent compares changed files for a PR.
 
 
-## [Unit test runner agent](https://github.com/Coral-Protocol/Coral-UnitTestRunner-Agent)
+## [Unit Test Runner Agent](https://github.com/Coral-Protocol/Coral-UnitTestRunner-Agent)
 
 Unit test runner agent automatically runs relevant pytest tests based on your code changes and return the results.
 
 
-## [Repo understanding agent](https://github.com/Coral-Protocol/Coral-RepoUnderstanding-Agent)
+## [Repo Understanding Agent](https://github.com/Coral-Protocol/Coral-RepoUnderstanding-Agent)
 
 Repo understanding agent automatically analyzes key files in a specified GitHub repository and provides a concise summary of the project’s purpose, main modules, usage, and overall structure.
 
 
-## [Repo unit test advisor agent](https://github.com/Coral-Protocol/Coral-RepoUnitTestAdvisor-Agent)
+## [Repo Unit Test Advisor Agent](https://github.com/Coral-Protocol/Coral-RepoUnitTestAdvisor-Agent)
 
 Repo unit test advisor agent evaluates if unit tests in a specified repo and branch sufficiently cover target files, and suggests if more tests are needed.
 
 
-## [Repo doc consistency checker agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
+## [Repo Doc Consistency hecker agent](https://github.com/Coral-Protocol/Coral-RepoDocConsistencyChecker-Agent)
 
 Repo doc consistency checker agent checks if documentation in a specified repo and branch is up-to-date.
+
+## [BlackboxAI Agent](https://github.com/Coral-Protocol/Coral-BlackboxAI-Agent)
+BLACKBOX AI is a coding-focused AI platform that delivers precise, context-aware support to streamline software development and tackle complex programming challenges efficiently.
+
 
 ---
 
@@ -82,13 +90,6 @@ Coral Pandas Agent interacts with other agents and performs data analysis on pan
 ## [Monzo Agent](https://github.com/Coral-Protocol/Coral-Monzo-Agent)
 
 The Monzo Agent allows you to securely access and analyze your Monzo banking data using a local LLM, ensuring privacy and security.
-
-## [ACI DEV Agent](https://github.com/Coral-Protocol/Coral-AciDevMCP-Agent)
-
-ACI.dev is the open-source infrastructure layer for AI-agent tool-use and VibeOps. It gives AI agents intent-aware access to 600+ tools with multi-tenant auth, granular permissions, and dynamic tool discovery—exposed as either direct function calls or through a Unified Model-Context-Protocol (MCP) server.
-
-## [BlackboxAI Agent](https://github.com/Coral-Protocol/Coral-BlackboxAI-Agent)
-BLACKBOX AI is a coding-focused AI platform that delivers precise, context-aware support to streamline software development and tackle complex programming challenges efficiently.
 
 ---
 
