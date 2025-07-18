@@ -10,7 +10,7 @@ This guide demonstrates a multi-agent system for spreadsheet analysis, Gmail int
 
 - Agents: [Voice Interface Agent](https://github.com/Coral-Protocol/Coral-VoiceInterface-Agent) | [Pandas Agent](https://github.com/Coral-Protocol/Coral-Pandas-Agent) | [ACIdev agent](https://github.com/Coral-Protocol/Coral-AciDevMCP-Agent/tree/pydantic-ai)
 
-- [Demo video](https://drive.google.com/file/d/1JlGDdraESduyIm44QvnJT2aiUzaRoi02/view?usp=sharing)
+- [Demo video](https://drive.google.com/file/d/1-VG3Kgld_AdSJx4suWBZ-x2K6QdGaCot/view)
 
 ### Outline
 
