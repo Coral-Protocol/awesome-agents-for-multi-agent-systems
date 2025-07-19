@@ -2,7 +2,7 @@
 
 This guide demonstrates a multi-agent software testing system built using Coral Protocol, supporting agents from three different frameworks [LangChain](https://github.com/langchain-ai/langchain), [Camel](https://github.com/camel-ai/camel), and [CrewAI](https://github.com/crewAIInc/crewAI). The system enables automatic understanding of codebases, pull request testing, test coverage analysis, and documentation consistency checking in any compatible GitHub repository.
 
-![multiagent-image](https://github.com/Coral-Protocol/Software-Testing-Multiagents/blob/main/images/Software_Testing_Multiagents.png)
+![multiagent-image](https://github.com/Coral-Protocol/awesome-agents-for-multi-agent-systems/blob/main/images/Software_Testing_Multiagents.png)
 
 ### Introduction
 

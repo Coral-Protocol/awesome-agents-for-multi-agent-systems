@@ -2,6 +2,8 @@
 
 This guide demonstrates a multi-agent system for spreadsheet analysis, Gmail integration, and voice command processing, built using Coral Protocol. The system supports multiagents running on multiple frameworks- [LiveKit](https://github.com/livekit/livekit), [LangChain](https://github.com/langchain-ai/langchain) and [PydanticAI](https://github.com/pydantic/pydantic-ai). It enables automated spreadsheet data processing, email drafting and sending via Gmail, and voice command recognition for hands-free operation.
 
+![multiagent-image](https://github.com/Coral-Protocol/awesome-agents-for-multi-agent-systems/blob/main/images/Multi-agent_System-Gmail_Integration_with_Voice_Command_Support.png)
+
 ### Introduction
 
 - The system consists of three specialized agents that collaborate to process spreadsheet data, interact with Gmail, and handle voice commands. The [Voice Interface Agent](https://github.com/Coral-Protocol/Coral-VoiceInterface-Agent), built with LiveKit, serves as the central coordinator, interpreting user instructions (text or voice), managing the workflow, and orchestrating the other agents. The [Pandas Agent](https://github.com/Coral-Protocol/Coral-Pandas-Agent), powered by LangChain, handles spreadsheet data processing, including loading, analyzing, and generating reports from CSV or Excel files with validated data structures. The [ACIdev agent](https://github.com/Coral-Protocol/Coral-AciDevMCP-Agent/tree/pydantic-ai), utilizing PydaticAI, processes voice commands, converts them to text, and triggers appropriate actions, such as generating emails or querying spreadsheet data. The system integrates with Gmail APIs to draft and send emails based on analysis results or user commands.
