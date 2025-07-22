@@ -93,6 +93,10 @@ Coral Pandas Agent interacts with other agents and performs data analysis on pan
 
 The Monzo Agent allows you to securely access and analyze your Monzo banking data using a local LLM, ensuring privacy and security.
 
+## [PowerPoint Agent](https://github.com/Coral-Protocol/Coral-PowerPointMCP-Agent)
+
+PowerPoint agent capable of creating comprehensive presentations with professional design, intelligent content organization, and advanced PowerPoint manipulation features using MCP tools.
+
 ---
 
 # Voice AI Agents
