@@ -2,8 +2,6 @@
 
 This guide demonstrates a multi-agent system for automated design creation with deep research capabilities, built using Coral Protocol. The system supports multiagents running on multiple frameworks - [LangChain](https://github.com/langchain-ai/langchain) and other modern AI frameworks. It enables automated design creation in Canva, deep research integration, and intelligent interface coordination for seamless operation.
 
-![multiagent-image](https://github.com/Coral-Protocol/awesome-agents-for-multi-agent-systems/blob/main/images/Canva-Design-Automation-with-Deep-Research.png)
-
 ### Introduction
 
 - The system consists of three specialized agents that collaborate to create designs and conduct research. The [Coral Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent) serves as the central coordinator, interpreting user instructions, managing the workflow, and orchestrating the other agents. The [Canva Dev MCP Agent](https://github.com/Coral-Protocol/Coral-CanvaDevMCP-Agent), powered by the Canva Developer Platform, handles design creation in Canva, including creating, modifying, and exporting designs. The [Open Deep Research Agent](https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent) conducts comprehensive research to gather relevant information and insights that can be incorporated into the designs.
