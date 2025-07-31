@@ -12,7 +12,7 @@ This guide demonstrates a multi-agent software testing system built using Coral 
 
 - Checkout demo video below.  
 
-[![Demo Video](https://github.com/Coral-Protocol/awesome-agents-for-multi-agent-systems/blob/main/images/Software_Testing_Multiagents_Video2.png)](https://drive.google.com/file/d/1PyVQd8Z7rfqbokZ6hsp8m_2IMI29QH7B/view?usp=drive_link)
+[![Demo Video](https://drive.google.com/file/d/1PyVQd8Z7rfqbokZ6hsp8m_2IMI29QH7B/view?usp=drive_link)
 
 ### How to run step by step
 
