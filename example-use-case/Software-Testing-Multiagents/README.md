@@ -109,11 +109,7 @@ yarn dev
 
 ### 3. Run the Agents
 
-<summary>You can run in either of the below modes to get your system running.</summary>
-
-#### 1. Executable Mode
-
-<details>
+#### Executable Mode
 
 - The Executable Mode is part of the Coral Protocol Orchestrator which works with [Coral Studio UI](https://github.com/Coral-Protocol/coral-studio).  
 
@@ -224,57 +220,6 @@ registry:
 
 - After the agents are loaded properly, you will see "4 agents" connected. Proceed ahead with "Select Session", add the agents, api key and esure to add both the Custom Tools to the Interface Agent.
 
-</details>
-
-#### 2. Dev Mode
-
-<details>
-
-- The Dev Mode allows the Coral Server and all agents to be seaprately running on each terminal without UI support.  
-
-- Ensure that the [Coral Server](https://github.com/Coral-Protocol/coral-server) is running on your system and run below commands in separate terminals.
-
-- Ensure that you have setup the `.env` file with required keys.  
-
-Run the Interface Agent
-
-```bash
-# cd to directory
-cd Coral-Interface-Agent
-
-# Run the agent using `uv`:
-uv run python main.py
-```
-
-Run the GitClone Agent
-
-```bash
-# cd to directory
-cd Coral-GitClone-Agent
-
-# Run the agent using `uv`:
-uv run python main.py
-```
-Run the CodeDiffReview Agent
-
-```bash
-# cd to directory
-cd Coral-CodeDiffReview-Agent
-
-# Run the agent using `uv`:
-uv run python main.py
-```
-Run the UnitTestRunner Agent
-
-```bash
-# cd to directory
-cd Coral-UnitTestRunner-Agent
-
-# Run the agent using `uv`:
-uv run python main.py
-```
-
-</details>
 
 
 ### 5. Example
