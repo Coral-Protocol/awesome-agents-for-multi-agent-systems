@@ -98,20 +98,18 @@ yarn dev
 
 ### 2. Setup the Agents
 
-
-<details>  
-
 - Terminate the Coral Server from above and start below steps.
-- In this example, we are using the agents: [Coral Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent), [Canva Dev MCP Agent](https://github.com/Coral-Protocol/Coral-CanvaDevMCP-Agent), and [Open Deep Research Agent](https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent).  
+- In this example, we are using the agents:  
+   1. [Coral Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent)  
+   2. [Canva Dev MCP Agent](https://github.com/Coral-Protocol/Coral-CanvaDevMCP-Agent)  
+   3. [Open Deep Research Agent](https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent)  
+      
 - Please click on the link and set up the agents by following the setup instructions in the repository.  
 - Check the output below to see how the terminal will look after successful installation, keep in mind the directory you are at while doing `uv sync`.
 
 
-</details>
-
 ### 3. Run the Agents
 
-<details>
 
 <summary>You can run the agents in dev mode via terminal.</summary>
 
@@ -156,11 +154,9 @@ uv run main.py
 
 </details>
 
-</details>
 
 ### 4. Example
 
-<details>
 
 ```bash
 # Input:
@@ -182,8 +178,6 @@ Create a Canva presentation using the research findings
    - Creates presentation with research content
    - Provides Canva design URLs
 ```
-
-</details>
 
 
 ### Where to find support 
