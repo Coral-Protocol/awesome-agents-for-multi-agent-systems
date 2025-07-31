@@ -107,11 +107,7 @@ yarn dev
 
 ### 3. Run the Agents
 
-<summary>You can run the agents in dev mode via terminal.</summary>
-
-#### 1. Dev Mode
-
-<details>
+#### Dev Mode
 
 - The Dev Mode allows the Coral Server and all agents to be seaprately running on each terminal without UI support.  
 
@@ -146,8 +142,6 @@ cd Coral-AciDevMCP-Agent
 #Run the agent using 'uv'
 uv run main.py
 ```
-
-</details>
 
 ### 4. Example
 
