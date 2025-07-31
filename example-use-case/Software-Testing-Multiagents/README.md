@@ -172,7 +172,7 @@ registry:
         description: "API key for the service"
     runtime:
       type: "executable"
-      command: ["bash", "-c", "${PROJECT_DIR}/Coral-GitClone-Agent/run_agent.sh main.py"]
+      command: ["bash", "-c", "<replace with path to this agent>/Coral-GitClone-Agent/run_agent.sh main.py"]
       environment:
         - name: "API_KEY"
           from: "API_KEY"
@@ -193,7 +193,7 @@ registry:
         description: "key for the github service" 
     runtime:
       type: "executable"
-      command: ["bash", "-c", "${PROJECT_DIR}/Coral-CodeDiffReview-Agent/run_agent.sh main.py"]
+      command: ["bash", "-c", "<replace with path to this agent>/Coral-CodeDiffReview-Agent/run_agent.sh main.py"]
       environment:
         - name: "API_KEY"
           from: "API_KEY"
@@ -215,7 +215,7 @@ registry:
         description: "API key for the service"
     runtime:
       type: "executable"
-      command: ["bash", "-c", "${PROJECT_DIR}/Coral-UnitTestRunner-Agent/run_agent.sh main.py"]
+      command: ["bash", "-c", "<replace with path to this agent>/Coral-UnitTestRunner-Agent/run_agent.sh main.py"]
       environment:
         - name: "API_KEY"
           from: "API_KEY"
