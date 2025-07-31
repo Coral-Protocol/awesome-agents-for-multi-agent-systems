@@ -81,9 +81,6 @@ yarn -v
 # Install from yarn
 yarn install
 
-# Allow port for eternal access
-sudo ufw allow 5173
-
 ```
 
 Run Coral Studio
