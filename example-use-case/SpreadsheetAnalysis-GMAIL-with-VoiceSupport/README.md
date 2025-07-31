@@ -14,35 +14,14 @@ This guide demonstrates a multi-agent system for spreadsheet analysis, Gmail int
 
 - [Demo video](https://drive.google.com/file/d/1-VG3Kgld_AdSJx4suWBZ-x2K6QdGaCot/view)
 
-### Outline
-
-- **Setup Coral Server and Coral Studio**  
-  Step-by-step guide to install and run Coral Server with necessary dependencies (Java).
-
-- **Setup the Agents**  
-  Instructions to install and configure the agents.
-
-- **Run the Agents**  
-  Available options to run agents:
-  - Dev Mode (terminal-based) for easier debugging  
-
-- **Example**  
-  Sample input and output to get results.
-
 ### How to run step by step
 
 ### 1. Setup Coral Server and Coral Studio
-
-<details>
 
 - To setup the [Coral Server](https://github.com/Coral-Protocol/coral-server) and [Coral Studio UI](https://github.com/Coral-Protocol/coral-studio), follow the steps given in repository to install.
 
 - In order to test if both are working, open the same instance in two terminals and run both simultaneously.
 
-```bash
-# run studio
-yarn dev
-```
 - You will see both running like this simultaneously if succesful and should be able to access Coral Studio from your browser.
 
 ![Coral Server and Studio Running](https://github.com/Coral-Protocol/Coral-RaiseYourHack-Guide/blob/main/images/server-studio.png)
@@ -107,10 +86,6 @@ yarn -v
 
 # Install from yarn
 yarn install
-
-# Allow port for eternal access
-sudo ufw allow 5173
-
 ```
 
 Run Coral Studio
@@ -123,24 +98,14 @@ yarn dev
 
 </details>
 
-</details>
-
 ### 2. Setup the Agents
-
-
-<details>  
 
 - Terminate the Coral Server from above and start below steps.
 - In this example, we are using the agents: [Coral Voice Interface Agent](https://github.com/Coral-Protocol/Coral-VoiceInterface-Agent) , [Coral Pandas Agent](https://github.com/Coral-Protocol/Coral-Pandas-Agent) and [Coral ACIdev agent](https://github.com/Coral-Protocol/Coral-AciDevMCP-Agent/tree/pydantic-ai).  
 - Please click on the link and set up the agents by following the setup instructions in the repository.  
 - Check the output below to see how the terminal will look after succesfull installation, keep in mind the directory you are at while doing `uv sync`.
 
-
-</details>
-
 ### 3. Run the Agents
-
-<details>
 
 <summary>You can run the agents in dev mode via terminal.</summary>
 
@@ -184,11 +149,7 @@ uv run main.py
 
 </details>
 
-</details>
-
 ### 4. Example
-
-<details>
 
 ```bash
 You have to give a voice input like this
@@ -205,10 +166,6 @@ then you can ask it to send this information to the ACIdev agent and email to xy
 The email will be sent.
 
 ```
-
-</details>
-
-</details>
 
 
 ### Where to find support 
