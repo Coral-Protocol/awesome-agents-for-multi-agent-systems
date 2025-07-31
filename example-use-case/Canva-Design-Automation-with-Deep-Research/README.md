@@ -16,10 +16,6 @@ This guide demonstrates a multi-agent system for automated design creation with 
 
 - In order to test if both are working, open the same instance in two terminals and run both simultaneously.
 
-```bash
-# run studio
-yarn dev
-```
 - You will see both running like this simultaneously if succesful and should be able to access Coral Studio from your browser.
 
 ![Coral Server and Studio Running](https://github.com/Coral-Protocol/Coral-RaiseYourHack-Guide/blob/main/images/server-studio.png)
