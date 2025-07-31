@@ -118,7 +118,6 @@ yarn dev
 - Update the file: `coral-server/src/main/resources/application.yaml` with the details below. 
 
 ```bash
-# replace ${PROJECT_DIR} with YOUR/PROJECT/DIRECTORY
 
 applications:
   - id: "app"
