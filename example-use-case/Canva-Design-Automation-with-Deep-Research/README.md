@@ -8,26 +8,9 @@ This guide demonstrates a multi-agent system for automated design creation with 
 
 - Agents: [Coral Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent) | [Canva Dev MCP Agent](https://github.com/Coral-Protocol/Coral-CanvaDevMCP-Agent) | [Open Deep Research Agent](https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent)
 
-### Outline
-
-- **Setup Coral Server and Coral Studio**  
-  Step-by-step guide to install and run Coral Server with necessary dependencies (Java).
-
-- **Setup the Agents**  
-  Instructions to install and configure the agents.
-
-- **Run the Agents**  
-  Available options to run agents:
-  - Dev Mode (terminal-based) for easier debugging  
-
-- **Example**  
-  Sample input and output to get results.
-
 ### How to run step by step
 
 ### 1. Setup Coral Server and Coral Studio
-
-<details>
 
 - To setup the [Coral Server](https://github.com/Coral-Protocol/coral-server) and [Coral Studio UI](https://github.com/Coral-Protocol/coral-studio), follow the steps given in repository to install.
 
@@ -114,8 +97,6 @@ Run Coral Studio
 yarn dev
 
 ```
-
-</details>
 
 </details>
 
