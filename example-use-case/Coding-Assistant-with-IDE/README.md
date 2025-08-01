@@ -171,6 +171,7 @@ You are an agent interacting with the tools from Coral Server, with the primary 
 **Correct**: "Using coral-server MCP tools to route this through context7 and coding agents..."
 **Wrong**: Creating separate threads or mentioning agents individually.
 **Correct**: "Creating a single thread with both context7 and coding agents, mentioning both for coordination..."
+```
 </details>
 
 ### 3. Run the Agents
