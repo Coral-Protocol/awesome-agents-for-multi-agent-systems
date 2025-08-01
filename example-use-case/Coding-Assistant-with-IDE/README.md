@@ -103,6 +103,27 @@ yarn dev
 - Please click on the link and set up the agents by following the setup instructions in the repository.
 - Check the output below to see how the terminal will look after successful installation, keep in mind the directory you are at while doing `uv sync`.
 
+#### IDE Configuration
+
+Add the following configuration to your IDE's `mcp.json` file to enable communication with the Coral agents:
+
+```json
+{
+  "mcpServers": {
+    "coral-interface": {
+      "type": "sse",
+      "url": "http://localhost:5555/devmode/exampleApplication/privkey/session1/sse?agentId=interface_agent"
+    }
+  }
+}
+```
+
+This configuration allows your IDE to connect to the Coral interface agent and enables the multi-agent system to work seamlessly with your development environment.
+
+![MCP Tools Interface](https://github.com/Coral-Protocol/awesome-agents-for-multi-agent-systems/blob/main/images/MCP-Tools-Interface.png)
+
+The MCP Tools interface will show the coral-interface server with various functions available including list_agents, create_thread, add_participant, remove_participant, close_thread, send_message, and wait_for_mentions.
+
 ### 3. Run the Agents
 
 #### Dev Mode
