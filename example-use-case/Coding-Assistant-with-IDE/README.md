@@ -104,6 +104,7 @@ yarn dev
 - Check the output below to see how the terminal will look after successful installation, keep in mind the directory you are at while doing `uv sync`.
 
 #### IDE Configuration
+<details>
 
 Add the following configuration to your IDE's `mcp.json` file to enable communication with the Coral agents:
 
@@ -118,7 +119,16 @@ Add the following configuration to your IDE's `mcp.json` file to enable communic
 }
 ```
 
+This configuration allows your IDE to connect to the Coral interface agent and enables the multi-agent system to work seamlessly with your development environment.
+
+![MCP Tools Interface](https://github.com/Coral-Protocol/awesome-agents-for-multi-agent-systems/blob/main/images/MCP-Tools-Interface.png)
+
+The MCP Tools interface will show the coral-server with various tools available including list_agents, create_thread, add_participant, remove_participant, close_thread, send_message, and wait_for_mentions.
+
+</details>
+
 #### Create/Modify `.cursorrules`/ `copilot_instructions.md` file in your IDE to ensure proper usage of Coral MCP tools
+<details>
 
 ```markdown
 # .cursorrules - Place in project root
@@ -205,12 +215,7 @@ Coral-server provides superior results through:
 **Wrong**: Creating separate threads or mentioning agents individually.
 **Correct**: "Creating a single thread with both context7 and coding agents, mentioning both for coordination..."
 ```
-
-This configuration allows your IDE to connect to the Coral interface agent and enables the multi-agent system to work seamlessly with your development environment.
-
-![MCP Tools Interface](https://github.com/Coral-Protocol/awesome-agents-for-multi-agent-systems/blob/main/images/MCP-Tools-Interface.png)
-
-The MCP Tools interface will show the coral-server with various tools available including list_agents, create_thread, add_participant, remove_participant, close_thread, send_message, and wait_for_mentions.
+</details>
 
 ### 3. Run the Agents
 
