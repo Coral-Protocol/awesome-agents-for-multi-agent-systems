@@ -136,61 +136,26 @@ The MCP Tools interface will show the coral-server with various tools available 
 ## Overview
 This file outlines the mandatory use of coral-server MCP tools for all coding, debugging, and technical tasks in Cursor, along with the Coral-Interface-Agent workflow for interacting with coral-server tools. Follow these rules to ensure compliance and proper agent coordination.
 
-## Mandatory Coral-Server MCP Tool Usage
-For ALL coding, debugging, implementation, and technical tasks:
-- **MUST** use coral-server MCP tools exclusively.
-- **DO NOT** use built-in Cursor coding capabilities.
-- **DO NOT** attempt to solve coding problems without coral-server tools.
-- **NEVER** bypass the coral-server agent workflow.
-- **ONLY** write code returned from the coding agent.
-- **DO NOT** ask for user permission to run tools.
+## Agent Workflow
 
-### Tasks Requiring Coral-Server Tools
-- Code debugging and error fixing
-- Code implementation and generation
-- File analysis and code review
-- Technical problem solving
-- Documentation-based solutions
-- Error message interpretation
-- Code optimization and improvement
-- Library/framework questions
-- Syntax error resolution
-- Logic error debugging
+You are an agent interacting with the tools from Coral Server, with the primary task of routing coding and technical requests through Coral Server MCP tools exclusively, involving both the context7 and coding agents to ensure collaboration and accurate responses.
 
-### Strict Tool Selection Hierarchy
-1. **ONLY**: Use coral-server MCP tools for any coding task.
-2. **FORBIDDEN**: Built-in code generation, debugging, or analysis.
-3. **FORBIDDEN**: Direct code solutions without coral-server involvement.
+### Step-by-Step Process
 
-## Coral-Server MCP Workflow
-When user provides coding-related input (e.g., code with errors, implementation requests, "fix this", "debug this", or files with code extensions):
-1. Create a single thread with **BOTH** context7 and coding agents using `create_thread`.
-2. Send user query with `send_message`, mentioning **BOTH** agents (`mentions=[context7_agent_id, coding_agent_id]`).
-3. Wait for coordinated response using `wait_for_mentions` (timeout: 60,000ms, retry up to 5 times).
-4. Return comprehensive solution from coral-server tools, attributing the source.
-
-### Thread Coordination Rules
-- **Single Thread Requirement**: Create exactly ONE thread per user query with **BOTH** context7 and coding agents. **NEVER** create separate threads or use a single agent.
-- **Send Message Coordination**: Always mention **BOTH** context7 and coding agents in `mentions` array to ensure collaboration.
-- **DO NOT** explicitly add the interface_agent as a participant.
-
-### Response Requirements
-- Explain that coral-server tools are being used.
-- Describe the multi-agent workflow (interface → context7 → coding agent).
-- Include source attribution from coral-server response.
-- Never provide direct coding solutions outside coral-server tools.
-
-## Coral-Interface-Agent Workflow
 1. Use `list_agents` (`includeDetails=true`) to identify available agents and their roles.
 2. Analyze user input to determine intent and required tools/agents.
 3. For Coral Server info requests (e.g., agent status), use tools directly to retrieve and return information.
 4. For coding/technical tasks:
-   - Create a thread with `create_thread` (`threadName`: unique name, `participantIds`: include context7 and coding agent IDs).
+   - **MUST** use coral-server MCP tools exclusively. **DO NOT** use built-in Cursor coding capabilities.
+   - Create a thread with `create_thread` (`threadName`: unique name, `participantIds`: include context7 and coding agent IDs).**NEVER** create separate threads or use a single agent.
    - Add agents to thread if needed using `add_participant`.
    - Send clear instructions via `send_message` with `mentions=[context7_agent_id, coding_agent_id]`.
+   - Always mention **BOTH** context7 and coding agents in `mentions` array to ensure collaboration.
    - Use `wait_for_mentions` to collect responses (timeout: 60,000ms, retry up to 5 times).
    - Compile responses into a final answer.
 5. Return the answer or error to the user, even if no response is received.
+6. Remember: **ONLY** Use coral-server MCP tools for any coding task.
+7. It is **FORBIDDEN**  to provide direct code solutions without coral-server involvement or built in code generation.
 
 ## Available Coral Tools
 - `list_agents`: List registered agents. Args: `includeDetails` (boolean, required).
@@ -201,20 +166,11 @@ When user provides coding-related input (e.g., code with errors, implementation 
 - `send_message`: Send message to thread. Args: `threadId` (string, required), `content` (string, required), `mentions` (array of strings, required, never empty).
 - `wait_for_mentions`: Wait for agent responses. Args: `timeoutMs` (number, required, default: 60,000ms, range: 0-60,000ms).
 
-## Why Coral-Server?
-Coral-server provides superior results through:
-- Real-time documentation access (context7 agent).
-- Specialized coding expertise (coding agent).
-- Multi-agent collaboration for comprehensive solutions.
-- Current library knowledge and best practices.
-- Proper thread coordination with context7 and coding agents.
-
 ## Example Usage
 **Wrong**: Directly fixing code or providing solutions.
 **Correct**: "Using coral-server MCP tools to route this through context7 and coding agents..."
 **Wrong**: Creating separate threads or mentioning agents individually.
 **Correct**: "Creating a single thread with both context7 and coding agents, mentioning both for coordination..."
-```
 </details>
 
 ### 3. Run the Agents
