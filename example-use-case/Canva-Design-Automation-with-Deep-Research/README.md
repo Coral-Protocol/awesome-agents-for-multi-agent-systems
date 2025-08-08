@@ -7,6 +7,7 @@ This guide demonstrates a multi-agent system for automated design creation with 
 - The system consists of three specialized agents that collaborate to create designs and conduct research. The [Coral Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent) serves as the central coordinator, interpreting user instructions, managing the workflow, and orchestrating the other agents. The [Canva Dev MCP Agent](https://github.com/Coral-Protocol/Coral-CanvaDevMCP-Agent), powered by the Canva Developer Platform, handles design creation in Canva, including creating, modifying, and exporting designs. The [Open Deep Research Agent](https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent) conducts comprehensive research to gather relevant information and insights that can be incorporated into the designs.
 
 - Agents: [Coral Interface Agent](https://github.com/Coral-Protocol/Coral-Interface-Agent) | [Canva Dev MCP Agent](https://github.com/Coral-Protocol/Coral-CanvaDevMCP-Agent) | [Open Deep Research Agent](https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent)
+- [Demo](https://getrapidemo.com/videos/4054fabf-c87a-4a3b-8a3b-051e521e6873)
 
 ### How to run step by step
 
