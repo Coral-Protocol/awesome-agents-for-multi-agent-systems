@@ -27,7 +27,7 @@ ACI.dev is the open-source infrastructure layer for AI-agent tool-use and VibeOp
 
 ---
 
-# Research /Scrapping
+# Research / Scraping
 
 ## [Open Deep Research Agent](https://github.com/Coral-Protocol/Coral-OpenDeepResearch-Agent)
 
