@@ -1,3 +1,6 @@
+# (Note: oudated)
+All of these versions are for pre-1.0.0 Coral. We'll work on addressing this. In the meantime, rust example agents and an example application can be found [here](https://github.com/Coral-Protocol/coral-example-app)
+
 # Awesome agents for your multi-agent systems
 
 Welcome, you can mix and match any agent from this list to create a multi-agent system as they are all following [Coral Protocol](https://docs.coralprotocol.org/CoralDoc/Introduction/WhatisCoralProtocol), meaning any agent from any framework or language can collaborate.
